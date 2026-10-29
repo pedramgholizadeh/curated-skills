@@ -3,9 +3,6 @@ name: Deploy site to GitHub Pages
 on:
   push:
     branches: [master]
-    paths:
-      - "site/**"
-      - ".github/workflows/deploy-pages.yml"
   workflow_dispatch:
 
 permissions:
@@ -13,10 +10,13 @@ permissions:
 
 jobs:
   deploy:
-    name: Publish site/ to gh-pages
+    name: Regenerate catalog and publish site/
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      - name: Generate site/skills.json from the repository
+        run: python3 site/build.py
 
       - name: Deploy site/ to the gh-pages branch
         uses: peaceiris/actions-gh-pages@v4
