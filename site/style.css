@@ -110,6 +110,7 @@ section h2 { font-size: 1.7rem; font-weight: 700; margin-bottom: .6rem; }
 .badge.ready { background: rgba(85, 230, 165, .15); color: var(--main); }
 .badge.custom { background: rgba(240, 143, 116, .16); color: var(--coral); }
 .badge.lime { background: rgba(232, 254, 81, .12); color: var(--lime); }
+.badge.files { background: transparent; color: var(--blue); border: 1px solid rgba(85, 163, 230, .3); }
 
 .tree .items { margin-left: 1.4rem; }
 .skill-item {

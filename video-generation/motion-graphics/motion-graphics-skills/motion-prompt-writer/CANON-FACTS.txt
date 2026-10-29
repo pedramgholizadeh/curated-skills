@@ -1,0 +1,8 @@
+eight parts	The bar.*Format.*The one rule.*Look.*Motion.*Never.*Before you finish.*The scene
+apple default	Apple-style default
+asks real numbers	real, never invented
+hold 1.2s	1\.2 seconds
+labels 34px	34px
+self check stills	still every 1 second
+no guessed hex	Never guess a hex code
+one moment	ONE moment

@@ -25,7 +25,7 @@ and efficiently**. 💚
 | 🧩 [fullstack-skills](fullstack-skills/README.md) | Backend · Frontend · Mobile · Telegram bots · AI agents | [README](fullstack-skills/README.md) |
 | 🎨 [ui-ux-skills](ui-ux-skills/README.md) | Design systems · Accessibility · Interaction · Visual · Research (+ 🏆 ui-ux-pro-max) | [README](ui-ux-skills/README.md) |
 | 📈 [seo-skills](seo-skills/README.md) | Content · On-page · Website optimization | [README](seo-skills/README.md) |
-| 🎥 [video-generation](video-generation/README.md) | Promos · Explainers · Motion graphics · Editing · AI video | [README](video-generation/README.md) |
+| 🎥 [video-generation](video-generation/README.md) | Promos · Explainers · Motion graphics · Editing · AI video (+ 🎬 6 vendored video packs, 115 skills) | [README](video-generation/README.md) |
 | ⭐ [custom-skills](custom-skills/README.md) | My own consolidated skills, merged from the categories above | [README](custom-skills/README.md) |
 | 🏛️ [anthropic-skills](anthropic-skills/README.md) | Vendored: Anthropic's official SKILL.md collection (19 skills) | [README](anthropic-skills/README.md) |
 | 📣 [marketing-skills](marketing-skills/README.md) | Vendored: coreyhaines31/marketingskills (52 skills) | [README](marketing-skills/README.md) |
@@ -50,8 +50,11 @@ curated-skills/
 │   ├── ✍️ content-skills/         keyword-research · content-writing · content-strategy
 │   ├── 🔗 on-page-skills/        meta-optimization · structured-data · internal-linking
 │   └── 🛠️ optimizing-website/    technical-seo · core-web-vitals · performance-audits
-├── 🎥 video-generation/       cinematic-promos · explainers · motion-graphics
-│                              editing-workflows · ai-video-generation
+├── 🎥 video-generation/       cinematic-promos (video-shotcraft) · explainers
+│                              motion-graphics (motion-graphics-skills ·
+│                              bart-motion-graphics · opus-video-skills)
+│                              editing-workflows · ai-video-generation (awesome index)
+│                              openmontage — cross-category toolkit (91 skills)
 ├── ⭐ custom-skills/           consolidated, opinionated skills by the maintainer
 │                              fullstack-dev · ui-ux-pro · pm-manager ·
 │                              marketing-manager · brand-reels
@@ -138,6 +141,7 @@ built from [`site/`](site/), auto-deployed by
 | | Contributor | Role | Focus |
 |---|---|---|---|
 | 🥇 | [Pedram Gholizadeh](https://pedramgholizadeh.ir) | Creator & maintainer | Fullstack · AI agents · SEO · Video |
+| 🥈 | [Ahmad Mousavi](https://ahmadmousavi.ir) | Contributor — video skill packs | Video generation · Motion graphics |
 
 <!--
 Add a row per contributor (🥈 🥉 🏅 ...):

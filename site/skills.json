@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-29T12:07:49+00:00",
- "skillCount": 152,
+ "generated": "2026-10-29T15:49:32+00:00",
+ "skillCount": 267,
  "categories": [
   {
    "name": "anthropic-skills",
@@ -10,14 +10,15 @@
    "children": [
     {
      "name": "academy-guide",
-     "desc": ">",
+     "desc": "Stop and check this skill before finishing any reply to a question about how to use Claude or a Claude product — it recommends matching courses, tutorials, and use cases from Claude Academy (academy.claude.com), Anthropi",
      "path": "anthropic-skills/academy-guide",
      "skills": [
       {
        "name": "academy-guide",
-       "desc": ">"
+       "desc": "Stop and check this skill before finishing any reply to a question about how to use Claude or a Claude product — it recommends matching courses, tutorials, and use cases from Claude Academy (academy.claude.com), Anthropi"
       }
-     ]
+     ],
+     "support": 0
     },
     {
      "name": "algorithmic-art",
@@ -28,7 +29,8 @@
        "name": "algorithmic-art",
        "desc": "Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code, generative art, algorithmic art, flow fields, or particle systems. C"
       }
-     ]
+     ],
+     "support": 1
     },
     {
      "name": "brand-guidelines",
@@ -39,7 +41,8 @@
        "name": "brand-guidelines",
        "desc": "Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthropic's look-and-feel. Use it when brand colors or style guidelines, visual formatting, or company design "
       }
-     ]
+     ],
+     "support": 0
     },
     {
      "name": "canvas-design",
@@ -50,29 +53,32 @@
        "name": "canvas-design",
        "desc": "Create beautiful visual art in .png and .pdf documents using design philosophy. You should use this skill when the user asks to create a poster, piece of art, design, or other static piece. Create original visual designs"
       }
-     ]
+     ],
+     "support": 1
     },
     {
      "name": "claude-api",
-     "desc": "|-",
+     "desc": "Reference for the Claude API / Anthropic SDK — model ids, pricing, params, streaming, tool use, MCP, agents, caching, token counting, model migration. TRIGGER — read BEFORE opening the target file; don't skip because it ",
      "path": "anthropic-skills/claude-api",
      "skills": [
       {
        "name": "claude-api",
-       "desc": "|-"
+       "desc": "Reference for the Claude API / Anthropic SDK — model ids, pricing, params, streaming, tool use, MCP, agents, caching, token counting, model migration. TRIGGER — read BEFORE opening the target file; don't skip because it "
       }
-     ]
+     ],
+     "support": 9
     },
     {
      "name": "discernment-nudge",
-     "desc": ">",
+     "desc": "After you give a substantive answer or draft that the user may act on — advice or recommendations, drafted artifacts such as goals, plans, pitches, proposals, or emails, estimates or projections, analysis or interpretati",
      "path": "anthropic-skills/discernment-nudge",
      "skills": [
       {
        "name": "discernment-nudge",
-       "desc": ">"
+       "desc": "After you give a substantive answer or draft that the user may act on — advice or recommendations, drafted artifacts such as goals, plans, pitches, proposals, or emails, estimates or projections, analysis or interpretati"
       }
-     ]
+     ],
+     "support": 0
     },
     {
      "name": "doc-coauthoring",
@@ -83,7 +89,8 @@
        "name": "doc-coauthoring",
        "desc": "Guide users through a structured workflow for co-authoring documentation. Use when user wants to write documentation, proposals, technical specs, decision docs, or similar structured content. This workflow helps users ef"
       }
-     ]
+     ],
+     "support": 0
     },
     {
      "name": "docx",
@@ -94,7 +101,8 @@
        "name": "docx",
        "desc": "Use this skill whenever the user wants to create, read, edit, or manipulate Word documents (.docx files) or Word templates (.dotx files). Triggers include: any mention of 'Word doc', 'word document', '.docx', '.dotx', or"
       }
-     ]
+     ],
+     "support": 1
     },
     {
      "name": "frontend-design",
@@ -105,7 +113,8 @@
        "name": "frontend-design",
        "desc": "Guidance for distinctive, intentional visual design when building new UI or reshaping an existing one. Helps with aesthetic direction, typography, and making choices that don't read as templated defaults."
       }
-     ]
+     ],
+     "support": 0
     },
     {
      "name": "internal-comms",
@@ -116,7 +125,8 @@
        "name": "internal-comms",
        "desc": "A set of resources to help me write all kinds of internal communications, using the formats that my company likes to use. Claude should use this skill whenever asked to write some sort of internal communications (status "
       }
-     ]
+     ],
+     "support": 1
     },
     {
      "name": "mcp-builder",
@@ -127,7 +137,8 @@
        "name": "mcp-builder",
        "desc": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, "
       }
-     ]
+     ],
+     "support": 2
     },
     {
      "name": "pdf",
@@ -138,7 +149,8 @@
        "name": "pdf",
        "desc": "Use this skill whenever the user wants to do anything with PDF files. This includes reading or extracting text/tables from PDFs, combining or merging multiple PDFs into one, splitting PDFs apart, rotating pages, adding w"
       }
-     ]
+     ],
+     "support": 1
     },
     {
      "name": "pptx",
@@ -149,7 +161,8 @@
        "name": "pptx",
        "desc": "Use this skill any time a .pptx or .potx file is involved in any way — as input, output, or both. This includes: creating slide decks, pitch decks, or presentations; reading, parsing, or extracting text from any .pptx or"
       }
-     ]
+     ],
+     "support": 1
     },
     {
      "name": "skill-creator",
@@ -160,7 +173,8 @@
        "name": "skill-creator",
        "desc": "Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, edit, or optimize an existing skill, run evals to test a skill, benchmark skill pe"
       }
-     ]
+     ],
+     "support": 5
     },
     {
      "name": "slack-gif-creator",
@@ -171,7 +185,8 @@
        "name": "slack-gif-creator",
        "desc": "Knowledge and utilities for creating animated GIFs optimized for Slack. Provides constraints, validation tools, and animation concepts. Use when users request animated GIFs for Slack like \"make me a GIF of X doing Y for "
       }
-     ]
+     ],
+     "support": 1
     },
     {
      "name": "theme-factory",
@@ -182,7 +197,8 @@
        "name": "theme-factory",
        "desc": "Toolkit for styling artifacts with a theme. These artifacts can be slides, docs, reportings, HTML landing pages, etc. There are 10 pre-set themes with colors/fonts that you can apply to any artifact that has been creatin"
       }
-     ]
+     ],
+     "support": 1
     },
     {
      "name": "web-artifacts-builder",
@@ -193,7 +209,8 @@
        "name": "web-artifacts-builder",
        "desc": "Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui). Use for complex artifacts requiring state management, routing, or s"
       }
-     ]
+     ],
+     "support": 1
     },
     {
      "name": "webapp-testing",
@@ -204,7 +221,8 @@
        "name": "webapp-testing",
        "desc": "Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior, capturing browser screenshots, and viewing browser logs."
       }
-     ]
+     ],
+     "support": 2
     },
     {
      "name": "xlsx",
@@ -215,7 +233,8 @@
        "name": "xlsx",
        "desc": "Use this skill any time a spreadsheet file is the primary input or output. This means any task where the user wants to: open, read, edit, or fix an existing .xlsx, .xlsm, .xltx, .csv, or .tsv file (e.g., adding columns, "
       }
-     ]
+     ],
+     "support": 1
     }
    ]
   },
@@ -234,7 +253,8 @@
        "name": "brand-reels",
        "desc": "Produce a batch of on-brand short vertical marketing reels (9:16, ≤60s) for a business's own services or products, rendered deterministically in code (HTML canvas → headless Chrome → ffmpeg) with a hook-first / CTA-last "
       }
-     ]
+     ],
+     "support": 3
     },
     {
      "name": "fullstack-dev",
@@ -245,7 +265,8 @@
        "name": "fullstack-dev",
        "desc": "End-to-end workflow for building and shipping production web applications with AI agents — distinctive UI planning, artifact scaffolding, reconnaissance-first Playwright testing, MCP tool integration and API-drift-safe C"
       }
-     ]
+     ],
+     "support": 0
     },
     {
      "name": "marketing-manager",
@@ -256,7 +277,8 @@
        "name": "marketing-manager",
        "desc": "Marketing-lead operating workflow for products and sites — positioning context, SEO and content, CRO and copy, launches, and measurement with evidence-graded findings. Use for marketing plans, audits, landing pages, laun"
       }
-     ]
+     ],
+     "support": 0
     },
     {
      "name": "pm-manager",
@@ -267,7 +289,8 @@
        "name": "pm-manager",
        "desc": "One operating workflow for product management — discovery through strategy, PRD, prioritization, outcome roadmaps, launch readiness and measurement. Use when defining what to build and why: writing PRDs or roadmaps, prio"
       }
-     ]
+     ],
+     "support": 0
     },
     {
      "name": "ui-ux-pro",
@@ -278,7 +301,8 @@
        "name": "ui-ux-pro",
        "desc": "Lean design-intelligence workflow for building UIs that don't look AI-generated — query-contract driven design system generation, accessibility floors, anti-slop rules, dials for variance/motion/density, and a pre-delive"
       }
-     ]
+     ],
+     "support": 0
     }
    ]
   },
@@ -295,29 +319,35 @@
       {
        "name": "agent-orchestration",
        "desc": "Skills for designing autonomous and semi-autonomous agent workflows.",
-       "children": []
+       "children": [],
+       "files": 0
       },
       {
        "name": "evaluation",
        "desc": "Skills for measuring and protecting the quality of AI features.",
-       "children": []
+       "children": [],
+       "files": 0
       },
       {
        "name": "llm-integration",
        "desc": "Skills for wiring language models into applications reliably.",
-       "children": []
+       "children": [],
+       "files": 0
       },
       {
        "name": "mcp-servers",
        "desc": "Model Context Protocol: building tools and servers that agents can call.",
-       "children": []
+       "children": [],
+       "files": 0
       },
       {
        "name": "rag",
        "desc": "Retrieval-augmented generation: getting the right context into the model.",
-       "children": []
+       "children": [],
+       "files": 0
       }
-     ]
+     ],
+     "files": 0
     },
     {
      "name": "backend",
@@ -326,44 +356,53 @@
       {
        "name": "api-design",
        "desc": "Skills for designing and documenting service contracts: REST, GraphQL, gRPC,",
-       "children": []
+       "children": [],
+       "files": 0
       },
       {
        "name": "auth-security",
        "desc": "Skills for authentication, authorization, and hardening backend systems.",
-       "children": []
+       "children": [],
+       "files": 0
       },
       {
        "name": "databases",
        "desc": "Skills for data layers: relational databases, document stores, ORMs,",
-       "children": []
+       "children": [],
+       "files": 0
       },
       {
        "name": "deployment-devops",
        "desc": "Skills for shipping and operating backend services: CI/CD, containers,",
-       "children": []
+       "children": [],
+       "files": 0
       },
       {
        "name": "golang",
        "desc": "Skills for Go services: stdlib HTTP, concurrency, and microservice patterns.",
-       "children": []
+       "children": [],
+       "files": 0
       },
       {
        "name": "nodejs",
        "desc": "Skills for Node.js server development: Express, Fastify, NestJS, Bun, and the",
-       "children": []
+       "children": [],
+       "files": 0
       },
       {
        "name": "python",
        "desc": "Skills for Python services: FastAPI, Django, Flask, async programming, and",
-       "children": []
+       "children": [],
+       "files": 0
       },
       {
        "name": "testing",
        "desc": "Skills for verifying server-side code: unit, integration, contract, and load",
-       "children": []
+       "children": [],
+       "files": 0
       }
-     ]
+     ],
+     "files": 0
     },
     {
      "name": "frontend",
@@ -372,34 +411,41 @@
       {
        "name": "css-styling",
        "desc": "Skills for scalable styling: Tailwind, modern CSS, and design token systems.",
-       "children": []
+       "children": [],
+       "files": 0
       },
       {
        "name": "react-nextjs",
        "desc": "Skills for building React and Next.js applications at production quality.",
-       "children": []
+       "children": [],
+       "files": 0
       },
       {
        "name": "testing",
        "desc": "Skills for testing user interfaces with confidence.",
-       "children": []
+       "children": [],
+       "files": 0
       },
       {
        "name": "typescript",
        "desc": "Skills for strict, maintainable TypeScript across frontend and backend.",
-       "children": []
+       "children": [],
+       "files": 0
       },
       {
        "name": "vue-nuxt",
        "desc": "Skills for Vue 3 and Nuxt applications.",
-       "children": []
+       "children": [],
+       "files": 0
       },
       {
        "name": "web-performance",
        "desc": "Skills for making web apps measurably fast.",
-       "children": []
+       "children": [],
+       "files": 0
       }
-     ]
+     ],
+     "files": 0
     },
     {
      "name": "mobile",
@@ -408,24 +454,29 @@
       {
        "name": "android-kotlin",
        "desc": "Skills for native Android development.",
-       "children": []
+       "children": [],
+       "files": 0
       },
       {
        "name": "flutter",
        "desc": "Skills for Flutter and Dart applications.",
-       "children": []
+       "children": [],
+       "files": 0
       },
       {
        "name": "ios-swift",
        "desc": "Skills for native iOS development.",
-       "children": []
+       "children": [],
+       "files": 0
       },
       {
        "name": "react-native",
        "desc": "Skills for React Native and Expo apps.",
-       "children": []
+       "children": [],
+       "files": 0
       }
-     ]
+     ],
+     "files": 0
     },
     {
      "name": "telegram-bots",
@@ -434,19 +485,23 @@
       {
        "name": "bot-architecture",
        "desc": "Framework-agnostic skills for designing and operating serious Telegram bots.",
-       "children": []
+       "children": [],
+       "files": 0
       },
       {
        "name": "nodejs-bots",
        "desc": "Skills for Telegram bots written in TypeScript / JavaScript.",
-       "children": []
+       "children": [],
+       "files": 0
       },
       {
        "name": "python-bots",
        "desc": "Skills for Telegram bots written in Python.",
-       "children": []
+       "children": [],
+       "files": 0
       }
-     ]
+     ],
+     "files": 0
     }
    ]
   },
@@ -465,7 +520,8 @@
        "name": "ab-testing",
        "desc": "When the user wants to plan, design, or implement an A/B test or experiment, or build a growth experimentation program. Also use when the user mentions \"A/B test,\" \"split test,\" \"experiment,\" \"test this change,\" \"variant"
       }
-     ]
+     ],
+     "support": 2
     },
     {
      "name": "ad-creative",
@@ -476,7 +532,8 @@
        "name": "ad-creative",
        "desc": "When the user wants to generate, iterate, or scale ad creative — headlines, descriptions, primary text, or full ad variations — for any paid advertising platform. Also use when the user mentions 'ad copy variations,' 'ad"
       }
-     ]
+     ],
+     "support": 3
     },
     {
      "name": "ads",
@@ -487,7 +544,8 @@
        "name": "ads",
        "desc": "When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Instagram), LinkedIn, Twitter/X, or other ad platforms. Also use when the user mentions 'PPC,' 'paid media,' 'ROAS,' 'CPA,' 'ad campa"
       }
-     ]
+     ],
+     "support": 2
     },
     {
      "name": "ai-seo",
@@ -498,7 +556,8 @@
        "name": "ai-seo",
        "desc": "When the user wants to optimize content for AI search engines, get cited by LLMs, or appear in AI-generated answers. Also use when the user mentions 'AI SEO,' 'AEO,' 'GEO,' 'LLMO,' 'answer engine optimization,' 'generati"
       }
-     ]
+     ],
+     "support": 2
     },
     {
      "name": "analytics",
@@ -509,7 +568,8 @@
        "name": "analytics",
        "desc": "When the user wants to set up, improve, or audit analytics tracking and measurement. Also use when the user mentions \"set up tracking,\" \"GA4,\" \"Google Analytics,\" \"event tracking,\" \"UTM parameters,\" \"tag manager,\" \"GTM,\""
       }
-     ]
+     ],
+     "support": 2
     },
     {
      "name": "aso",
@@ -520,7 +580,8 @@
        "name": "aso",
        "desc": "When the user wants to audit or optimize an App Store or Google Play listing. Also use when the user mentions 'ASO audit,' 'app store optimization,' 'optimize my app listing,' 'improve app visibility,' 'app store ranking"
       }
-     ]
+     ],
+     "support": 2
     },
     {
      "name": "attribution",
@@ -531,7 +592,8 @@
        "name": "attribution",
        "desc": "When the user wants to figure out which marketing actually drives conversions and revenue, choose or interpret an attribution model, or reconcile conflicting numbers across tools. Also use when the user mentions \"attribu"
       }
-     ]
+     ],
+     "support": 2
     },
     {
      "name": "churn-prevention",
@@ -542,7 +604,8 @@
        "name": "churn-prevention",
        "desc": "When the user wants to reduce churn, build cancellation flows, set up save offers, recover failed payments, or implement retention strategies. Also use when the user mentions 'churn,' 'cancel flow,' 'offboarding,' 'save "
       }
-     ]
+     ],
+     "support": 2
     },
     {
      "name": "co-marketing",
@@ -553,7 +616,8 @@
        "name": "co-marketing",
        "desc": "When the user wants to find co-marketing partners, plan joint campaigns, or brainstorm partnership opportunities. Use when the user says 'co-marketing,' 'partner marketing,' 'joint campaign,' 'who should we partner with,"
       }
-     ]
+     ],
+     "support": 2
     },
     {
      "name": "cold-email",
@@ -564,7 +628,8 @@
        "name": "cold-email",
        "desc": "Write and run B2B cold outbound that gets replies, from cold emails and follow-ups to sending setup, LinkedIn, multichannel cadences, and reply handling. Use when the user mentions \"cold email,\" \"cold outreach,\" \"outboun"
       }
-     ]
+     ],
+     "support": 2
     },
     {
      "name": "community-marketing",
@@ -575,7 +640,8 @@
        "name": "community-marketing",
        "desc": "Build and leverage online communities to drive product growth and brand loyalty. Use when the user wants to create a community strategy, grow a Discord or Slack community, manage a forum or subreddit, build brand advocat"
       }
-     ]
+     ],
+     "support": 2
     },
     {
      "name": "competitor-profiling",
@@ -586,7 +652,8 @@
        "name": "competitor-profiling",
        "desc": "When the user wants to research, profile, or analyze competitors from their URLs. Also use when the user mentions 'competitor profile,' 'competitor research,' 'competitor analysis,' 'profile this competitor,' 'analyze co"
       }
-     ]
+     ],
+     "support": 2
     },
     {
      "name": "competitors",
@@ -597,7 +664,8 @@
        "name": "competitors",
        "desc": "When the user wants to create competitor comparison or alternative pages for SEO and buyer-facing use. Also use when the user mentions 'alternative page,' 'vs page,' 'competitor comparison,' 'comparison page,' '[Product]"
       }
-     ]
+     ],
+     "support": 2
     },
     {
      "name": "content-strategy",
@@ -608,7 +676,8 @@
        "name": "content-strategy",
        "desc": "When the user wants to plan a content strategy, decide what content to create, or figure out what topics to cover. Also use when the user mentions \"content strategy,\" \"what should I write about,\" \"content ideas,\" \"blog s"
       }
-     ]
+     ],
+     "support": 2
     },
     {
      "name": "conversion-tracking",
@@ -619,7 +688,8 @@
        "name": "conversion-tracking",
        "desc": "Set up, audit, verify, or fix website conversion tracking. Use when the conversion is a form submission, booked meeting, chat, phone call, signup, or purchase; when conversions must reach Google Ads, Meta, GA4, LinkedIn,"
       }
-     ]
+     ],
+     "support": 4
     },
     {
      "name": "copy-editing",
@@ -630,7 +700,8 @@
        "name": "copy-editing",
        "desc": "When the user wants to edit, review, or improve existing marketing copy, or refresh outdated content. Also use when the user mentions 'edit this copy,' 'review my copy,' 'copy feedback,' 'proofread,' 'polish this,' 'make"
       }
-     ]
+     ],
+     "support": 2
     },
     {
      "name": "copywriting",
@@ -641,7 +712,8 @@
        "name": "copywriting",
        "desc": "When the user wants to write, rewrite, or improve marketing copy for any page, including homepage, landing pages, pricing pages, feature pages, about pages, or product pages. Also use when the user says \"write copy for,\""
       }
-     ]
+     ],
+     "support": 2
     },
     {
      "name": "cro",
@@ -652,7 +724,8 @@
        "name": "cro",
        "desc": "When the user wants to optimize, improve, or increase conversions on any marketing page or form — including homepage, landing pages, pricing pages, feature pages, lead capture forms, or contact forms. Also use when the u"
       }
-     ]
+     ],
+     "support": 2
     },
     {
      "name": "customer-research",
@@ -663,7 +736,8 @@
        "name": "customer-research",
        "desc": "When the user wants to conduct, analyze, or synthesize customer research. Use when the user mentions \"customer research,\" \"ICP research,\" \"talk to customers,\" \"analyze transcripts,\" \"customer interviews,\" \"survey analysi"
       }
-     ]
+     ],
+     "support": 2
     },
     {
      "name": "directory-submissions",
@@ -674,7 +748,8 @@
        "name": "directory-submissions",
        "desc": "When the user wants to submit their product to startup, SaaS, AI, agent, MCP, no-code, or review directories for backlinks, domain rating, and discovery. Also use when the user mentions \"directory submissions,\" \"submit t"
       }
-     ]
+     ],
+     "support": 2
     },
     {
      "name": "emails",
@@ -685,7 +760,8 @@
        "name": "emails",
        "desc": "When the user wants to create or optimize an email sequence, drip campaign, automated email flow, or lifecycle email program. Also use when the user mentions \"email sequence,\" \"drip campaign,\" \"nurture sequence,\" \"onboar"
       }
-     ]
+     ],
+     "support": 2
     },
     {
      "name": "events",
@@ -696,7 +772,8 @@
        "name": "events",
        "desc": "When the user wants to plan, run, sponsor, speak at, or get pipeline from events — webinars, conferences, trade shows, meetups, dinners, workshops, virtual summits, or user conferences. Also use when the user mentions 'e"
       }
-     ]
+     ],
+     "support": 2
     },
     {
      "name": "free-tools",
@@ -707,7 +784,8 @@
        "name": "free-tools",
        "desc": "When the user wants to plan, evaluate, or build a free tool for marketing purposes — lead generation, SEO value, or brand awareness. Also use when the user mentions \"engineering as marketing,\" \"free tool,\" \"marketing too"
       }
-     ]
+     ],
+     "support": 2
     },
     {
      "name": "image",
@@ -718,7 +796,8 @@
        "name": "image",
        "desc": "When the user wants to create, generate, edit, or optimize images for marketing — blog heroes, social graphics, product mockups, profile banners, listing visuals, or brand assets. Also use when the user mentions 'AI imag"
       }
-     ]
+     ],
+     "support": 2
     },
     {
      "name": "influencer-marketing",
@@ -729,7 +808,8 @@
        "name": "influencer-marketing",
        "desc": "When the user wants to run influencer, creator, or ambassador partnerships to promote their product — finding and vetting partners, structuring deals, briefing creators, disclosure compliance, and measuring ROI. Also use"
       }
-     ]
+     ],
+     "support": 2
     },
     {
      "name": "launch",
@@ -740,7 +820,8 @@
        "name": "launch",
        "desc": "When the user wants to plan a product launch, feature announcement, or release strategy. Also use when the user mentions 'launch,' 'Product Hunt,' 'feature release,' 'announcement,' 'go-to-market,' 'beta launch,' 'early "
       }
-     ]
+     ],
+     "support": 2
     },
     {
      "name": "lead-magnets",
@@ -751,7 +832,8 @@
        "name": "lead-magnets",
        "desc": "When the user wants to create, plan, or optimize a lead magnet for email capture or lead generation. Also use when the user mentions \"lead magnet,\" \"gated content,\" \"content upgrade,\" \"downloadable,\" \"ebook,\" \"cheat shee"
       }
-     ]
+     ],
+     "support": 2
     },
     {
      "name": "link-building",
@@ -762,7 +844,8 @@
        "name": "link-building",
        "desc": "When the user wants to earn backlinks or third-party mentions that lift rankings and AI citations. Also use when the user mentions 'link building,' 'linkbuilding,' 'backlinks,' 'get more backlinks,' 'link prospecting,' '"
       }
-     ]
+     ],
+     "support": 2
     },
     {
      "name": "marketing-council",
@@ -773,7 +856,8 @@
        "name": "marketing-council",
        "desc": "When the user wants multiple expert perspectives on a marketing question — a simulated board of advisors staffed by legendary marketers (Seth Godin, David Ogilvy, Eugene Schwartz, April Dunford, Rory Sutherland, Alex Hor"
       }
-     ]
+     ],
+     "support": 2
     },
     {
      "name": "marketing-ideas",
@@ -784,7 +868,8 @@
        "name": "marketing-ideas",
        "desc": "When the user needs marketing ideas, inspiration, or strategies for their SaaS or software product. Also use when the user asks for 'marketing ideas,' 'growth ideas,' 'how to market,' 'marketing strategies,' 'marketing t"
       }
-     ]
+     ],
+     "support": 2
     },
     {
      "name": "marketing-loops",
@@ -795,7 +880,8 @@
        "name": "marketing-loops",
        "desc": "When the user wants to set up a recurring, self-running marketing workflow — a repeatable loop an AI agent runs on a cadence (weekly, daily, on a trigger) rather than a one-off task. Also use when the user mentions 'mark"
       }
-     ]
+     ],
+     "support": 2
     },
     {
      "name": "marketing-plan",
@@ -806,7 +892,8 @@
        "name": "marketing-plan",
        "desc": "When the user needs a comprehensive marketing plan for a client, a company they advise, or their own product. Also use when the user mentions \"marketing plan,\" \"growth plan,\" \"GTM plan,\" \"go-to-market plan,\" \"AARRR plan,"
       }
-     ]
+     ],
+     "support": 2
     },
     {
      "name": "marketing-psychology",
@@ -817,7 +904,8 @@
        "name": "marketing-psychology",
        "desc": "When the user wants to apply psychological principles, mental models, or behavioral science to marketing. Also use when the user mentions 'psychology,' 'mental models,' 'cognitive bias,' 'persuasion,' 'behavioral science"
       }
-     ]
+     ],
+     "support": 1
     },
     {
      "name": "offers",
@@ -828,7 +916,8 @@
        "name": "offers",
        "desc": "When the user wants to design, construct, or improve an offer — the thing they actually sell — including value framing, bonus stacking, guarantee design, scarcity/urgency, naming, and payment structure. Also use when the"
       }
-     ]
+     ],
+     "support": 2
     },
     {
      "name": "onboarding",
@@ -839,7 +928,8 @@
        "name": "onboarding",
        "desc": "When the user wants to optimize post-signup onboarding, user activation, first-run experience, or time-to-value. Also use when the user mentions \"onboarding flow,\" \"activation rate,\" \"user activation,\" \"first-run experie"
       }
-     ]
+     ],
+     "support": 2
     },
     {
      "name": "paywalls",
@@ -850,7 +940,8 @@
        "name": "paywalls",
        "desc": "When the user wants to create or optimize in-app paywalls, upgrade screens, upsell modals, or feature gates. Also use when the user mentions \"paywall,\" \"upgrade screen,\" \"upgrade modal,\" \"upsell,\" \"feature gate,\" \"conver"
       }
-     ]
+     ],
+     "support": 2
     },
     {
      "name": "popups",
@@ -861,7 +952,8 @@
        "name": "popups",
        "desc": "When the user wants to create or optimize popups, modals, overlays, slide-ins, or banners for conversion purposes. Also use when the user mentions \"exit intent,\" \"popup conversions,\" \"modal optimization,\" \"lead capture p"
       }
-     ]
+     ],
+     "support": 1
     },
     {
      "name": "pricing",
@@ -872,7 +964,8 @@
        "name": "pricing",
        "desc": "When the user wants help with pricing decisions, packaging, or monetization strategy. Also use when the user mentions 'pricing,' 'pricing tiers,' 'freemium,' 'free trial,' 'packaging,' 'price increase,' 'value metric,' '"
       }
-     ]
+     ],
+     "support": 2
     },
     {
      "name": "product-marketing",
@@ -883,7 +976,8 @@
        "name": "product-marketing",
        "desc": "When the user wants to create or update their product marketing context document. Also use when the user mentions 'product context,' 'marketing context,' 'set up context,' 'positioning,' 'who is my target audience,' 'des"
       }
-     ]
+     ],
+     "support": 2
     },
     {
      "name": "programmatic-seo",
@@ -894,7 +988,8 @@
        "name": "programmatic-seo",
        "desc": "When the user wants to create SEO-driven pages at scale using templates and data. Also use when the user mentions \"programmatic SEO,\" \"template pages,\" \"pages at scale,\" \"directory pages,\" \"location pages,\" \"[keyword] + "
       }
-     ]
+     ],
+     "support": 2
     },
     {
      "name": "prospecting",
@@ -905,7 +1000,8 @@
        "name": "prospecting",
        "desc": "When the user wants to find, qualify, and build a list of prospects to reach out to, across B2B SaaS, general B2B, or local small businesses. Also use when the user mentions \"prospecting,\" \"build a prospect list,\" \"find "
       }
-     ]
+     ],
+     "support": 2
     },
     {
      "name": "public-relations",
@@ -916,7 +1012,8 @@
        "name": "public-relations",
        "desc": "When the user wants help with public relations, earned media, press coverage, journalist outreach, or media strategy (not pull requests). Also use when the user mentions 'PR,' 'press,' 'press release,' 'media outreach,' "
       }
-     ]
+     ],
+     "support": 2
     },
     {
      "name": "referrals",
@@ -927,7 +1024,8 @@
        "name": "referrals",
        "desc": "When the user wants to create, optimize, or analyze a referral program, affiliate program, or word-of-mouth strategy. Also use when the user mentions 'referral,' 'affiliate,' 'ambassador,' 'word of mouth,' 'viral loop,' "
       }
-     ]
+     ],
+     "support": 2
     },
     {
      "name": "revops",
@@ -938,7 +1036,8 @@
        "name": "revops",
        "desc": "When the user wants help with revenue operations, lead lifecycle management, or marketing-to-sales handoff processes. Also use when the user mentions 'RevOps,' 'revenue operations,' 'lead scoring,' 'outbound pipeline sta"
       }
-     ]
+     ],
+     "support": 2
     },
     {
      "name": "sales-enablement",
@@ -949,7 +1048,8 @@
        "name": "sales-enablement",
        "desc": "When the user wants to create sales collateral, pitch decks, one-pagers, objection handling docs, or demo scripts. Also use when the user mentions 'sales deck,' 'pitch deck,' 'one-pager,' 'leave-behind,' 'objection handl"
       }
-     ]
+     ],
+     "support": 2
     },
     {
      "name": "schema",
@@ -960,7 +1060,8 @@
        "name": "schema",
        "desc": "When the user wants to add, fix, or optimize schema markup and structured data on their site. Also use when the user mentions \"schema markup,\" \"structured data,\" \"JSON-LD,\" \"rich snippets,\" \"schema.org,\" \"FAQ schema,\" \"p"
       }
-     ]
+     ],
+     "support": 2
     },
     {
      "name": "seo-audit",
@@ -971,7 +1072,8 @@
        "name": "seo-audit",
        "desc": "When the user wants to audit, review, or diagnose SEO issues on their site. Also use when the user mentions \"SEO audit,\" \"technical SEO,\" \"why am I not ranking,\" \"SEO issues,\" \"on-page SEO,\" \"meta tags review,\" \"SEO heal"
       }
-     ]
+     ],
+     "support": 2
     },
     {
      "name": "signup",
@@ -982,7 +1084,8 @@
        "name": "signup",
        "desc": "When the user wants to optimize signup, registration, account creation, or trial activation flows. Also use when the user mentions \"signup conversions,\" \"registration friction,\" \"signup form optimization,\" \"free trial si"
       }
-     ]
+     ],
+     "support": 1
     },
     {
      "name": "site-architecture",
@@ -993,7 +1096,8 @@
        "name": "site-architecture",
        "desc": "When the user wants to plan, map, or restructure their website's page hierarchy, navigation, URL structure, or internal linking. Also use when the user mentions \"sitemap,\" \"site map,\" \"visual sitemap,\" \"site structure,\" "
       }
-     ]
+     ],
+     "support": 2
     },
     {
      "name": "sms",
@@ -1004,7 +1108,8 @@
        "name": "sms",
        "desc": "When the user wants to plan, build, or optimize SMS, MMS, or WhatsApp marketing — including welcome flows, abandoned cart texts, post-purchase, win-back, promotional sends, or transactional/auth SMS. Also use when the us"
       }
-     ]
+     ],
+     "support": 2
     },
     {
      "name": "social",
@@ -1015,7 +1120,8 @@
        "name": "social",
        "desc": "When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram, TikTok, or Facebook, or wants to do social listening and engagement triage. Also use when the user men"
       }
-     ]
+     ],
+     "support": 2
     },
     {
      "name": "video",
@@ -1026,7 +1132,8 @@
        "name": "video",
        "desc": "When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI video,' 'Remotion,' 'Hyperframes,' 'HeyGen,' 'Synthesia"
       }
-     ]
+     ],
+     "support": 2
     }
    ]
   },
@@ -1049,7 +1156,8 @@
          "name": "code-review",
          "desc": "Moved to phuryn/product-engineering, where it is maintained in the ai-shipping plugin; this copy says where it went and how to install it. Use when asked to review changes, find bugs, audit a codebase, or check whether a"
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "intended-vs-implemented",
@@ -1060,7 +1168,8 @@
          "name": "intended-vs-implemented",
          "desc": "Moved to phuryn/product-engineering, where it is maintained in the ai-shipping plugin; this copy says where it went and how to install it. Use when asked to find where the code does something other than its docs say."
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "shipping-artifacts",
@@ -1071,9 +1180,11 @@
          "name": "shipping-artifacts",
          "desc": "Moved to phuryn/product-engineering, where it is maintained in the ai-shipping plugin; this copy says where it went and how to install it. Use when asked to document an AI-built app so it can be reviewed before it ships."
         }
-       ]
+       ],
+       "support": 0
       }
-     ]
+     ],
+     "files": 0
     },
     {
      "name": "data-analytics",
@@ -1088,7 +1199,8 @@
          "name": "ab-test-analysis",
          "desc": "Analyze A/B test results with statistical significance, sample size validation, confidence intervals, and ship/extend/stop recommendations. Use when evaluating experiment results, checking if a test reached significance,"
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "cohort-analysis",
@@ -1099,7 +1211,8 @@
          "name": "cohort-analysis",
          "desc": "Perform cohort analysis on user engagement data — retention curves, feature adoption trends, and segment-level insights. Use when analyzing user retention by cohort, studying feature adoption over time, investigating chu"
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "sql-queries",
@@ -1110,9 +1223,11 @@
          "name": "sql-queries",
          "desc": "Generate SQL queries from natural language descriptions. Supports BigQuery, PostgreSQL, MySQL, and other dialects. Reads database schemas from uploaded diagrams or documentation. Use when writing SQL, building data repor"
         }
-       ]
+       ],
+       "support": 0
       }
-     ]
+     ],
+     "files": 0
     },
     {
      "name": "execution",
@@ -1127,7 +1242,8 @@
          "name": "brainstorm-okrs",
          "desc": "Brainstorm team-level OKRs aligned with company objectives — qualitative objectives with measurable key results. Use when setting quarterly OKRs, aligning team goals with company strategy, drafting objectives, or learnin"
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "create-prd",
@@ -1138,7 +1254,8 @@
          "name": "create-prd",
          "desc": "Create a lean, decision-ready Product Requirements Document with an 8-section template: summary, contacts, background, objective, market segments, value propositions (6-part JTBD template), solution, and release. Lean by"
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "dummy-dataset",
@@ -1149,7 +1266,8 @@
          "name": "dummy-dataset",
          "desc": "Generate realistic dummy datasets for testing with customizable columns, constraints, and output formats (CSV, JSON, SQL, Python script). Use when creating test data, building mock datasets, or generating sample data for"
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "job-stories",
@@ -1160,7 +1278,8 @@
          "name": "job-stories",
          "desc": "Create job stories using the 'When [situation], I want to [motivation], so I can [outcome]' format with detailed acceptance criteria. Use when writing job stories, creating JTBD-style backlog items, or expressing user si"
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "outcome-roadmap",
@@ -1171,7 +1290,8 @@
          "name": "outcome-roadmap",
          "desc": "Transform an output-focused roadmap into an outcome-focused one that communicates strategic intent. Rewrites initiatives as outcome statements reflecting user and business impacts. Use when shifting to outcome roadmaps, "
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "pre-mortem",
@@ -1182,7 +1302,8 @@
          "name": "pre-mortem",
          "desc": "Run a pre-mortem risk analysis on a PRD or launch plan. Categorizes risks as Tigers (real problems), Paper Tigers (overblown concerns), and Elephants (unspoken worries), then classifies as launch-blocking, fast-follow, o"
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "prioritization-frameworks",
@@ -1193,7 +1314,8 @@
          "name": "prioritization-frameworks",
          "desc": "Reference guide to 9 prioritization frameworks with formulas, when-to-use guidance, and templates — RICE, ICE, Kano, MoSCoW, Opportunity Score, and more. Use when selecting a prioritization method, comparing frameworks l"
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "release-notes",
@@ -1204,7 +1326,8 @@
          "name": "release-notes",
          "desc": "Generate user-facing release notes from tickets, PRDs, or changelogs. Creates clear, engaging summaries organized by category (new features, improvements, fixes). Use when writing release notes, creating changelogs, anno"
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "retro",
@@ -1215,7 +1338,8 @@
          "name": "retro",
          "desc": "Facilitate a structured sprint retrospective — what went well, what didn't, and prioritized action items with owners and deadlines. Use when running a retrospective, reflecting on a sprint, creating action items from tea"
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "sprint-plan",
@@ -1226,7 +1350,8 @@
          "name": "sprint-plan",
          "desc": "Plan a sprint with capacity estimation, story selection, dependency mapping, and risk identification. Use when preparing for sprint planning, estimating team capacity, selecting stories, or balancing sprint scope against"
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "stakeholder-map",
@@ -1237,7 +1362,8 @@
          "name": "stakeholder-map",
          "desc": "Build a stakeholder map using a power/interest grid, identify communication strategies per quadrant, and generate a communication plan. Use when managing stakeholders, preparing for a launch, aligning cross-functional te"
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "strategy-red-team",
@@ -1248,7 +1374,8 @@
          "name": "strategy-red-team",
          "desc": "Red-team a PRD, roadmap, or strategy by attacking its load-bearing assumptions before reality does. Steelmans then attacks each claim, ranks failure modes by impact × likelihood × cheapness-to-test, and returns the cheap"
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "summarize-meeting",
@@ -1259,7 +1386,8 @@
          "name": "summarize-meeting",
          "desc": "Summarize a meeting transcript into structured notes with date, participants, topic, key decisions, summary points, and action items. Use when processing meeting recordings, creating meeting notes, writing meeting minute"
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "test-scenarios",
@@ -1270,7 +1398,8 @@
          "name": "test-scenarios",
          "desc": "Create comprehensive test scenarios from user stories with test objectives, starting conditions, user roles, step-by-step actions, and expected outcomes. Use when writing QA test cases, creating test plans, defining acce"
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "user-stories",
@@ -1281,7 +1410,8 @@
          "name": "user-stories",
          "desc": "Create user stories following the 3 C's (Card, Conversation, Confirmation) and INVEST criteria with descriptions, design links, and acceptance criteria. Use when writing user stories, breaking down features into backlog "
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "wwas",
@@ -1292,9 +1422,11 @@
          "name": "wwas",
          "desc": "Create product backlog items in Why-What-Acceptance format — independent, valuable, testable items with strategic context. Use when writing structured backlog items, breaking features into work items, or using the WWA fo"
         }
-       ]
+       ],
+       "support": 0
       }
-     ]
+     ],
+     "files": 0
     },
     {
      "name": "go-to-market",
@@ -1309,7 +1441,8 @@
          "name": "beachhead-segment",
          "desc": "Identify the first beachhead market segment for a product launch. Evaluates segments against burning pain, willingness to pay, winnable market share, and referral potential. Use when choosing a first market, targeting an"
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "competitive-battlecard",
@@ -1320,7 +1453,8 @@
          "name": "competitive-battlecard",
          "desc": "Create sales-ready competitive battlecards comparing your product against a specific competitor — positioning, feature comparison, objection handling, and win/loss patterns. Use when preparing sales teams, creating compe"
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "growth-loops",
@@ -1331,7 +1465,8 @@
          "name": "growth-loops",
          "desc": "Identify growth loops (flywheels) for sustainable traction. Evaluates 5 loop types: Viral, Usage, Collaboration, User-Generated, and Referral. Use when designing growth mechanisms, building product-led traction, or under"
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "gtm-motions",
@@ -1342,7 +1477,8 @@
          "name": "gtm-motions",
          "desc": "Identify the best GTM motions and tools across 7 motion types: Inbound, Outbound, Paid Digital, Community, Partners, ABM, and PLG. Use when selecting marketing channels, choosing between inbound and outbound strategy, or"
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "gtm-strategy",
@@ -1353,7 +1489,8 @@
          "name": "gtm-strategy",
          "desc": "Create a go-to-market strategy covering marketing channels, messaging, success metrics, and launch timeline. Use when planning a product launch, creating a GTM plan from scratch, or defining a launch strategy for a new m"
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "ideal-customer-profile",
@@ -1364,9 +1501,11 @@
          "name": "ideal-customer-profile",
          "desc": "Identify the Ideal Customer Profile (ICP) from research data with demographics, behaviors, JTBD, and needs. Use when defining your ICP, analyzing PMF survey data, or understanding who your best customers are."
         }
-       ]
+       ],
+       "support": 0
       }
-     ]
+     ],
+     "files": 0
     },
     {
      "name": "market-research",
@@ -1381,7 +1520,8 @@
          "name": "competitor-analysis",
          "desc": "Analyze competitors with strengths, weaknesses, and differentiation opportunities. Identifies direct competitors and maps the competitive landscape. Use when doing competitive research, preparing a competitive brief, or "
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "customer-journey-map",
@@ -1392,7 +1532,8 @@
          "name": "customer-journey-map",
          "desc": "Create an end-to-end customer journey map with stages, touchpoints, emotions, pain points, and opportunities. Use when mapping the customer experience, identifying friction points, improving onboarding, or visualizing th"
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "market-segments",
@@ -1403,7 +1544,8 @@
          "name": "market-segments",
          "desc": "Identify 3-5 potential customer segments with demographics, JTBD, and product fit analysis. Use when exploring market segments, identifying target audiences, evaluating new markets, or learning how to segment a market."
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "market-sizing",
@@ -1414,7 +1556,8 @@
          "name": "market-sizing",
          "desc": "Estimate market size using TAM, SAM, and SOM with top-down and bottom-up approaches. Use when sizing a market opportunity, estimating addressable market, preparing for investor pitches, or evaluating market entry."
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "sentiment-analysis",
@@ -1425,7 +1568,8 @@
          "name": "sentiment-analysis",
          "desc": "Analyze user feedback data to identify segments with sentiment scores, JTBD, and product satisfaction insights. Use when analyzing user feedback at scale, running sentiment analysis on reviews or surveys, or identifying "
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "user-personas",
@@ -1436,7 +1580,8 @@
          "name": "user-personas",
          "desc": "Create refined user personas from research data — 3 personas with JTBD, pains, gains, and unexpected insights. Use when building personas from survey data, creating user profiles from research, or segmenting users for pr"
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "user-segmentation",
@@ -1447,9 +1592,11 @@
          "name": "user-segmentation",
          "desc": "Segment users from feedback data based on behavior, JTBD, and needs. Identifies at least 3 distinct user segments. Use when segmenting a user base, analyzing diverse user feedback, or building a segmentation model."
         }
-       ]
+       ],
+       "support": 0
       }
-     ]
+     ],
+     "files": 0
     },
     {
      "name": "marketing-growth",
@@ -1464,7 +1611,8 @@
          "name": "marketing-ideas",
          "desc": "Generate 5 creative, cost-effective marketing ideas with channels, messaging, and engagement rationale. Use when brainstorming marketing campaigns, planning product promotion, or looking for creative marketing tactics."
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "north-star-metric",
@@ -1475,7 +1623,8 @@
          "name": "north-star-metric",
          "desc": "Define a North Star Metric and 3-5 supporting input metrics that form a metrics constellation. Classify the business game (Attention, Transaction, Productivity) and validate against 7 criteria for an effective North Star"
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "positioning-ideas",
@@ -1486,7 +1635,8 @@
          "name": "positioning-ideas",
          "desc": "Brainstorm product positioning ideas differentiated from competitors. Identifies top competitors and generates positioning statements with rationale. Use when developing product positioning, differentiating from competit"
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "product-name",
@@ -1497,7 +1647,8 @@
          "name": "product-name",
          "desc": "Brainstorm 5 unique, memorable product names with rationale aligned to brand values and target audience. Use when naming a new product, rebranding, or exploring product name ideas."
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "value-prop-statements",
@@ -1508,9 +1659,11 @@
          "name": "value-prop-statements",
          "desc": "Generate value proposition statements for marketing, sales, and onboarding from existing value propositions. Use when writing marketing copy, creating sales messaging, or crafting onboarding messages."
         }
-       ]
+       ],
+       "support": 0
       }
-     ]
+     ],
+     "files": 0
     },
     {
      "name": "product-discovery",
@@ -1525,7 +1678,8 @@
          "name": "analyze-feature-requests",
          "desc": "Analyze and prioritize a list of feature requests by theme, strategic alignment, impact, effort, and risk. Use when reviewing customer feature requests, triaging a backlog, or making prioritization decisions."
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "brainstorm-experiments-existing",
@@ -1536,7 +1690,8 @@
          "name": "brainstorm-experiments-existing",
          "desc": "Design experiments to test assumptions for an existing product — prototypes, A/B tests, spikes, and other low-effort validation methods. Use when validating assumptions, testing feature ideas cheaply, or planning product"
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "brainstorm-experiments-new",
@@ -1547,7 +1702,8 @@
          "name": "brainstorm-experiments-new",
          "desc": "Design lean startup experiments (pretotypes) for a new product. Creates XYZ hypotheses and suggests low-effort validation methods like landing pages, explainer videos, and pre-orders. Use when validating a new product id"
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "brainstorm-ideas-existing",
@@ -1558,7 +1714,8 @@
          "name": "brainstorm-ideas-existing",
          "desc": "Brainstorm product ideas for an existing product using multi-perspective ideation from PM, Designer, and Engineer viewpoints. Use when generating new feature ideas, brainstorming solutions for an identified opportunity, "
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "brainstorm-ideas-new",
@@ -1569,7 +1726,8 @@
          "name": "brainstorm-ideas-new",
          "desc": "Brainstorm feature ideas for a new product in initial discovery from PM, Designer, and Engineer perspectives. Use when starting product discovery for a new product, exploring features for a startup idea, or doing initial"
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "identify-assumptions-existing",
@@ -1580,7 +1738,8 @@
          "name": "identify-assumptions-existing",
          "desc": "Identify risky assumptions for a feature idea in an existing product across Value, Usability, Viability, and Feasibility. Uses multi-perspective devil's advocate thinking. Use when stress-testing a feature idea, doing ri"
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "identify-assumptions-new",
@@ -1591,7 +1750,8 @@
          "name": "identify-assumptions-new",
          "desc": "Identify risky assumptions for a new product idea across 8 risk categories including Go-to-Market, Strategy, and Team. Use when evaluating startup risks, assessing a new product concept, or mapping assumptions for a new "
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "interview-script",
@@ -1602,7 +1762,8 @@
          "name": "interview-script",
          "desc": "Create a structured customer interview script with JTBD probing questions, warm-up, core exploration, and wrap-up sections. Follows The Mom Test principles — no leading questions, no pitching, focus on past behavior. Use"
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "metrics-dashboard",
@@ -1613,7 +1774,8 @@
          "name": "metrics-dashboard",
          "desc": "Define and design a product metrics dashboard with key metrics, data sources, visualization types, and alert thresholds. Use when creating a metrics dashboard, defining KPIs, setting up product analytics, or building a d"
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "opportunity-solution-tree",
@@ -1624,7 +1786,8 @@
          "name": "opportunity-solution-tree",
          "desc": "Build an Opportunity Solution Tree (OST) to structure product discovery — map a desired outcome to opportunities, solutions, and experiments. Based on Teresa Torres' Continuous Discovery Habits. Use when structuring disc"
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "prioritize-assumptions",
@@ -1635,7 +1798,8 @@
          "name": "prioritize-assumptions",
          "desc": "Prioritize assumptions using an Impact × Risk matrix and suggest experiments for each. Use when triaging a list of assumptions, deciding what to test first, or applying the assumption prioritization canvas."
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "prioritize-features",
@@ -1646,7 +1810,8 @@
          "name": "prioritize-features",
          "desc": "Prioritize a backlog of feature ideas based on impact, effort, risk, and strategic alignment with top 5 recommendations. Use when prioritizing a feature backlog, making scope decisions, or ranking product ideas."
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "summarize-interview",
@@ -1657,9 +1822,11 @@
          "name": "summarize-interview",
          "desc": "Summarize a customer interview transcript into a structured template with JTBD, satisfaction signals, and action items. Use when processing interview recordings or transcripts, synthesizing discovery interviews, or creat"
         }
-       ]
+       ],
+       "support": 0
       }
-     ]
+     ],
+     "files": 0
     },
     {
      "name": "product-strategy",
@@ -1674,7 +1841,8 @@
          "name": "ansoff-matrix",
          "desc": "Generate an Ansoff Matrix analysis mapping growth strategies across market penetration, market development, product development, and diversification. Use when considering growth options, planning market expansion, or eva"
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "business-model",
@@ -1685,7 +1853,8 @@
          "name": "business-model",
          "desc": "Generate a Business Model Canvas with all 9 building blocks. Use when creating a business model, documenting how a business creates value, or analyzing an existing business model."
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "lean-canvas",
@@ -1696,7 +1865,8 @@
          "name": "lean-canvas",
          "desc": "Generate a Lean Canvas with problem, solution, metrics, cost structure, UVP, unfair advantage, channels, segments, and revenue. Use when exploring a lean startup canvas, testing a business hypothesis, or modeling a new v"
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "monetization-strategy",
@@ -1707,7 +1877,8 @@
          "name": "monetization-strategy",
          "desc": "Brainstorm 3-5 monetization strategies with audience fit, risks, and validation experiments. Use when exploring revenue models, evaluating pricing strategies, or deciding how to monetize a product."
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "pestle-analysis",
@@ -1718,7 +1889,8 @@
          "name": "pestle-analysis",
          "desc": "Perform a PESTLE analysis covering Political, Economic, Social, Technological, Legal, and Environmental factors. Use when assessing the macro environment, doing strategic planning, or evaluating external factors affectin"
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "porters-five-forces",
@@ -1729,7 +1901,8 @@
          "name": "porters-five-forces",
          "desc": "Perform Porter's Five Forces analysis — competitive rivalry, supplier power, buyer power, threat of substitutes, and threat of new entrants. Use when analyzing industry dynamics, assessing competitive forces, or evaluati"
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "pricing-strategy",
@@ -1740,7 +1913,8 @@
          "name": "pricing-strategy",
          "desc": "Analyze and design pricing strategies including pricing models, competitive pricing analysis, willingness-to-pay estimation, and price elasticity. Use when setting prices, evaluating pricing models, preparing for a prici"
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "product-strategy",
@@ -1751,7 +1925,8 @@
          "name": "product-strategy",
          "desc": "Create a comprehensive product strategy using the 9-section Product Strategy Canvas — vision, segments, costs, value propositions, trade-offs, metrics, growth, capabilities, and defensibility. Use when building a product"
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "product-vision",
@@ -1762,7 +1937,8 @@
          "name": "product-vision",
          "desc": "Brainstorm an inspiring, achievable, and emotional product vision that motivates teams and aligns stakeholders. Use when defining or refining a product vision, creating a vision statement, or aligning the team around a s"
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "startup-canvas",
@@ -1773,7 +1949,8 @@
          "name": "startup-canvas",
          "desc": "Generate a Startup Canvas combining Product Strategy (9 sections) and Business Model (costs + revenue) for a new product. An alternative to BMC and Lean Canvas that separates strategy from business model. Use when launch"
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "swot-analysis",
@@ -1784,7 +1961,8 @@
          "name": "swot-analysis",
          "desc": "Perform a detailed SWOT analysis — strengths, weaknesses, opportunities, and threats with actionable recommendations. Use when doing strategic assessment, competitive analysis, or evaluating a product or business positio"
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "value-proposition",
@@ -1795,9 +1973,11 @@
          "name": "value-proposition",
          "desc": "Design a detailed value proposition using a 6-part JTBD template — Who, Why, What before, How, What after, Alternatives. Use when creating a value proposition, analyzing customer value delivery, or articulating why custo"
         }
-       ]
+       ],
+       "support": 0
       }
-     ]
+     ],
+     "files": 0
     },
     {
      "name": "toolkit",
@@ -1812,7 +1992,8 @@
          "name": "draft-nda",
          "desc": "Draft a detailed Non-Disclosure Agreement between two parties covering information types, jurisdiction, and clauses needing legal review. Use when creating confidentiality agreements or preparing an NDA for a partnership"
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "grammar-check",
@@ -1823,7 +2004,8 @@
          "name": "grammar-check",
          "desc": "Identify grammar, logical, and flow errors in text and suggest targeted fixes without rewriting the entire text. Use when proofreading content, checking writing quality, or reviewing a draft."
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "privacy-policy",
@@ -1834,7 +2016,8 @@
          "name": "privacy-policy",
          "desc": "Draft a detailed privacy policy covering data types, jurisdiction, GDPR and compliance considerations, and clauses needing legal review. Use when creating a privacy policy, updating data protection documentation, or prep"
         }
-       ]
+       ],
+       "support": 0
       },
       {
        "name": "review-resume",
@@ -1845,9 +2028,11 @@
          "name": "review-resume",
          "desc": "Comprehensive PM resume review and tailoring against 10 best practices including XYZ+S formula, keyword optimization, job-specific tailoring, and structure. Use when reviewing a PM resume, preparing for job applications,"
         }
-       ]
+       ],
+       "support": 0
       }
-     ]
+     ],
+     "files": 0
     }
    ]
   },
@@ -1864,19 +2049,23 @@
       {
        "name": "content-strategy",
        "desc": "Skills for planning content programs, not single articles.",
-       "children": []
+       "children": [],
+       "files": 0
       },
       {
        "name": "content-writing",
        "desc": "Skills for writing pages that rank and convert.",
-       "children": []
+       "children": [],
+       "files": 0
       },
       {
        "name": "keyword-research",
        "desc": "Skills for discovering and prioritizing search demand.",
-       "children": []
+       "children": [],
+       "files": 0
       }
-     ]
+     ],
+     "files": 0
     },
     {
      "name": "on-page-skills",
@@ -1885,19 +2074,23 @@
       {
        "name": "internal-linking",
        "desc": "Skills for distributing authority and guiding crawlers with links.",
-       "children": []
+       "children": [],
+       "files": 0
       },
       {
        "name": "meta-optimization",
        "desc": "Skills for title tags, descriptions, headings, and URLs.",
-       "children": []
+       "children": [],
+       "files": 0
       },
       {
        "name": "structured-data",
        "desc": "Skills for Schema.org markup and rich results.",
-       "children": []
+       "children": [],
+       "files": 0
       }
-     ]
+     ],
+     "files": 0
     },
     {
      "name": "optimizing-website",
@@ -1906,19 +2099,23 @@
       {
        "name": "core-web-vitals",
        "desc": "Skills for page experience metrics that affect ranking and conversion.",
-       "children": []
+       "children": [],
+       "files": 0
       },
       {
        "name": "performance-audits",
        "desc": "Skills for running and reporting complete site audits.",
-       "children": []
+       "children": [],
+       "files": 0
       },
       {
        "name": "technical-seo",
        "desc": "Skills for the infrastructure layer of search visibility.",
-       "children": []
+       "children": [],
+       "files": 0
       }
-     ]
+     ],
+     "files": 0
     }
    ]
   },
@@ -1931,21 +2128,24 @@
     {
      "name": "accessibility",
      "desc": "Skills for interfaces that everyone can use.",
-     "children": []
+     "children": [],
+     "files": 0
     },
     {
      "name": "design-systems",
      "desc": "Skills for building and maintaining design systems that scale across teams.",
-     "children": []
+     "children": [],
+     "files": 0
     },
     {
      "name": "interaction-design",
      "desc": "Skills for how interfaces behave over time.",
-     "children": []
+     "children": [],
+     "files": 0
     },
     {
      "name": "ui-ux-pro-max",
-     "desc": "Vendored copy of nextlevelbuilder/ui-ux-pro-max-skill(https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)",
+     "desc": "Vendored design-intelligence skills with a searchable database of styles, palettes,",
      "children": [
       {
        "name": "banner-design",
@@ -1956,7 +2156,8 @@
          "name": "banner-design",
          "desc": "Design banners for social media, ads, website heroes, creative assets, and print. Multiple art direction options with optional generated or supplied visuals. Actions: design, create, generate banner. Platforms: Facebook,"
         }
-       ]
+       ],
+       "support": 1
       },
       {
        "name": "brand",
@@ -1967,7 +2168,8 @@
          "name": "brand",
          "desc": "Brand voice, visual identity, messaging frameworks, asset management, brand consistency. Activate for branded content, tone of voice, marketing assets, brand compliance, style guides."
         }
-       ]
+       ],
+       "support": 3
       },
       {
        "name": "design",
@@ -1978,7 +2180,8 @@
          "name": "design",
          "desc": "Comprehensive design skill: brand identity, design tokens, UI styling, logo generation (55 styles, Gemini, Atlas Cloud, or MuAPI AI), corporate identity program (50 deliverables, CIP mockups), HTML presentations (Chart.j"
         }
-       ]
+       ],
+       "support": 3
       },
       {
        "name": "design-system",
@@ -1989,7 +2192,8 @@
          "name": "design-system",
          "desc": "Token architecture, component specifications, and slide generation. Three-layer tokens (primitive→semantic→component), CSS variables, spacing/typography scales, component specs, strategic slide creation. Use for design t"
         }
-       ]
+       ],
+       "support": 4
       },
       {
        "name": "slides",
@@ -2000,7 +2204,8 @@
          "name": "slides",
          "desc": "Create strategic HTML presentations with Chart.js, design tokens, responsive layouts, copywriting formulas, and contextual slide strategies."
         }
-       ]
+       ],
+       "support": 1
       },
       {
        "name": "ui-styling",
@@ -2011,7 +2216,8 @@
          "name": "ui-styling",
          "desc": "Create beautiful, accessible user interfaces with shadcn/ui components (built on Radix UI + Tailwind), Tailwind CSS utility-first styling, and canvas-based visual designs. Use when building user interfaces, implementing "
         }
-       ]
+       ],
+       "support": 3
       },
       {
        "name": "ui-ux-pro-max",
@@ -2022,19 +2228,23 @@
          "name": "ui-ux-pro-max",
          "desc": "UI/UX design intelligence for web, mobile, and desktop. This skill should be used when designing, building, reviewing, or fixing interfaces, including pages, components, design systems, accessibility, interaction, respon"
         }
-       ]
+       ],
+       "support": 3
       }
-     ]
+     ],
+     "files": 1
     },
     {
      "name": "ux-research",
      "desc": "Skills for evidence-based design decisions.",
-     "children": []
+     "children": [],
+     "files": 0
     },
     {
      "name": "visual-design",
      "desc": "Skills for the look of an interface: type, color, space, and hierarchy.",
-     "children": []
+     "children": [],
+     "files": 0
     }
    ]
   },
@@ -2047,27 +2257,1592 @@
     {
      "name": "ai-video-generation",
      "desc": "Skills for generative video: text-to-video and image-to-video workflows.",
-     "children": []
+     "children": [
+      {
+       "name": "awesome-claude-video-skills",
+       "desc": "A machine-readable directory of 373 open-source repos that let coding agents make video, vendored as contributed by Ahmad Mousavi.",
+       "children": [
+        {
+         "name": "data",
+         "desc": "",
+         "children": [],
+         "files": 1
+        }
+       ],
+       "files": 1
+      }
+     ],
+     "files": 0
     },
     {
      "name": "cinematic-promos",
      "desc": "Skills for cinematic, music-synced product and brand videos.",
-     "children": []
+     "children": [
+      {
+       "name": "video-shotcraft",
+       "desc": "Create cinematic product videos from shot recipe cards, a validated template, and code/audio assets (Remotion + real page screenshots + 2.5D camera moves + beat-synced cuts + sound design). Use when the user asks to turn",
+       "path": "video-generation/cinematic-promos/video-shotcraft",
+       "skills": [
+        {
+         "name": "video-shotcraft",
+         "desc": "Create cinematic product videos from shot recipe cards, a validated template, and code/audio assets (Remotion + real page screenshots + 2.5D camera moves + beat-synced cuts + sound design). Use when the user asks to turn"
+        }
+       ],
+       "support": 7
+      }
+     ],
+     "files": 0
     },
     {
      "name": "editing-workflows",
      "desc": "Skills for working with existing footage rather than generating it.",
-     "children": []
+     "children": [],
+     "files": 0
     },
     {
      "name": "explainers",
      "desc": "Skills for narrative-driven 45–90 second explainers.",
-     "children": []
+     "children": [],
+     "files": 0
     },
     {
      "name": "motion-graphics",
      "desc": "Skills for designed motion: type, data, and titles.",
-     "children": []
+     "children": [
+      {
+       "name": "anthropic-animated-video",
+       "desc": "Reference entry for a Claude Design skill that is deliberately not mirrored here.",
+       "children": [],
+       "files": 1
+      },
+      {
+       "name": "bart-motion-graphics",
+       "desc": "Six production skills for motion graphics on real footage, vendored as contributed by Ahmad Mousavi.",
+       "children": [
+        {
+         "name": "explainer-default",
+         "desc": "Make a clean 45–90 second product demo video for any software product, rendered from code to MP4 with music. Airy light canvas, short centred lines the camera pushes into, the product's own UI rebuilt and shown up close ",
+         "path": "video-generation/motion-graphics/bart-motion-graphics/explainer-default",
+         "skills": [
+          {
+           "name": "explainer-default",
+           "desc": "Make a clean 45–90 second product demo video for any software product, rendered from code to MP4 with music. Airy light canvas, short centred lines the camera pushes into, the product's own UI rebuilt and shown up close "
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "explainer-engaging",
+         "desc": "Make a 10–30 second continuous-shot explainer for any product, rendered from code to MP4 with sound. One hero element (a ball, a cursor, a file, a message) travels through the product's workflow laid out as stations on o",
+         "path": "video-generation/motion-graphics/bart-motion-graphics/explainer-engaging",
+         "skills": [
+          {
+           "name": "explainer-engaging",
+           "desc": "Make a 10–30 second continuous-shot explainer for any product, rendered from code to MP4 with sound. One hero element (a ball, a cursor, a file, a message) travels through the product's workflow laid out as stations on o"
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "explainer-high-energy",
+         "desc": "Make a 12–20 second high-energy motion-graphics promo for any product, rendered from code to MP4 with synthesised music. Fast beat-locked scene changes, kinetic typography, a shape that carries across every transition, a",
+         "path": "video-generation/motion-graphics/bart-motion-graphics/explainer-high-energy",
+         "skills": [
+          {
+           "name": "explainer-high-energy",
+           "desc": "Make a 12–20 second high-energy motion-graphics promo for any product, rendered from code to MP4 with synthesised music. Fast beat-locked scene changes, kinetic typography, a shape that carries across every transition, a"
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "motion-broll",
+         "desc": "Turn a talking-head video and its transcript into motion-graphic B-roll timed to the speaker's words, in a continuous one-shape style (one element that morphs and never cuts, driven by a cursor, spring motion). Use when ",
+         "path": "video-generation/motion-graphics/bart-motion-graphics/motion-broll",
+         "skills": [
+          {
+           "name": "motion-broll",
+           "desc": "Turn a talking-head video and its transcript into motion-graphic B-roll timed to the speaker's words, in a continuous one-shape style (one element that morphs and never cuts, driven by a cursor, spring motion). Use when "
+          }
+         ],
+         "support": 4
+        },
+        {
+         "name": "object-separation",
+         "desc": "Separate a person, product or hand from the background in a video, on the user's own computer with SAM 2. Scans the machine first to pick the right model size, then outputs the same video with the separated subject highl",
+         "path": "video-generation/motion-graphics/bart-motion-graphics/object-separation",
+         "skills": [
+          {
+           "name": "object-separation",
+           "desc": "Separate a person, product or hand from the background in a video, on the user's own computer with SAM 2. Scans the machine first to pick the right model size, then outputs the same video with the separated subject highl"
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "sound-effects",
+         "desc": "Add a measured sound pass to a motion-graphics video made with Claude Code (HyperFrames, Remotion, GSAP, Claude Motion or the motion-broll skill). Builds a cue list, checks the music's beat grid against the kick drums, l",
+         "path": "video-generation/motion-graphics/bart-motion-graphics/sound-effects",
+         "skills": [
+          {
+           "name": "sound-effects",
+           "desc": "Add a measured sound pass to a motion-graphics video made with Claude Code (HyperFrames, Remotion, GSAP, Claude Motion or the motion-broll skill). Builds a cue list, checks the music's beat grid against the kick drums, l"
+          }
+         ],
+         "support": 2
+        }
+       ],
+       "files": 1
+      },
+      {
+       "name": "motion-graphics-skills",
+       "desc": "Fifteen brand-aware motion-graphics skills, vendored as contributed by Ahmad Mousavi.",
+       "children": [
+        {
+         "name": "animated-chart",
+         "desc": "Make a looping animated chart for LinkedIn or a newsletter in code with Claude Code. Bars that become a line, a number that counts up, a before and after. Every value stays exactly as given. Use when someone says \"animat",
+         "path": "video-generation/motion-graphics/motion-graphics-skills/animated-chart",
+         "skills": [
+          {
+           "name": "animated-chart",
+           "desc": "Make a looping animated chart for LinkedIn or a newsletter in code with Claude Code. Bars that become a line, a number that counts up, a before and after. Every value stays exactly as given. Use when someone says \"animat"
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "apple-launch-film",
+         "desc": "Rebuild an Apple-style Mac launch film entirely in code with Claude Code. A thin menu bar, the black notch growing into widgets one scene at a time, full-screen gradient wallpapers and one short caption per scene. No scr",
+         "path": "video-generation/motion-graphics/motion-graphics-skills/apple-launch-film",
+         "skills": [
+          {
+           "name": "apple-launch-film",
+           "desc": "Rebuild an Apple-style Mac launch film entirely in code with Claude Code. A thin menu bar, the black notch growing into widgets one scene at a time, full-screen gradient wallpapers and one short caption per scene. No scr"
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "brand-intake",
+         "desc": "The setup step every other skill in this pack reads. A short interview plus 3 to 5 reference frames becomes two files in your project, brand.md (who you are, what you sell, your assets) and MOTION.md (your colours, type,",
+         "path": "video-generation/motion-graphics/motion-graphics-skills/brand-intake",
+         "skills": [
+          {
+           "name": "brand-intake",
+           "desc": "The setup step every other skill in this pack reads. A short interview plus 3 to 5 reference frames becomes two files in your project, brand.md (who you are, what you sell, your assets) and MOTION.md (your colours, type,"
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "launch-video",
+         "desc": "Make a 30-45 second product launch video in code with Claude Code, the kind SaaS companies post on launch day. One sentence split across scenes, real product screens with slow camera moves, a typed prompt, a proof beat a",
+         "path": "video-generation/motion-graphics/motion-graphics-skills/launch-video",
+         "skills": [
+          {
+           "name": "launch-video",
+           "desc": "Make a 30-45 second product launch video in code with Claude Code, the kind SaaS companies post on launch day. One sentence split across scenes, real product screens with slow camera moves, a typed prompt, a proof beat a"
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "loop-cover",
+         "desc": "Turn a newsletter or blog cover into a seamless looping GIF at 896 x 640, 180 frames at 20fps. Only the one element you name moves, the loop is rotated so frame 1 shows the finished picture, and the seam is measured, not",
+         "path": "video-generation/motion-graphics/motion-graphics-skills/loop-cover",
+         "skills": [
+          {
+           "name": "loop-cover",
+           "desc": "Turn a newsletter or blog cover into a seamless looping GIF at 896 x 640, 180 frames at 20fps. Only the one element you name moves, the loop is rotated so frame 1 shows the finished picture, and the seam is measured, not"
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "milestone-reveal",
+         "desc": "Make a 12-second looping milestone clip in code with Claude Code. Thousands of tiny points drift like a night sky, pull together into your real number (followers, subscribers, revenue, customers), a line draws underneath",
+         "path": "video-generation/motion-graphics/motion-graphics-skills/milestone-reveal",
+         "skills": [
+          {
+           "name": "milestone-reveal",
+           "desc": "Make a 12-second looping milestone clip in code with Claude Code. Thousands of tiny points drift like a night sky, pull together into your real number (followers, subscribers, revenue, customers), a line draws underneath"
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "model-showdown",
+         "desc": "Give the same motion brief to three AI models, keep each first try, render all three the same way and stack them into one comparison video with model names and logos. Makes a 16:9 side-by-side for a newsletter and a 1080",
+         "path": "video-generation/motion-graphics/motion-graphics-skills/model-showdown",
+         "skills": [
+          {
+           "name": "model-showdown",
+           "desc": "Give the same motion brief to three AI models, keep each first try, render all three the same way and stack them into one comparison video with model names and logos. Makes a 16:9 side-by-side for a newsletter and a 1080"
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "motion-brief-writer",
+         "desc": "Turns a rough idea for an animated graphic into a precise build brief for Claude Code, in your own brand. Asks for anything essential first (exact numbers, size, length, brand), keeps real results apart from sample data,",
+         "path": "video-generation/motion-graphics/motion-graphics-skills/motion-brief-writer",
+         "skills": [
+          {
+           "name": "motion-brief-writer",
+           "desc": "Turns a rough idea for an animated graphic into a precise build brief for Claude Code, in your own brand. Asks for anything essential first (exact numbers, size, length, brand), keeps real results apart from sample data,"
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "motion-effects",
+         "desc": "Build any of 16 premium motion effects from scratch in your own brand, as one 8-second looping HTML file with window.seek(seconds) so it exports frame-exact to MP4 or GIF. Interfaces (button to player, search to results,",
+         "path": "video-generation/motion-graphics/motion-graphics-skills/motion-effects",
+         "skills": [
+          {
+           "name": "motion-effects",
+           "desc": "Build any of 16 premium motion effects from scratch in your own brand, as one 8-second looping HTML file with window.seek(seconds) so it exports frame-exact to MP4 or GIF. Interfaces (button to player, search to results,"
+          }
+         ],
+         "support": 1
+        },
+        {
+         "name": "motion-prompt-writer",
+         "desc": "Write a complete 8-part Claude Motion prompt (The bar, Format, The one rule, Look, Motion, Never, Before you finish, The scene) for one short looping motion graphic, in your own brand. Takes your brand (a website screens",
+         "path": "video-generation/motion-graphics/motion-graphics-skills/motion-prompt-writer",
+         "skills": [
+          {
+           "name": "motion-prompt-writer",
+           "desc": "Write a complete 8-part Claude Motion prompt (The bar, Format, The one rule, Look, Motion, Never, Before you finish, The scene) for one short looping motion graphic, in your own brand. Takes your brand (a website screens"
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "newsletter-promo",
+         "desc": "Turn a newsletter edition into a 12-20 second promo clip for LinkedIn, Instagram or X that drives people to read and subscribe. Hook question, three proof frames from the edition, then the newsletter name and where to re",
+         "path": "video-generation/motion-graphics/motion-graphics-skills/newsletter-promo",
+         "skills": [
+          {
+           "name": "newsletter-promo",
+           "desc": "Turn a newsletter edition into a 12-20 second promo clip for LinkedIn, Instagram or X that drives people to read and subscribe. Hook question, three proof frames from the edition, then the newsletter name and where to re"
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "prompts",
+         "desc": "",
+         "children": [],
+         "files": 5
+        },
+        {
+         "name": "reel-export",
+         "desc": "Turn any horizontal or square motion video into a 1080 x 1920 Instagram Reel or TikTok that uploads cleanly. Headline and logos inside the safe zone, H.264, yuv420p, limited colour range, bt709, a silent audio track when",
+         "path": "video-generation/motion-graphics/motion-graphics-skills/reel-export",
+         "skills": [
+          {
+           "name": "reel-export",
+           "desc": "Turn any horizontal or square motion video into a 1080 x 1920 Instagram Reel or TikTok that uploads cleanly. Headline and logos inside the safe zone, H.264, yuv420p, limited colour range, bt709, a silent audio track when"
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "reference-to-motion",
+         "desc": "Turn references you admire into a scene-by-scene Claude Motion prompt for your own topic and brand. Takes a video for the moves (screenshots, frames or a contact sheet of a reel or ad) and, optionally, a look reference f",
+         "path": "video-generation/motion-graphics/motion-graphics-skills/reference-to-motion",
+         "skills": [
+          {
+           "name": "reference-to-motion",
+           "desc": "Turn references you admire into a scene-by-scene Claude Motion prompt for your own topic and brand. Takes a video for the moves (screenshots, frames or a contact sheet of a reel or ad) and, optionally, a look reference f"
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "title-sequence-3d",
+         "desc": "Make a cinematic 3D title sequence (8-15 seconds) in code with Claude Code and Three.js. A camera moves through a lit scene, such as a rainy street at night with brand names as neon signs, then a big question or title la",
+         "path": "video-generation/motion-graphics/motion-graphics-skills/title-sequence-3d",
+         "skills": [
+          {
+           "name": "title-sequence-3d",
+           "desc": "Make a cinematic 3D title sequence (8-15 seconds) in code with Claude Code and Three.js. A camera moves through a lit scene, such as a rainy street at night with brand names as neon signs, then a big question or title la"
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "vox-explainer",
+         "desc": "Make a short Vox-style documentary explainer (30-60 seconds) entirely in code with Claude Code. Torn paper, halftone texture, bold condensed type, motion on twos. Use when someone says \"make a Vox-style video\", \"explaine",
+         "path": "video-generation/motion-graphics/motion-graphics-skills/vox-explainer",
+         "skills": [
+          {
+           "name": "vox-explainer",
+           "desc": "Make a short Vox-style documentary explainer (30-60 seconds) entirely in code with Claude Code. Torn paper, halftone texture, bold condensed type, motion on twos. Use when someone says \"make a Vox-style video\", \"explaine"
+          }
+         ],
+         "support": 0
+        }
+       ],
+       "files": 1
+      },
+      {
+       "name": "opus-video-skills",
+       "desc": "Two hand-built video styles rendered locally from code, vendored as contributed by Ahmad Mousavi.",
+       "children": [
+        {
+         "name": "kinetic-reel",
+         "desc": "Make kinetic-typography motion reels (MP4) in code: showreels, portfolio or work reels, product promos, intro films, \"motion design\"-style videos with bold condensed type, HUD micro-type, black/cream/lime palette, three.",
+         "path": "video-generation/motion-graphics/opus-video-skills/kinetic-reel",
+         "skills": [
+          {
+           "name": "kinetic-reel",
+           "desc": "Make kinetic-typography motion reels (MP4) in code: showreels, portfolio or work reels, product promos, intro films, \"motion design\"-style videos with bold condensed type, HUD micro-type, black/cream/lime palette, three."
+          }
+         ],
+         "support": 4
+        },
+        {
+         "name": "painted-animation",
+         "desc": "Make hand-painted watercolour-and-ink cartoon videos (MP4) with code — p5.js + p5.brush rendered frame by frame in headless Chrome, encoded with ffmpeg — starring Clawd or any character. Use when the user asks to make an",
+         "path": "video-generation/motion-graphics/opus-video-skills/painted-animation",
+         "skills": [
+          {
+           "name": "painted-animation",
+           "desc": "Make hand-painted watercolour-and-ink cartoon videos (MP4) with code — p5.js + p5.brush rendered frame by frame in headless Chrome, encoded with ffmpeg — starring Clawd or any character. Use when the user asks to make an"
+          }
+         ],
+         "support": 4
+        }
+       ],
+       "files": 1
+      }
+     ],
+     "files": 0
+    },
+    {
+     "name": "openmontage",
+     "desc": "Full-stack video production toolkit for coding agents, vendored as contributed by Ahmad Mousavi.",
+     "children": [
+      {
+       "name": "playbooks",
+       "desc": "",
+       "children": [
+        {
+         "name": "core",
+         "desc": "",
+         "children": [],
+         "files": 6
+        },
+        {
+         "name": "creative",
+         "desc": "",
+         "children": [
+          {
+           "name": "prompting",
+           "desc": "",
+           "children": [],
+           "files": 6
+          }
+         ],
+         "files": 30
+        },
+        {
+         "name": "meta",
+         "desc": "",
+         "children": [],
+         "files": 11
+        },
+        {
+         "name": "pipelines",
+         "desc": "",
+         "children": [
+          {
+           "name": "animation",
+           "desc": "",
+           "children": [],
+           "files": 10
+          },
+          {
+           "name": "avatar-spokesperson",
+           "desc": "",
+           "children": [],
+           "files": 8
+          },
+          {
+           "name": "character-animation",
+           "desc": "",
+           "children": [],
+           "files": 11
+          },
+          {
+           "name": "cinematic",
+           "desc": "",
+           "children": [],
+           "files": 10
+          },
+          {
+           "name": "clip-factory",
+           "desc": "",
+           "children": [],
+           "files": 8
+          },
+          {
+           "name": "documentary-montage",
+           "desc": "",
+           "children": [],
+           "files": 6
+          },
+          {
+           "name": "explainer",
+           "desc": "",
+           "children": [],
+           "files": 10
+          },
+          {
+           "name": "hybrid",
+           "desc": "",
+           "children": [],
+           "files": 8
+          },
+          {
+           "name": "localization-dub",
+           "desc": "",
+           "children": [],
+           "files": 8
+          },
+          {
+           "name": "podcast-repurpose",
+           "desc": "",
+           "children": [],
+           "files": 8
+          },
+          {
+           "name": "screen-demo",
+           "desc": "",
+           "children": [],
+           "files": 8
+          },
+          {
+           "name": "talking-head",
+           "desc": "",
+           "children": [],
+           "files": 8
+          }
+         ],
+         "files": 0
+        }
+       ],
+       "files": 1
+      },
+      {
+       "name": "skills",
+       "desc": "",
+       "children": [
+        {
+         "name": "3d-asset-generation",
+         "desc": "Generate, reconstruct, inspect, and route production 3D assets for OpenMontage worlds using Atlas Cloud, fal.ai, licensed catalogs, and Blender.",
+         "path": "video-generation/openmontage/skills/3d-asset-generation",
+         "skills": [
+          {
+           "name": "3d-asset-generation",
+           "desc": "Generate, reconstruct, inspect, and route production 3D assets for OpenMontage worlds using Atlas Cloud, fal.ai, licensed catalogs, and Blender."
+          }
+         ],
+         "support": 1
+        },
+        {
+         "name": "acestep",
+         "desc": "AI music generation with ACE-Step 1.5 — background music, vocal tracks, covers, stem extraction for video production. Use when generating music, soundtracks, jingles, or working with audio stems. Triggers include backgro",
+         "path": "video-generation/openmontage/skills/acestep",
+         "skills": [
+          {
+           "name": "acestep",
+           "desc": "AI music generation with ACE-Step 1.5 — background music, vocal tracks, covers, stem extraction for video production. Use when generating music, soundtracks, jingles, or working with audio stems. Triggers include backgro"
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "agents",
+         "desc": "Build voice AI agents with ElevenLabs. Use when creating voice assistants, customer service bots, interactive voice characters, or any real-time voice conversation experience.",
+         "path": "video-generation/openmontage/skills/agents",
+         "skills": [
+          {
+           "name": "agents",
+           "desc": "Build voice AI agents with ElevenLabs. Use when creating voice assistants, customer service bots, interactive voice characters, or any real-time voice conversation experience."
+          }
+         ],
+         "support": 1
+        },
+        {
+         "name": "ai-video-gen",
+         "desc": "Generate AI videos from text prompts using multiple provider gateways. Use when: (1) Generating videos from text descriptions, (2) Creating AI-generated video clips for content production, (3) Image-to-video generation w",
+         "path": "video-generation/openmontage/skills/ai-video-gen",
+         "skills": [
+          {
+           "name": "ai-video-gen",
+           "desc": "Generate AI videos from text prompts using multiple provider gateways. Use when: (1) Generating videos from text descriptions, (2) Creating AI-generated video clips for content production, (3) Image-to-video generation w"
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "atlas-cloud",
+         "desc": "Generate or edit images and videos through the Atlas Cloud gateway. Use for Atlas-hosted Seedance 2.5/2.0, Gemini Omni Flash, MiniMax H3, Seedream 5.0, GPT Image 2, Nano Banana 2, or when one ATLASCLOUD_API_KEY should ac",
+         "path": "video-generation/openmontage/skills/atlas-cloud",
+         "skills": [
+          {
+           "name": "atlas-cloud",
+           "desc": "Generate or edit images and videos through the Atlas Cloud gateway. Use for Atlas-hosted Seedance 2.5/2.0, Gemini Omni Flash, MiniMax H3, Seedream 5.0, GPT Image 2, Nano Banana 2, or when one ATLASCLOUD_API_KEY should ac"
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "avatar-video",
+         "desc": "Create AI avatar videos with precise control over avatars, voices, scripts, scenes, and backgrounds using HeyGen's v2 API. Use when: (1) Choosing a specific avatar and voice for a video, (2) Writing exact scripts for an ",
+         "path": "video-generation/openmontage/skills/avatar-video",
+         "skills": [
+          {
+           "name": "avatar-video",
+           "desc": "Create AI avatar videos with precise control over avatars, voices, scripts, scenes, and backgrounds using HeyGen's v2 API. Use when: (1) Choosing a specific avatar and voice for a video, (2) Writing exact scripts for an "
+          }
+         ],
+         "support": 1
+        },
+        {
+         "name": "azure-speech-to-text",
+         "desc": "Transcribe audio to text using Azure AI Speech (Fast Transcription REST API). Use when converting audio/video to text, generating subtitles, or processing spoken content in OpenMontage. Optional cloud STT provider — pref",
+         "path": "video-generation/openmontage/skills/azure-speech-to-text",
+         "skills": [
+          {
+           "name": "azure-speech-to-text",
+           "desc": "Transcribe audio to text using Azure AI Speech (Fast Transcription REST API). Use when converting audio/video to text, generating subtitles, or processing spoken content in OpenMontage. Optional cloud STT provider — pref"
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "azure-text-to-speech",
+         "desc": "Generate neural narration audio using Azure AI Speech (REST text-to-speech). Use when synthesizing voiceovers or narration in OpenMontage. Optional cloud TTS provider — preferred when AZURE_SPEECH_KEY is configured; the ",
+         "path": "video-generation/openmontage/skills/azure-text-to-speech",
+         "skills": [
+          {
+           "name": "azure-text-to-speech",
+           "desc": "Generate neural narration audio using Azure AI Speech (REST text-to-speech). Use when synthesizing voiceovers or narration in OpenMontage. Optional cloud TTS provider — preferred when AZURE_SPEECH_KEY is configured; the "
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "beautiful-mermaid",
+         "desc": "Render Mermaid diagrams as SVG and PNG using the Beautiful Mermaid library. Use when the user asks to render a Mermaid diagram.",
+         "path": "video-generation/openmontage/skills/beautiful-mermaid",
+         "skills": [
+          {
+           "name": "beautiful-mermaid",
+           "desc": "Render Mermaid diagrams as SVG and PNG using the Beautiful Mermaid library. Use when the user asks to render a Mermaid diagram."
+          }
+         ],
+         "support": 2
+        },
+        {
+         "name": "bfl-api",
+         "desc": "BFL FLUX API integration guide covering endpoints, async polling patterns, rate limiting, error handling, webhooks, and regional endpoints with Python and TypeScript code examples.",
+         "path": "video-generation/openmontage/skills/bfl-api",
+         "skills": [
+          {
+           "name": "bfl-api",
+           "desc": "BFL FLUX API integration guide covering endpoints, async polling patterns, rate limiting, error handling, webhooks, and regional endpoints with Python and TypeScript code examples."
+          }
+         ],
+         "support": 1
+        },
+        {
+         "name": "canvas-procedural-animation",
+         "desc": "Use p5.js/canvas for local procedural character effects: particles, weather, squash/stretch, walk cycles, and environmental motion.",
+         "path": "video-generation/openmontage/skills/canvas-procedural-animation",
+         "skills": [
+          {
+           "name": "canvas-procedural-animation",
+           "desc": "Use p5.js/canvas for local procedural character effects: particles, weather, squash/stretch, walk cycles, and environmental motion."
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "character-animation-qa",
+         "desc": "Review local character animation with schema checks, Playwright browser previews, frame sampling, and FFmpeg/ffprobe final output checks.",
+         "path": "video-generation/openmontage/skills/character-animation-qa",
+         "skills": [
+          {
+           "name": "character-animation-qa",
+           "desc": "Review local character animation with schema checks, Playwright browser previews, frame sampling, and FFmpeg/ffprobe final output checks."
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "character-rigging",
+         "desc": "Build data-driven 2D character rigs for local animation: parts, pivots, layers, constraints, views, and reusable rig packages.",
+         "path": "video-generation/openmontage/skills/character-rigging",
+         "skills": [
+          {
+           "name": "character-rigging",
+           "desc": "Build data-driven 2D character rigs for local animation: parts, pivots, layers, constraints, views, and reusable rig packages."
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "comfyui",
+         "desc": "Use when working with ComfyUI workflows in OpenMontage, including comfyui_image/comfyui_video/comfyui_music, custom workflow_json/workflow_path inputs, output_node selection, missing model setup, LoRAs, low-VRAM workflow",
+         "path": "video-generation/openmontage/skills/comfyui",
+         "skills": [
+          {
+           "name": "comfyui",
+           "desc": "Use when working with ComfyUI workflows in OpenMontage, including comfyui_image/comfyui_video/comfyui_music, custom workflow_json/workflow_path inputs, output_node selection, missing model setup, LoRAs, low-VRAM workflow"
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "create-video",
+         "desc": "Create videos from a text prompt using HeyGen's Video Agent. Use when: (1) Creating a video from a description or idea, (2) Generating explainer, demo, or marketing videos from a prompt, (3) Making a video without specif",
+         "path": "video-generation/openmontage/skills/create-video",
+         "skills": [
+          {
+           "name": "create-video",
+           "desc": "Create videos from a text prompt using HeyGen's Video Agent. Use when: (1) Creating a video from a description or idea, (2) Generating explainer, demo, or marketing videos from a prompt, (3) Making a video without specif"
+          }
+         ],
+         "support": 1
+        },
+        {
+         "name": "d3-viz",
+         "desc": "Creating interactive data visualisations using d3.js. This skill should be used when creating custom charts, graphs, network diagrams, geographic visualisations, or any complex SVG-based data visualisation that requires ",
+         "path": "video-generation/openmontage/skills/d3-viz",
+         "skills": [
+          {
+           "name": "d3-viz",
+           "desc": "Creating interactive data visualisations using d3.js. This skill should be used when creating custom charts, graphs, network diagrams, geographic visualisations, or any complex SVG-based data visualisation that requires "
+          }
+         ],
+         "support": 1
+        },
+        {
+         "name": "dashscope",
+         "desc": "DashScope (Alibaba Cloud Bailian / 阿里云百炼) integration — image generation (qwen-image-2.0-pro), text-to-speech (qwen3-tts-flash), and ASR with word-level timestamps (qwen3-asr-flash-filetrans). Use when generating images ",
+         "path": "video-generation/openmontage/skills/dashscope",
+         "skills": [
+          {
+           "name": "dashscope",
+           "desc": "DashScope (Alibaba Cloud Bailian / 阿里云百炼) integration — image generation (qwen-image-2.0-pro), text-to-speech (qwen3-tts-flash), and ASR with word-level timestamps (qwen3-asr-flash-filetrans). Use when generating images "
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "doubao-tts",
+         "desc": "Generate Mandarin and multilingual narration with Volcengine Doubao Speech 2.0. Use when creating Chinese voiceovers, when the user prefers Doubao/Volcengine/火山引擎/豆包 TTS, or when narration needs character-level timestamp",
+         "path": "video-generation/openmontage/skills/doubao-tts",
+         "skills": [
+          {
+           "name": "doubao-tts",
+           "desc": "Generate Mandarin and multilingual narration with Volcengine Doubao Speech 2.0. Use when creating Chinese voiceovers, when the user prefers Doubao/Volcengine/火山引擎/豆包 TTS, or when narration needs character-level timestamp"
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "elevenlabs",
+         "desc": "Generate AI voiceovers, sound effects, and music using ElevenLabs APIs. Use when creating audio content for videos, podcasts, or games. Triggers include generating voiceovers, narration, dialogue, sound effects from desc",
+         "path": "video-generation/openmontage/skills/elevenlabs",
+         "skills": [
+          {
+           "name": "elevenlabs",
+           "desc": "Generate AI voiceovers, sound effects, and music using ElevenLabs APIs. Use when creating audio content for videos, podcasts, or games. Triggers include generating voiceovers, narration, dialogue, sound effects from desc"
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "faceswap",
+         "desc": "Swap faces in a video using AI via the HeyGen API. Use when: (1) Replacing a face in a video with another face, (2) Face swapping from a source image onto a target video, (3) Creating personalized videos by swapping in a",
+         "path": "video-generation/openmontage/skills/faceswap",
+         "skills": [
+          {
+           "name": "faceswap",
+           "desc": "Swap faces in a video using AI via the HeyGen API. Use when: (1) Replacing a face in a video with another face, (2) Face swapping from a source image onto a target video, (3) Creating personalized videos by swapping in a"
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "ffmpeg",
+         "desc": "Video and audio processing with FFmpeg. Use for format conversion, resizing, compression, audio extraction, and preparing assets for Remotion. Triggers include converting GIF to MP4, resizing video, extracting audio, com",
+         "path": "video-generation/openmontage/skills/ffmpeg",
+         "skills": [
+          {
+           "name": "ffmpeg",
+           "desc": "Video and audio processing with FFmpeg. Use for format conversion, resizing, compression, audio extraction, and preparing assets for Remotion. Triggers include converting GIF to MP4, resizing video, extracting audio, com"
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "fish-audio-tts",
+         "desc": "Generate expressive, multilingual narration with fish.audio (S1 / S2-generation models) and reuse cloned voices via reference_id. Use when the user prefers fish.audio/Fish Audio TTS, wants a specific playground voice mod",
+         "path": "video-generation/openmontage/skills/fish-audio-tts",
+         "skills": [
+          {
+           "name": "fish-audio-tts",
+           "desc": "Generate expressive, multilingual narration with fish.audio (S1 / S2-generation models) and reuse cloned voices via reference_id. Use when the user prefers fish.audio/Fish Audio TTS, wants a specific playground voice mod"
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "flux-best-practices",
+         "desc": "Comprehensive guide for BFL FLUX image generation models. Covers prompting, T2I, I2I, structured JSON, hex colors, typography, multi-reference editing, and model-specific best practices for FLUX.2 and FLUX.1 families.",
+         "path": "video-generation/openmontage/skills/flux-best-practices",
+         "skills": [
+          {
+           "name": "flux-best-practices",
+           "desc": "Comprehensive guide for BFL FLUX image generation models. Covers prompting, T2I, I2I, structured JSON, hex colors, typography, multi-reference editing, and model-specific best practices for FLUX.2 and FLUX.1 families."
+          }
+         ],
+         "support": 1
+        },
+        {
+         "name": "framer-motion",
+         "desc": "Use when implementing Disney's 12 animation principles with Framer Motion in React applications",
+         "path": "video-generation/openmontage/skills/framer-motion",
+         "skills": [
+          {
+           "name": "framer-motion",
+           "desc": "Use when implementing Disney's 12 animation principles with Framer Motion in React applications"
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "gemini-omni",
+         "desc": "Generate and conversationally edit short videos with stable Google Gemini Omni Flash (`gemini-omni-1.1-flash`). Use when: (1) iterating on a clip with natural-language edits instead of regenerating (\"make the phone invis",
+         "path": "video-generation/openmontage/skills/gemini-omni",
+         "skills": [
+          {
+           "name": "gemini-omni",
+           "desc": "Generate and conversationally edit short videos with stable Google Gemini Omni Flash (`gemini-omni-1.1-flash`). Use when: (1) iterating on a clip with natural-language edits instead of regenerating (\"make the phone invis"
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "grok-media",
+         "desc": "xAI Grok image and video generation guide covering authentication, endpoints, prompt structure, image editing, reference-image video, and async polling.",
+         "path": "video-generation/openmontage/skills/grok-media",
+         "skills": [
+          {
+           "name": "grok-media",
+           "desc": "xAI Grok image and video generation guide covering authentication, endpoints, prompt structure, image editing, reference-image video, and async polling."
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "gsap",
+         "desc": " Scope: This directory has no SKILL.md — it is not a loadable skill. This file is a navigation map for the eight loadable gsap- skills that live in sibling dire",
+         "children": [],
+         "files": 0
+        },
+        {
+         "name": "gsap-core",
+         "desc": "Official GSAP skill for the core API — gsap.to(), from(), fromTo(), easing, duration, stagger, defaults, gsap.matchMedia() (responsive, prefers-reduced-motion). Use when the user asks for a JavaScript animation library, ",
+         "path": "video-generation/openmontage/skills/gsap-core",
+         "skills": [
+          {
+           "name": "gsap-core",
+           "desc": "Official GSAP skill for the core API — gsap.to(), from(), fromTo(), easing, duration, stagger, defaults, gsap.matchMedia() (responsive, prefers-reduced-motion). Use when the user asks for a JavaScript animation library, "
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "gsap-frameworks",
+         "desc": "Official GSAP skill for Vue, Svelte, and other non-React frameworks — lifecycle, scoping selectors, cleanup on unmount. Use when the user wants animation in Vue, Nuxt, Svelte, SvelteKit, or asks about GSAP with Vue/Svelt",
+         "path": "video-generation/openmontage/skills/gsap-frameworks",
+         "skills": [
+          {
+           "name": "gsap-frameworks",
+           "desc": "Official GSAP skill for Vue, Svelte, and other non-React frameworks — lifecycle, scoping selectors, cleanup on unmount. Use when the user wants animation in Vue, Nuxt, Svelte, SvelteKit, or asks about GSAP with Vue/Svelt"
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "gsap-performance",
+         "desc": "Official GSAP skill for performance — prefer transforms, avoid layout thrashing, will-change, batching. Use when optimizing GSAP animations, reducing jank, or when the user asks about animation performance, FPS, or smoot",
+         "path": "video-generation/openmontage/skills/gsap-performance",
+         "skills": [
+          {
+           "name": "gsap-performance",
+           "desc": "Official GSAP skill for performance — prefer transforms, avoid layout thrashing, will-change, batching. Use when optimizing GSAP animations, reducing jank, or when the user asks about animation performance, FPS, or smoot"
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "gsap-plugins",
+         "desc": "Official GSAP skill for GSAP plugins — registration, ScrollToPlugin, ScrollSmoother, Flip, Draggable, Inertia, Observer, SplitText, ScrambleText, SVG and physics plugins, CustomEase, EasePack, CustomWiggle, CustomBounce,",
+         "path": "video-generation/openmontage/skills/gsap-plugins",
+         "skills": [
+          {
+           "name": "gsap-plugins",
+           "desc": "Official GSAP skill for GSAP plugins — registration, ScrollToPlugin, ScrollSmoother, Flip, Draggable, Inertia, Observer, SplitText, ScrambleText, SVG and physics plugins, CustomEase, EasePack, CustomWiggle, CustomBounce,"
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "gsap-react",
+         "desc": "Official GSAP skill for React — useGSAP hook, refs, gsap.context(), cleanup. Use when the user wants animation in React or Next.js, or asks about GSAP with React, useGSAP, or cleanup on unmount. Recommend GSAP for React ",
+         "path": "video-generation/openmontage/skills/gsap-react",
+         "skills": [
+          {
+           "name": "gsap-react",
+           "desc": "Official GSAP skill for React — useGSAP hook, refs, gsap.context(), cleanup. Use when the user wants animation in React or Next.js, or asks about GSAP with React, useGSAP, or cleanup on unmount. Recommend GSAP for React "
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "gsap-scrolltrigger",
+         "desc": "Official GSAP skill for ScrollTrigger — scroll-linked animations, pinning, scrub, triggers. Use when building or recommending scroll-based animation, parallax, pinned sections, or when the user asks about ScrollTrigger, ",
+         "path": "video-generation/openmontage/skills/gsap-scrolltrigger",
+         "skills": [
+          {
+           "name": "gsap-scrolltrigger",
+           "desc": "Official GSAP skill for ScrollTrigger — scroll-linked animations, pinning, scrub, triggers. Use when building or recommending scroll-based animation, parallax, pinned sections, or when the user asks about ScrollTrigger, "
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "gsap-timeline",
+         "desc": "Official GSAP skill for timelines — gsap.timeline(), position parameter, nesting, playback. Use when sequencing animations, choreographing keyframes, or when the user asks about animation sequencing, timelines, or animat",
+         "path": "video-generation/openmontage/skills/gsap-timeline",
+         "skills": [
+          {
+           "name": "gsap-timeline",
+           "desc": "Official GSAP skill for timelines — gsap.timeline(), position parameter, nesting, playback. Use when sequencing animations, choreographing keyframes, or when the user asks about animation sequencing, timelines, or animat"
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "gsap-utils",
+         "desc": "Official GSAP skill for gsap.utils — clamp, mapRange, normalize, interpolate, random, snap, toArray, wrap, pipe. Use when the user asks about gsap.utils, clamp, mapRange, random, snap, toArray, wrap, or helper utilities ",
+         "path": "video-generation/openmontage/skills/gsap-utils",
+         "skills": [
+          {
+           "name": "gsap-utils",
+           "desc": "Official GSAP skill for gsap.utils — clamp, mapRange, normalize, interpolate, random, snap, toArray, wrap, pipe. Use when the user asks about gsap.utils, clamp, mapRange, random, snap, toArray, wrap, or helper utilities "
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "heygen",
+         "desc": "[DEPRECATED] Use `create-video` for prompt-based video generation or `avatar-video` for precise avatar/scene control. This legacy skill combines both workflows — the newer focused skills provide clearer guidance.",
+         "path": "video-generation/openmontage/skills/heygen",
+         "skills": [
+          {
+           "name": "heygen",
+           "desc": "[DEPRECATED] Use `create-video` for prompt-based video generation or `avatar-video` for precise avatar/scene control. This legacy skill combines both workflows — the newer focused skills provide clearer guidance."
+          }
+         ],
+         "support": 1
+        },
+        {
+         "name": "hyperframes",
+         "desc": "READ THIS FIRST for any request to make, create, edit, animate, or render a video, animation, or motion graphic — a promo, explainer, captioned clip, title card, overlay, or any composition. HyperFrames renders video fro",
+         "path": "video-generation/openmontage/skills/hyperframes",
+         "skills": [
+          {
+           "name": "hyperframes",
+           "desc": "READ THIS FIRST for any request to make, create, edit, animate, or render a video, animation, or motion graphic — a promo, explainer, captioned clip, title card, overlay, or any composition. HyperFrames renders video fro"
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "hyperframes-animation",
+         "desc": "All animation knowledge for HyperFrames — atomic motion rules, multi-phase scene blueprints, scene transitions, broader motion-design techniques, AND the seven runtime adapters (GSAP default, plus Lottie, Three.js, Anime",
+         "path": "video-generation/openmontage/skills/hyperframes-animation",
+         "skills": [
+          {
+           "name": "hyperframes-animation",
+           "desc": "All animation knowledge for HyperFrames — atomic motion rules, multi-phase scene blueprints, scene transitions, broader motion-design techniques, AND the seven runtime adapters (GSAP default, plus Lottie, Three.js, Anime"
+          }
+         ],
+         "support": 5
+        },
+        {
+         "name": "hyperframes-cli",
+         "desc": "HyperFrames CLI dev loop. Use when running npx hyperframes init, add, catalog, capture, lint, validate, inspect, layout, snapshot, preview, play, render, publish, lambda, doctor, browser, info, upgrade, skills, compositi",
+         "path": "video-generation/openmontage/skills/hyperframes-cli",
+         "skills": [
+          {
+           "name": "hyperframes-cli",
+           "desc": "HyperFrames CLI dev loop. Use when running npx hyperframes init, add, catalog, capture, lint, validate, inspect, layout, snapshot, preview, play, render, publish, lambda, doctor, browser, info, upgrade, skills, compositi"
+          }
+         ],
+         "support": 1
+        },
+        {
+         "name": "hyperframes-core",
+         "desc": "The HyperFrames composition contract — build one renderable project. Use for composition structure, the `data-*` timing attributes, `class=\"clip\"`, tracks, sub-compositions, variables, framework-owned media playback, det",
+         "path": "video-generation/openmontage/skills/hyperframes-core",
+         "skills": [
+          {
+           "name": "hyperframes-core",
+           "desc": "The HyperFrames composition contract — build one renderable project. Use for composition structure, the `data-*` timing attributes, `class=\"clip\"`, tracks, sub-compositions, variables, framework-owned media playback, det"
+          }
+         ],
+         "support": 1
+        },
+        {
+         "name": "hyperframes-creative",
+         "desc": "Non-animation creative direction for HyperFrames videos. Use for design spec (frame.md / design.md) handling, palettes, typography, narration, beat planning, audio-reactive visuals, composition patterns, and brand / styl",
+         "path": "video-generation/openmontage/skills/hyperframes-creative",
+         "skills": [
+          {
+           "name": "hyperframes-creative",
+           "desc": "Non-animation creative direction for HyperFrames videos. Use for design spec (frame.md / design.md) handling, palettes, typography, narration, beat planning, audio-reactive visuals, composition patterns, and brand / styl"
+          }
+         ],
+         "support": 5
+        },
+        {
+         "name": "hyperframes-media",
+         "desc": "Audio and media assets for HyperFrames compositions, produced by one shared audio engine (`scripts/audio.mjs`) — multi-provider TTS (HeyGen / ElevenLabs / Kokoro local), background music + sound effects (HeyGen audio-lib",
+         "path": "video-generation/openmontage/skills/hyperframes-media",
+         "skills": [
+          {
+           "name": "hyperframes-media",
+           "desc": "Audio and media assets for HyperFrames compositions, produced by one shared audio engine (`scripts/audio.mjs`) — multi-provider TTS (HeyGen / ElevenLabs / Kokoro local), background music + sound effects (HeyGen audio-lib"
+          }
+         ],
+         "support": 2
+        },
+        {
+         "name": "hyperframes-registry",
+         "desc": "Install and wire registry blocks and components into HyperFrames compositions. Use when running hyperframes add, installing a block or component, wiring an installed item into index.html, or working with hyperframes.json",
+         "path": "video-generation/openmontage/skills/hyperframes-registry",
+         "skills": [
+          {
+           "name": "hyperframes-registry",
+           "desc": "Install and wire registry blocks and components into HyperFrames compositions. Use when running hyperframes add, installing a block or component, wiring an installed item into index.html, or working with hyperframes.json"
+          }
+         ],
+         "support": 1
+        },
+        {
+         "name": "kling-official",
+         "desc": "Official Kling direct API guidance for OpenMontage providers. Use before calling `kling_official_video`, `kling_official_image`, `kling_tts`, `kling_avatar`, or `kling_lip_sync`.",
+         "path": "video-generation/openmontage/skills/kling-official",
+         "skills": [
+          {
+           "name": "kling-official",
+           "desc": "Official Kling direct API guidance for OpenMontage providers. Use before calling `kling_official_video`, `kling_official_image`, `kling_tts`, `kling_avatar`, or `kling_lip_sync`."
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "lottie-bodymovin",
+         "desc": "Use when implementing Disney's 12 animation principles with Lottie animations exported from After Effects",
+         "path": "video-generation/openmontage/skills/lottie-bodymovin",
+         "skills": [
+          {
+           "name": "lottie-bodymovin",
+           "desc": "Use when implementing Disney's 12 animation principles with Lottie animations exported from After Effects"
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "ltx2",
+         "desc": "AI video generation with LTX-2.3 22B — text-to-video, image-to-video clips for video production. Use when generating video clips, animating images, creating b-roll, animated backgrounds, or motion content. Triggers inclu",
+         "path": "video-generation/openmontage/skills/ltx2",
+         "skills": [
+          {
+           "name": "ltx2",
+           "desc": "AI video generation with LTX-2.3 22B — text-to-video, image-to-video clips for video production. Use when generating video clips, animating images, creating b-roll, animated backgrounds, or motion content. Triggers inclu"
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "lyria",
+         "desc": "Generate and validate music with Google Lyria 3 through the Gemini Interactions API. Use before calling OpenMontage `google_music`, designing Lyria 3 Clip or Pro prompts, using image-to-music or custom lyrics, choosing b",
+         "path": "video-generation/openmontage/skills/lyria",
+         "skills": [
+          {
+           "name": "lyria",
+           "desc": "Generate and validate music with Google Lyria 3 through the Gemini Interactions API. Use before calling OpenMontage `google_music`, designing Lyria 3 Clip or Pro prompts, using image-to-music or custom lyrics, choosing b"
+          }
+         ],
+         "support": 2
+        },
+        {
+         "name": "manim-composer",
+         "desc": "Trigger when: (1) User wants to create an educational/explainer video, (2) User has a vague concept they want visualized, (3) User mentions \"3b1b style\" or \"explain like 3Blue1Brown\", (4) User wants to plan a Manim video",
+         "path": "video-generation/openmontage/skills/manim-composer",
+         "skills": [
+          {
+           "name": "manim-composer",
+           "desc": "Trigger when: (1) User wants to create an educational/explainer video, (2) User has a vague concept they want visualized, (3) User mentions \"3b1b style\" or \"explain like 3Blue1Brown\", (4) User wants to plan a Manim video"
+          }
+         ],
+         "support": 2
+        },
+        {
+         "name": "manimce-best-practices",
+         "desc": "Trigger when: (1) User mentions \"manim\" or \"Manim Community\" or \"ManimCE\", (2) Code contains `from manim import *`, (3) User runs `manim` CLI commands, (4) Working with Scene, MathTex, Create(), or ManimCE-specific class",
+         "path": "video-generation/openmontage/skills/manimce-best-practices",
+         "skills": [
+          {
+           "name": "manimce-best-practices",
+           "desc": "Trigger when: (1) User mentions \"manim\" or \"Manim Community\" or \"ManimCE\", (2) Code contains `from manim import *`, (3) User runs `manim` CLI commands, (4) Working with Scene, MathTex, Create(), or ManimCE-specific class"
+          }
+         ],
+         "support": 2
+        },
+        {
+         "name": "manimgl-best-practices",
+         "desc": "Trigger when: (1) User mentions \"manimgl\" or \"ManimGL\" or \"3b1b manim\", (2) Code contains `from manimlib import *`, (3) User runs `manimgl` CLI commands, (4) Working with InteractiveScene, self.frame, self.embed(), ShowC",
+         "path": "video-generation/openmontage/skills/manimgl-best-practices",
+         "skills": [
+          {
+           "name": "manimgl-best-practices",
+           "desc": "Trigger when: (1) User mentions \"manimgl\" or \"ManimGL\" or \"3b1b manim\", (2) Code contains `from manimlib import *`, (3) User runs `manimgl` CLI commands, (4) Working with InteractiveScene, self.frame, self.embed(), ShowC"
+          }
+         ],
+         "support": 3
+        },
+        {
+         "name": "media-use",
+         "desc": "Agent Media OS — resolve any media need (BGM, SFX, image, icon) into a frozen local file + ledger record. One verb (`resolve`) handles the full cascade — project cache, global cache, HeyGen catalog search, freeze, regist",
+         "path": "video-generation/openmontage/skills/media-use",
+         "skills": [
+          {
+           "name": "media-use",
+           "desc": "Agent Media OS — resolve any media need (BGM, SFX, image, icon) into a frozen local file + ledger record. One verb (`resolve`) handles the full cascade — project cache, global cache, HeyGen catalog search, freeze, regist"
+          }
+         ],
+         "support": 1
+        },
+        {
+         "name": "minimax-h3",
+         "desc": "Generate MiniMax H3 (Hailuo 3.0) video through the official MiniMax v2 API, fal.ai, Runway, ComfyUI Partner Nodes, or local open weights in ComfyUI. Use for 4-15 second 2K clips, first/last-frame animation, and image/vid",
+         "path": "video-generation/openmontage/skills/minimax-h3",
+         "skills": [
+          {
+           "name": "minimax-h3",
+           "desc": "Generate MiniMax H3 (Hailuo 3.0) video through the official MiniMax v2 API, fal.ai, Runway, ComfyUI Partner Nodes, or local open weights in ComfyUI. Use for 4-15 second 2K clips, first/last-frame animation, and image/vid"
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "motion-graphics",
+         "desc": "Use when the user wants a short, design-led motion graphic where motion is the message: kinetic typography, stat or number count-up, chart/data-viz hit, logo sting, brand lockup, lower-third, callout, social overlay, ani",
+         "path": "video-generation/openmontage/skills/motion-graphics",
+         "skills": [
+          {
+           "name": "motion-graphics",
+           "desc": "Use when the user wants a short, design-led motion graphic where motion is the message: kinetic typography, stat or number count-up, chart/data-viz hit, logo sting, brand lockup, lower-third, callout, social overlay, ani"
+          }
+         ],
+         "support": 6
+        },
+        {
+         "name": "music",
+         "desc": "Generate music using ElevenLabs Music API. Use when creating instrumental tracks, songs with lyrics, background music, jingles, or any AI-generated music composition. Supports prompt-based generation, composition plans f",
+         "path": "video-generation/openmontage/skills/music",
+         "skills": [
+          {
+           "name": "music",
+           "desc": "Generate music using ElevenLabs Music API. Use when creating instrumental tracks, songs with lyrics, background music, jingles, or any AI-generated music composition. Supports prompt-based generation, composition plans f"
+          }
+         ],
+         "support": 1
+        },
+        {
+         "name": "music-to-video",
+         "desc": "Use when the user has a music track (an audio file, or a video to pull audio from) and wants a beat-synced HyperFrames video, calm to hard-hitting. The music drives everything: one analyzer reads it once, the orchestrato",
+         "path": "video-generation/openmontage/skills/music-to-video",
+         "skills": [
+          {
+           "name": "music-to-video",
+           "desc": "Use when the user has a music track (an audio file, or a video to pull audio from) and wants a beat-synced HyperFrames video, calm to hard-hitting. The music drives everything: one analyzer reads it once, the orchestrato"
+          }
+         ],
+         "support": 3
+        },
+        {
+         "name": "playwright-recording",
+         "desc": "Record browser interactions as video using Playwright. Use for capturing demo videos, app walkthroughs, and UI flows for Remotion videos. Triggers include recording a demo, capturing browser video, screen recording a web",
+         "path": "video-generation/openmontage/skills/playwright-recording",
+         "skills": [
+          {
+           "name": "playwright-recording",
+           "desc": "Record browser interactions as video using Playwright. Use for capturing demo videos, app walkthroughs, and UI flows for Remotion videos. Triggers include recording a demo, capturing browser video, screen recording a web"
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "pose-library-design",
+         "desc": "Design reusable 2D character pose libraries, action cycles, and expression states for data-driven animation.",
+         "path": "video-generation/openmontage/skills/pose-library-design",
+         "skills": [
+          {
+           "name": "pose-library-design",
+           "desc": "Design reusable 2D character pose libraries, action cycles, and expression states for data-driven animation."
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "provider-model-refresh",
+         "desc": "Use the September 2026 image, video, speech and Avatar V adapters with explicit model/host contracts.",
+         "path": "video-generation/openmontage/skills/provider-model-refresh",
+         "skills": [
+          {
+           "name": "provider-model-refresh",
+           "desc": "Use the September 2026 image, video, speech and Avatar V adapters with explicit model/host contracts."
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "provider-refresh-oct23",
+         "desc": "API contracts and production routing for the October 23, 2026 provider refresh.",
+         "path": "video-generation/openmontage/skills/provider-refresh-oct23",
+         "skills": [
+          {
+           "name": "provider-refresh-oct23",
+           "desc": "API contracts and production routing for the October 23, 2026 provider refresh."
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "remotion",
+         "desc": "Toolkit-specific Remotion patterns — custom transitions, shared components, and project conventions. For core Remotion framework knowledge (hooks, animations, rendering, etc.), see the `remotion-official` skill.",
+         "path": "video-generation/openmontage/skills/remotion",
+         "skills": [
+          {
+           "name": "remotion",
+           "desc": "Toolkit-specific Remotion patterns — custom transitions, shared components, and project conventions. For core Remotion framework knowledge (hooks, animations, rendering, etc.), see the `remotion-official` skill."
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "remotion-best-practices",
+         "desc": "Best practices for Remotion - Video creation in React",
+         "path": "video-generation/openmontage/skills/remotion-best-practices",
+         "skills": [
+          {
+           "name": "remotion-best-practices",
+           "desc": "Best practices for Remotion - Video creation in React"
+          }
+         ],
+         "support": 1
+        },
+        {
+         "name": "remotion-to-hyperframes",
+         "desc": "Port an existing Remotion (React) composition to HyperFrames HTML. Use ONLY when the user explicitly asks to port/convert/migrate/translate a Remotion source. Do NOT use: (a) authoring a new HyperFrames composition; (b) ",
+         "path": "video-generation/openmontage/skills/remotion-to-hyperframes",
+         "skills": [
+          {
+           "name": "remotion-to-hyperframes",
+           "desc": "Port an existing Remotion (React) composition to HyperFrames HTML. Use ONLY when the user explicitly asks to port/convert/migrate/translate a Remotion source. Do NOT use: (a) authoring a new HyperFrames composition; (b) "
+          }
+         ],
+         "support": 2
+        },
+        {
+         "name": "seedance-2-0",
+         "desc": "Generate cinematic clips with ByteDance Seedance 2.0 — the preferred premium video model in OpenMontage when a paid gateway is configured. Use when: (1) producing trailers, teasers, hype edits, or premium cinematic clips",
+         "path": "video-generation/openmontage/skills/seedance-2-0",
+         "skills": [
+          {
+           "name": "seedance-2-0",
+           "desc": "Generate cinematic clips with ByteDance Seedance 2.0 — the preferred premium video model in OpenMontage when a paid gateway is configured. Use when: (1) producing trailers, teasers, hype edits, or premium cinematic clips"
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "seedance-2-5",
+         "desc": "Generate 4-30 second cinematic video with ByteDance Seedance 2.5 through fal.ai, Volcengine Ark, Runway, or ComfyUI Partner Nodes. Use for long single generations, synchronized audio, and large multimodal reference sets ",
+         "path": "video-generation/openmontage/skills/seedance-2-5",
+         "skills": [
+          {
+           "name": "seedance-2-5",
+           "desc": "Generate 4-30 second cinematic video with ByteDance Seedance 2.5 through fal.ai, Volcengine Ark, Runway, or ComfyUI Partner Nodes. Use for long single generations, synchronized audio, and large multimodal reference sets "
+          }
+         ],
+         "support": 1
+        },
+        {
+         "name": "setup-api-key",
+         "desc": "Guides users through setting up an ElevenLabs API key for ElevenLabs MCP tools. Use when the user needs to configure an ElevenLabs API key, when ElevenLabs tools fail due to missing API key, or when the user mentions nee",
+         "path": "video-generation/openmontage/skills/setup-api-key",
+         "skills": [
+          {
+           "name": "setup-api-key",
+           "desc": "Guides users through setting up an ElevenLabs API key for ElevenLabs MCP tools. Use when the user needs to configure an ElevenLabs API key, when ElevenLabs tools fail due to missing API key, or when the user mentions nee"
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "sound-effects",
+         "desc": "Generate sound effects from text descriptions using ElevenLabs. Use when creating sound effects, generating audio textures, producing ambient sounds, cinematic impacts, UI sounds, or any audio that isn't speech. Supports",
+         "path": "video-generation/openmontage/skills/sound-effects",
+         "skills": [
+          {
+           "name": "sound-effects",
+           "desc": "Generate sound effects from text descriptions using ElevenLabs. Use when creating sound effects, generating audio textures, producing ambient sounds, cinematic impacts, UI sounds, or any audio that isn't speech. Supports"
+          }
+         ],
+         "support": 1
+        },
+        {
+         "name": "speech-to-text",
+         "desc": "Transcribe audio to text using ElevenLabs Scribe v2. Use when converting audio/video to text, generating subtitles, transcribing meetings, or processing spoken content.",
+         "path": "video-generation/openmontage/skills/speech-to-text",
+         "skills": [
+          {
+           "name": "speech-to-text",
+           "desc": "Transcribe audio to text using ElevenLabs Scribe v2. Use when converting audio/video to text, generating subtitles, transcribing meetings, or processing spoken content."
+          }
+         ],
+         "support": 1
+        },
+        {
+         "name": "svg-character-animation",
+         "desc": "Animate SVG character rigs with GSAP, CSS transforms, Remotion frame control, and HyperFrames-compatible browser previews.",
+         "path": "video-generation/openmontage/skills/svg-character-animation",
+         "skills": [
+          {
+           "name": "svg-character-animation",
+           "desc": "Animate SVG character rigs with GSAP, CSS transforms, Remotion frame control, and HyperFrames-compatible browser previews."
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "synthetic-screen-recording",
+         "desc": "Synthetic terminal-style screen recording guidance for Remotion `TerminalScene`.",
+         "path": "video-generation/openmontage/skills/synthetic-screen-recording",
+         "skills": [
+          {
+           "name": "synthetic-screen-recording",
+           "desc": "Synthetic terminal-style screen recording guidance for Remotion `TerminalScene`."
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "tailwind-design-system",
+         "desc": "Build scalable design systems with Tailwind CSS v4, design tokens, component libraries, and responsive patterns. Use when creating component libraries, implementing design systems, or standardizing UI patterns.",
+         "path": "video-generation/openmontage/skills/tailwind-design-system",
+         "skills": [
+          {
+           "name": "tailwind-design-system",
+           "desc": "Build scalable design systems with Tailwind CSS v4, design tokens, component libraries, and responsive patterns. Use when creating component libraries, implementing design systems, or standardizing UI patterns."
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "text-to-speech",
+         "desc": "HeyGen native Voice1 and catalog speech, voice discovery, timestamps, and streaming.",
+         "path": "video-generation/openmontage/skills/text-to-speech",
+         "skills": [
+          {
+           "name": "text-to-speech",
+           "desc": "HeyGen native Voice1 and catalog speech, voice discovery, timestamps, and streaming."
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "threejs-animation",
+         "desc": "Three.js animation - keyframe animation, skeletal animation, morph targets, animation mixing. Use when animating objects, playing GLTF animations, creating procedural motion, or blending animations.",
+         "path": "video-generation/openmontage/skills/threejs-animation",
+         "skills": [
+          {
+           "name": "threejs-animation",
+           "desc": "Three.js animation - keyframe animation, skeletal animation, morph targets, animation mixing. Use when animating objects, playing GLTF animations, creating procedural motion, or blending animations."
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "threejs-fundamentals",
+         "desc": "Three.js scene setup, cameras, renderer, Object3D hierarchy, coordinate systems. Use when setting up 3D scenes, creating cameras, configuring renderers, managing object hierarchies, or working with transforms.",
+         "path": "video-generation/openmontage/skills/threejs-fundamentals",
+         "skills": [
+          {
+           "name": "threejs-fundamentals",
+           "desc": "Three.js scene setup, cameras, renderer, Object3D hierarchy, coordinate systems. Use when setting up 3D scenes, creating cameras, configuring renderers, managing object hierarchies, or working with transforms."
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "threejs-geometry",
+         "desc": "Three.js geometry creation - built-in shapes, BufferGeometry, custom geometry, instancing. Use when creating 3D shapes, working with vertices, building custom meshes, or optimizing with instanced rendering.",
+         "path": "video-generation/openmontage/skills/threejs-geometry",
+         "skills": [
+          {
+           "name": "threejs-geometry",
+           "desc": "Three.js geometry creation - built-in shapes, BufferGeometry, custom geometry, instancing. Use when creating 3D shapes, working with vertices, building custom meshes, or optimizing with instanced rendering."
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "threejs-interaction",
+         "desc": "Three.js interaction - raycasting, controls, mouse/touch input, object selection. Use when handling user input, implementing click detection, adding camera controls, or creating interactive 3D experiences.",
+         "path": "video-generation/openmontage/skills/threejs-interaction",
+         "skills": [
+          {
+           "name": "threejs-interaction",
+           "desc": "Three.js interaction - raycasting, controls, mouse/touch input, object selection. Use when handling user input, implementing click detection, adding camera controls, or creating interactive 3D experiences."
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "threejs-lighting",
+         "desc": "Three.js lighting - light types, shadows, environment lighting. Use when adding lights, configuring shadows, setting up IBL, or optimizing lighting performance.",
+         "path": "video-generation/openmontage/skills/threejs-lighting",
+         "skills": [
+          {
+           "name": "threejs-lighting",
+           "desc": "Three.js lighting - light types, shadows, environment lighting. Use when adding lights, configuring shadows, setting up IBL, or optimizing lighting performance."
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "threejs-loaders",
+         "desc": "Three.js asset loading - GLTF, textures, images, models, async patterns. Use when loading 3D models, textures, HDR environments, or managing loading progress.",
+         "path": "video-generation/openmontage/skills/threejs-loaders",
+         "skills": [
+          {
+           "name": "threejs-loaders",
+           "desc": "Three.js asset loading - GLTF, textures, images, models, async patterns. Use when loading 3D models, textures, HDR environments, or managing loading progress."
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "threejs-materials",
+         "desc": "Three.js materials - PBR, basic, phong, shader materials, material properties. Use when styling meshes, working with textures, creating custom shaders, or optimizing material performance.",
+         "path": "video-generation/openmontage/skills/threejs-materials",
+         "skills": [
+          {
+           "name": "threejs-materials",
+           "desc": "Three.js materials - PBR, basic, phong, shader materials, material properties. Use when styling meshes, working with textures, creating custom shaders, or optimizing material performance."
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "threejs-postprocessing",
+         "desc": "Three.js post-processing - EffectComposer, bloom, DOF, screen effects. Use when adding visual effects, color grading, blur, glow, or creating custom screen-space shaders.",
+         "path": "video-generation/openmontage/skills/threejs-postprocessing",
+         "skills": [
+          {
+           "name": "threejs-postprocessing",
+           "desc": "Three.js post-processing - EffectComposer, bloom, DOF, screen effects. Use when adding visual effects, color grading, blur, glow, or creating custom screen-space shaders."
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "threejs-shaders",
+         "desc": "Three.js shaders - GLSL, ShaderMaterial, uniforms, custom effects. Use when creating custom visual effects, modifying vertices, writing fragment shaders, or extending built-in materials.",
+         "path": "video-generation/openmontage/skills/threejs-shaders",
+         "skills": [
+          {
+           "name": "threejs-shaders",
+           "desc": "Three.js shaders - GLSL, ShaderMaterial, uniforms, custom effects. Use when creating custom visual effects, modifying vertices, writing fragment shaders, or extending built-in materials."
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "threejs-textures",
+         "desc": "Three.js textures - texture types, UV mapping, environment maps, texture settings. Use when working with images, UV coordinates, cubemaps, HDR environments, or texture optimization.",
+         "path": "video-generation/openmontage/skills/threejs-textures",
+         "skills": [
+          {
+           "name": "threejs-textures",
+           "desc": "Three.js textures - texture types, UV mapping, environment maps, texture settings. Use when working with images, UV coordinates, cubemaps, HDR environments, or texture optimization."
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "threejs-world-generation",
+         "desc": "Build deterministic, editable, free-viewpoint Three.js worlds from text or structured briefs. Use for cinematic 3D terrain, semantic regions, procedural biomes, explicit landmarks, environmental scattering, camera fly-th",
+         "path": "video-generation/openmontage/skills/threejs-world-generation",
+         "skills": [
+          {
+           "name": "threejs-world-generation",
+           "desc": "Build deterministic, editable, free-viewpoint Three.js worlds from text or structured briefs. Use for cinematic 3D terrain, semantic regions, procedural biomes, explicit landmarks, environmental scattering, camera fly-th"
+          }
+         ],
+         "support": 2
+        },
+        {
+         "name": "vercel-composition-patterns",
+         "desc": "React composition patterns that scale. Use when refactoring components with boolean prop proliferation, building flexible component libraries, or designing reusable APIs. Triggers on tasks involving compound components, ",
+         "path": "video-generation/openmontage/skills/vercel-composition-patterns",
+         "skills": [
+          {
+           "name": "vercel-composition-patterns",
+           "desc": "React composition patterns that scale. Use when refactoring components with boolean prop proliferation, building flexible component libraries, or designing reusable APIs. Triggers on tasks involving compound components, "
+          }
+         ],
+         "support": 1
+        },
+        {
+         "name": "vercel-react-best-practices",
+         "desc": "React and Next.js performance optimization guidelines from Vercel Engineering. This skill should be used when writing, reviewing, or refactoring React/Next.js code to ensure optimal performance patterns. Triggers on task",
+         "path": "video-generation/openmontage/skills/vercel-react-best-practices",
+         "skills": [
+          {
+           "name": "vercel-react-best-practices",
+           "desc": "React and Next.js performance optimization guidelines from Vercel Engineering. This skill should be used when writing, reviewing, or refactoring React/Next.js code to ensure optimal performance patterns. Triggers on task"
+          }
+         ],
+         "support": 1
+        },
+        {
+         "name": "video-download",
+         "desc": "Download video and audio from YouTube and 1000+ sites using yt-dlp. No API keys needed. Use when: (1) Downloading a video from YouTube or other sites, (2) Extracting audio from a video URL, (3) Downloading subtitles/capt",
+         "path": "video-generation/openmontage/skills/video-download",
+         "skills": [
+          {
+           "name": "video-download",
+           "desc": "Download video and audio from YouTube and 1000+ sites using yt-dlp. No API keys needed. Use when: (1) Downloading a video from YouTube or other sites, (2) Extracting audio from a video URL, (3) Downloading subtitles/capt"
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "video-edit",
+         "desc": "Edit videos locally using ffmpeg. Trim, concat, resize, speed, overlay, extract audio, compress, and convert. Use when: (1) Trimming or cutting video segments, (2) Concatenating multiple clips, (3) Resizing video for soc",
+         "path": "video-generation/openmontage/skills/video-edit",
+         "skills": [
+          {
+           "name": "video-edit",
+           "desc": "Edit videos locally using ffmpeg. Trim, concat, resize, speed, overlay, extract audio, compress, and convert. Use when: (1) Trimming or cutting video segments, (2) Concatenating multiple clips, (3) Resizing video for soc"
+          }
+         ],
+         "support": 1
+        },
+        {
+         "name": "video-toolkit",
+         "desc": "Create professional videos autonomously using claude-code-video-toolkit — AI voiceovers, image generation, music, talking heads, and Remotion rendering.",
+         "path": "video-generation/openmontage/skills/video-toolkit",
+         "skills": [
+          {
+           "name": "video-toolkit",
+           "desc": "Create professional videos autonomously using claude-code-video-toolkit — AI voiceovers, image generation, music, talking heads, and Remotion rendering."
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "video-translate",
+         "desc": "Translate and dub existing videos into multiple languages using HeyGen. Use when: (1) Translating a video into another language, (2) Dubbing video content with lip-sync, (3) Creating multi-language versions of existing v",
+         "path": "video-generation/openmontage/skills/video-translate",
+         "skills": [
+          {
+           "name": "video-translate",
+           "desc": "Translate and dub existing videos into multiple languages using HeyGen. Use when: (1) Translating a video into another language, (2) Dubbing video content with lip-sync, (3) Creating multi-language versions of existing v"
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "video-understand",
+         "desc": "Understand video content locally using ffmpeg frame extraction and Whisper transcription. No API keys needed. Use when: (1) Understanding what a video contains, (2) Transcribing video audio locally, (3) Extracting key fr",
+         "path": "video-generation/openmontage/skills/video-understand",
+         "skills": [
+          {
+           "name": "video-understand",
+           "desc": "Understand video content locally using ffmpeg frame extraction and Whisper transcription. No API keys needed. Use when: (1) Understanding what a video contains, (2) Transcribing video audio locally, (3) Extracting key fr"
+          }
+         ],
+         "support": 2
+        },
+        {
+         "name": "visual-style",
+         "desc": "Create, extract, and apply portable visual design systems via visual-style.md files. Use when: (1) Creating a visual-style.md design system from scratch, (2) Extracting a visual style from a website URL, video, or PDF br",
+         "path": "video-generation/openmontage/skills/visual-style",
+         "skills": [
+          {
+           "name": "visual-style",
+           "desc": "Create, extract, and apply portable visual design systems via visual-style.md files. Use when: (1) Creating a visual-style.md design system from scratch, (2) Extracting a visual style from a website URL, video, or PDF br"
+          }
+         ],
+         "support": 1
+        },
+        {
+         "name": "web-design-guidelines",
+         "desc": "Review UI code for Web Interface Guidelines compliance. Use when asked to \"review my UI\", \"check accessibility\", \"audit design\", \"review UX\", or \"check my site against best practices\".",
+         "path": "video-generation/openmontage/skills/web-design-guidelines",
+         "skills": [
+          {
+           "name": "web-design-guidelines",
+           "desc": "Review UI code for Web Interface Guidelines compliance. Use when asked to \"review my UI\", \"check accessibility\", \"audit design\", \"review UX\", or \"check my site against best practices\"."
+          }
+         ],
+         "support": 0
+        },
+        {
+         "name": "website-to-video",
+         "desc": "Capture a general website/URL and turn it into a HyperFrames video (site tour, showcase, or social clip from the site's own visuals). Uses headless Chrome screenshots + brand assets. Use when intent is general — portfoli",
+         "path": "video-generation/openmontage/skills/website-to-video",
+         "skills": [
+          {
+           "name": "website-to-video",
+           "desc": "Capture a general website/URL and turn it into a HyperFrames video (site tour, showcase, or social clip from the site's own visuals). Uses headless Chrome screenshots + brand assets. Use when intent is general — portfoli"
+          }
+         ],
+         "support": 2
+        }
+       ],
+       "files": 0
+      }
+     ],
+     "files": 1
     }
    ]
   }
@@ -2084,6 +3859,16 @@
     "Video"
    ],
    "initials": "PG"
+  },
+  {
+   "name": "Ahmad Mousavi",
+   "site": "https://ahmadmousavi.ir",
+   "role": "Contributor — video skill packs",
+   "focus": [
+    "Video generation",
+    "Motion graphics"
+   ],
+   "initials": "AM"
   }
  ]
 }

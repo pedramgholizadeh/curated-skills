@@ -1,8 +1,9 @@
 # 🎨 UI/UX Pro Max
 
-Vendored copy of [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)
-(MIT © Next Level Builder) — design-intelligence skills with a searchable
-database of styles, palettes, typography and UX guidelines.
+Vendored design-intelligence skills with a searchable database of styles, palettes,
+typography and UX guidelines (MIT © Next Level Builder).
+
+Upstream: [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)
 
 ## Skills in this collection
 

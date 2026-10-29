@@ -45,10 +45,25 @@ def parse_frontmatter(path: Path) -> dict:
     if not m:
         return {}
     fm = {}
-    for line in m.group(1).splitlines():
-        kv = re.match(r"^([A-Za-z_][\w-]*)\s*:\s*(.*)$", line)
-        if kv and kv.group(1) in ("name", "description"):
-            fm[kv.group(1)] = kv.group(2).strip().strip("\"'")
+    lines = m.group(1).splitlines()
+    i = 0
+    while i < len(lines):
+        kv = re.match(r"^([A-Za-z_][\w-]*)\s*:\s*(.*)$", lines[i])
+        if not kv:
+            i += 1
+            continue
+        key, value = kv.group(1), kv.group(2).strip().strip("\"'")
+        if value in {"|", "|-", "|+", ">", ">-", ">+"} or (value == "" and i + 1 < len(lines)
+                                                            and lines[i + 1].startswith((" ", "\t"))):
+            block, i = [], i + 1
+            while i < len(lines) and (not lines[i].strip() or lines[i].startswith((" ", "\t"))):
+                block.append(lines[i].strip())
+                i += 1
+            value = " ".join(x for x in block if x)
+        else:
+            i += 1
+        if key in ("name", "description"):
+            fm[key] = value
     return fm
 
 
@@ -73,19 +88,25 @@ def build_dir_node(directory: Path) -> dict:
     skill_md = directory / SKILL_MD
     if skill_md.is_file():
         fm = parse_frontmatter(skill_md)
+        subdirs = [d for d in directory.iterdir()
+                   if d.is_dir() and not d.name.startswith(".") and d.name not in SKIP_DIRS]
         return {
             "name": fm.get("name", directory.name),
             "desc": (fm.get("description") or "")[:MAX_SKILL_DESC],
             "path": str(directory.relative_to(ROOT)),
             "skills": [{"name": directory.name,
                         "desc": (fm.get("description") or "")[:MAX_SKILL_DESC]}],
+            "support": len(subdirs),
         }
     children = [build_dir_node(sub) for sub in sorted(directory.iterdir())
                 if sub.is_dir() and not sub.name.startswith(".") and sub.name not in SKIP_DIRS]
+    support_files = [f for f in directory.iterdir()
+                     if f.is_file() and f.name not in ("README.md", SKILL_MD)]
     return {
         "name": directory.name,
         "desc": desc_from_readme(directory),
         "children": children,
+        "files": len(support_files),
     }
 
 

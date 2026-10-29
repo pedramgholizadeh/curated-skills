@@ -7,9 +7,10 @@ but a few things remain manual.
 ## How the site stays in sync
 
 - `site/build.py` scans every category for `SKILL.md` files (name + description
-  from YAML frontmatter), keeps empty folders as `SKELETON` nodes, reads folder
-  descriptions from each `README.md`, and parses the Contributors table from the
-  root `README.md`. Output: `site/skills.json`.
+  from YAML frontmatter), keeps empty folders as `SKELETON` nodes, counts other
+  files in a folder as `FILES` nodes (supporting content, not a skill), reads
+  folder descriptions from each `README.md`, and parses the Contributors table
+  from the root `README.md`. Output: `site/skills.json`.
 - `site/app.js` only renders `skills.json`. **Never hardcode skills in app.js.**
 - `.github/workflows/deploy-pages.yml` runs `build.py` on every push to
   `master` and publishes `site/` to the `gh-pages` branch. A merged PR that
@@ -32,8 +33,18 @@ but a few things remain manual.
 - `custom-skills/` is flat and its skills declare merged lineage via `sources:`
   frontmatter (see `custom-skills/README.md`).
 - Vendored collections (`anthropic-skills/`, `marketing-skills/`,
-  `product-skills/`, `ui-ux-skills/ui-ux-pro-max/`) are **not edited in
-  place** — re-vendor upstream updates; improvements go to `custom-skills/`.
+  `product-skills/`, `ui-ux-skills/ui-ux-pro-max/`, `video-generation/openmontage/`
+  and the other `video-generation/` packs) are **not edited in place** —
+  re-vendor upstream updates; improvements go to `custom-skills/`.
+- Vendoring rules: keep the upstream `LICENSE` verbatim inside the pack folder,
+  add a pack `README.md` naming the upstream repo and who contributed it, and
+  trim heavy media (`assets/`, `demos/`, `examples/`, previews, files over
+  ~200 KB) so the catalog stays cloneable — say what was trimmed in the README.
+  Flatten a pack's inner `skills/` wrapper so the site tree is
+  `<category>/<subcategory>/<pack>/<skill>/SKILL.md`.
+- Only mirror material whose upstream license permits redistribution. Leaked or
+  unlicensed files (e.g. dumps of product prompts) get a reference folder with a
+  `README.md` + `PROVENANCE.md` and no copied content.
 - Every folder keeps its own `README.md`.
 - All content, comments and commits are in English.
 - Commits follow Conventional Commits; regenerate `site/skills.json` in the
