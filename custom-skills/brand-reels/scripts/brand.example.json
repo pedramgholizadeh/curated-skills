@@ -1,0 +1,34 @@
+{
+  "name": "brand",
+  "canvas": { "w": 1080, "h": 1920, "fps": 30 },
+  "direction": "ltr",
+  "domain": "yourbrand.com",
+  "ctaLine": "For a free consultation, just DM us",
+  "bpm": 112,
+  "logo": "../assets/logo.png",
+  "fonts": {
+    "text": "Inter",
+    "weights": [400, 500, 600, 700, 800, 900],
+    "icon": "Material Symbols Rounded"
+  },
+  "digits": null,
+  "palette": {
+    "bg": "#0C1518",
+    "bg2": "#0F1B1F",
+    "bg3": "#132226",
+    "primary": "#224248",
+    "secondary": "#325E6A",
+    "accent": "#44A1A4",
+    "accent2": "#FF9A00",
+    "text": "#EAF1F2",
+    "soft": "#9FB2B6",
+    "line": "rgba(255,255,255,.11)"
+  },
+  "safe": {
+    "textW": 760,
+    "areaTop": 250,
+    "areaBot": 1330,
+    "timelineY": 1512,
+    "logoY": 96
+  }
+}

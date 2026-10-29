@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Brand Reels · studio</title>
+<!--
+  Fonts are loaded from assets/fonts/ and referenced by the family names in brand.json
+  (fonts.text and fonts.icon). Add one @font-face block per family you use.
+  For RTL scripts, a variable font covering the needed weights is ideal.
+-->
+<style>
+  @font-face {
+    font-family: 'Inter';                 /* == brand.json fonts.text */
+    src: url('../assets/fonts/Inter-var.ttf') format('truetype-variations');
+    font-weight: 100 900;
+  }
+  @font-face {
+    font-family: 'Material Symbols Rounded';  /* == brand.json fonts.icon */
+    src: url('../assets/fonts/MaterialSymbolsRounded.woff2') format('woff2');
+    font-weight: 100 700;
+  }
+  html, body { margin: 0; background: #05090a; }
+  #out { display: block; width: 540px; height: 960px; }
+</style>
+</head>
+<body>
+<canvas id="out" width="1080" height="1920"></canvas>
+<script src="engine.js"></script>
+</body>
+</html>
