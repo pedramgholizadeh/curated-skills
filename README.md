@@ -2,8 +2,18 @@
 
 A hand-picked, production-grade collection of AI agent skills, organized by domain.
 Each skill is a self-contained folder that teaches an AI coding agent (Claude Code,
-Qoder, or any agent that follows the `SKILL.md` convention) how to perform a specific
-task at a professional level.
+Qoder, OpenCode, ZCode, Antigravity, Codex, or any agent that follows the
+`SKILL.md` convention) how to perform a specific task at a professional level.
+
+## About & Author
+
+Hi, I'm **Pedram Gholizadeh** — a software developer and SEO specialist
+([pedramgholizadeh.ir](https://pedramgholizadeh.ir)). I've been building products,
+bots, agents and search-optimized websites for years, and this repository is where
+I curate the skills I actually use in real work.
+
+My hope is simple: if these skills make my agents better, they can make yours better
+too. May this collection help everyone use AI agents more effectively and efficiently.
 
 ## Catalog
 
@@ -63,35 +73,96 @@ description: What it does AND when to trigger it. Written in third person.
 ---
 ```
 
-## Usage
+## Usage by Agent
+
+Every skill follows the open `SKILL.md` standard, so one copy of this repository
+works across all major coding agents. Pick your agent below — the examples copy
+(or symlink) skill folders into the directory each agent discovers.
+
+A convenient first step on any machine: clone once, then link from it.
+
+```bash
+git clone https://github.com/your-name/curated-skills.git ~/curated-skills
+```
 
 ### Claude Code
 
-Point Claude at this repository as a skills directory, or copy/link the skills you need:
+Discovers skills in `~/.claude/skills/` (personal) and `.claude/skills/` (project).
 
 ```bash
 # Link a single skill
-ln -s "$(pwd)/fullstack-skills/backend/nodejs/skill-name" ~/.claude/skills/skill-name
+ln -s ~/curated-skills/fullstack-skills/backend/nodejs/<skill> ~/.claude/skills/<skill>
 
-# Or link a whole category
-cp -R fullstack-skills/*/ ~/.claude/skills/
+# Or install a whole category
+cp -R ~/curated-skills/fullstack-skills/*/. ~/.claude/skills/
 ```
 
 ### Qoder Desktop
 
-Install skills from this repository into your personal skills directory
-(`~/.qoder/skills/`) or the project's `.qoder/skills/` directory. The agent
-discovers each `SKILL.md` automatically and loads it on demand.
+Installs into `~/.qoder/skills/` (personal) or the project's `.qoder/skills/`.
+Each `SKILL.md` is discovered automatically and loaded on demand.
 
 ```bash
-cp -R fullstack-skills/backend/nodejs/<skill> ~/.qoder/skills/
+cp -R ~/curated-skills/fullstack-skills/backend/nodejs/<skill> ~/.qoder/skills/
 ```
 
-### Any agent / plain LLM
+### OpenCode
 
-Every `SKILL.md` is plain Markdown. Paste its contents into a system prompt or
-a custom instructions file (e.g. `AGENTS.md`, `QODER.md`) to use the skill
-without tooling support.
+First-class skills support. Searches `.opencode/skills/` (project),
+`~/.config/opencode/skills/` (global), and shared Claude/Agents folders. See the
+[OpenCode skills docs](https://opencode.ai/docs/skills/).
+
+```bash
+cp -R ~/curated-skills/fullstack-skills/backend/nodejs/<skill> ~/.config/opencode/skills/
+
+# Or make them available in one project only
+mkdir -p .opencode/skills && cp -R ~/curated-skills/video-generation/* .opencode/skills/
+```
+
+### ZCode (Z.ai)
+
+User-level skills live at `~/.zcode/skills/<skill-name>/SKILL.md`. ZCode also
+ships an importer: **Settings → Skills → Import** scans skill directories of other
+agents (Claude, Codex, …) so skills installed below can be imported in one click.
+See the [ZCode skill docs](https://zcode.z.ai/en/docs/skill).
+
+```bash
+cp -R ~/curated-skills/seo-skills/content-skills/<skill> ~/.zcode/skills/
+```
+
+### Z.ai (chat & web agents)
+
+Z.ai's coding-agent skill loading lives in ZCode (above). The Z.ai web agent
+currently has no `SKILL.md` directory discovery, so use skills with it by
+attaching or pasting a skill's `SKILL.md` into the agent's custom instructions —
+each file is self-contained plain Markdown with YAML frontmatter.
+
+### Google Antigravity
+
+Personal skills are discovered at `~/.gemini/antigravity/skills/<skill-name>/SKILL.md`.
+See the [Antigravity agent-skills docs](https://antigravity.google/docs/skills/).
+
+```bash
+cp -R ~/curated-skills/fullstack-skills/frontend/react-nextjs/<skill> ~/.gemini/antigravity/skills/
+```
+
+### OpenAI Codex
+
+Codex and ChatGPT load agent skills from the shared `~/.agents/skills/` directory —
+one location that ZCode's importer can also scan. See the
+[build-skills docs](https://learn.chatgpt.com/docs/build-skills).
+
+```bash
+mkdir -p ~/.agents/skills
+cp -R ~/curated-skills/fullstack-skills/ai-agents/rag/<skill> ~/.agents/skills/
+```
+
+### Any other agent
+
+Every `SKILL.md` is plain Markdown. Paste its contents into a system prompt, a
+custom-instructions file (`AGENTS.md`, `QODER.md`, `.cursorrules`, …), or a knowledge
+project. The frontmatter `description` is the trigger contract: if the agent supports
+routing instructions, tell it to load a skill when its description matches the task.
 
 ## Contributing
 
@@ -103,7 +174,7 @@ is part of every pull request.
 
 | Contributor | Role | Focus |
 |---|---|---|
-| [Pedram Gholizadeh](https://github.com/) | Creator & maintainer | Fullstack, AI agents, SEO, video |
+| [Pedram Gholizadeh](https://pedramgholizadeh.ir) | Creator & maintainer | Fullstack, AI agents, SEO, video |
 
 <!--
 Add a row per contributor:
