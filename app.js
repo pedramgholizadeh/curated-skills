@@ -29,9 +29,9 @@ function countSkills(node) {
 
 function statusBadge(node) {
   const total = countSkills(node);
-  return total > 0
-    ? `<span class="badge ready">${total} SKILL${total > 1 ? "S" : ""}</span>`
-    : `<span class="badge skeleton">SKELETON</span>`;
+  if (total > 0) return `<span class="badge ready">${total} SKILL${total > 1 ? "S" : ""}</span>`;
+  if (node.files) return `<span class="badge files">${node.files} FILE${node.files > 1 ? "S" : ""}</span>`;
+  return `<span class="badge skeleton">SKELETON</span>`;
 }
 
 /* Descending by skill count — empty (skeleton) folders sink to the end. */
@@ -46,15 +46,18 @@ function renderNode(node, depth) {
   const sum = el("summary");
   sum.innerHTML = `<span class="node-label">${isSkill ? "📄" : "📁"} ${esc(node.name)}${isSkill ? "" : "/"}</span>
     <span class="node-desc">${esc(node.desc)}</span>
-    ${isSkill ? '<span class="badge lime">SKILL.md</span>' : statusBadge(node)}`;
+    ${isSkill
+      ? `<span class="badge lime">SKILL.md</span>${node.support ? `<span class="badge files">${node.support} FOLDER${node.support > 1 ? "S" : ""}</span>` : ""}`
+      : statusBadge(node)}`;
   det.append(sum);
   const body = el("div", "items");
   if (isSkill) {
     node.skills.forEach(s => body.append(el("div", "skill-item",
       `<code title="${esc(s.desc)}">${esc(s.name)}</code> <span>${esc(s.desc)}</span>`)));
   } else if (node.children.length === 0) {
-    body.append(el("div", "skill-item",
-      `<em style="color:var(--dim)">Folder ready — skills land here as subfolders appear.</em>`));
+    body.append(el("div", "skill-item", node.files
+      ? `<em style="color:var(--dim)">Supporting files (${node.files}) — this folder holds content, not a SKILL.md.</em>`
+      : `<em style="color:var(--dim)">Folder ready — skills land here as subfolders appear.</em>`));
   } else {
     sorted(node.children).forEach(c => body.append(renderNode(c, depth + 1)));
   }
