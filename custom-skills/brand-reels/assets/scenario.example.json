@@ -1,0 +1,100 @@
+{
+  "_comment": "Worked example proving the engine is business-agnostic. A small-batch coffee roaster, English/LTR. Pair with a brand.json whose `domain` is 'roastery.example' and `direction` is 'ltr', then: node scripts/validate.mjs scenario.example && node scripts/render.mjs scenario.example --preview. Layout choice: single-origin / blend / subscription are ALTERNATIVES the customer chooses between, so they use `compare` (VS chips) — unlike SEO whose parts are complementary and use `features`. No numbers, counts, or prices anywhere.",
+  "key": "scenario.example",
+  "title": "Fresh Coffee Roaster",
+  "url": "/coffee/",
+  "bpm": 112,
+  "scenes": [
+    {
+      "id": "hook",
+      "dur": 3,
+      "layout": "hook",
+      "icon": "bolt",
+      "lines": [
+        "Still drinking *stale*",
+        "supermarket beans?"
+      ]
+    },
+    {
+      "id": "problem",
+      "dur": 4,
+      "layout": "problem",
+      "lines": [
+        "Hidden roast dates *betray* you"
+      ],
+      "items": [
+        "Flavor fades the week it ships",
+        "No origin story, no traceability"
+      ]
+    },
+    {
+      "id": "range",
+      "dur": 6,
+      "layout": "compare",
+      "lines": [
+        "Pick your *lane*"
+      ],
+      "items": [
+        {
+          "text": "Single-origin",
+          "detail": "One farm, pure character",
+          "icon": "eco"
+        },
+        {
+          "text": "Signature blend",
+          "detail": "Balanced, everyday cup",
+          "icon": "blend"
+        },
+        {
+          "text": "Fresh subscription",
+          "detail": "Roasted and shipped to your door",
+          "icon": "autorenew",
+          "accent": true
+        }
+      ]
+    },
+    {
+      "id": "belief",
+      "dur": 3,
+      "layout": "statement",
+      "lines": [
+        "Fresh isn't a feature.",
+        "It's *the whole point*."
+      ]
+    },
+    {
+      "id": "process",
+      "dur": 4,
+      "layout": "features",
+      "lines": [
+        "From *green* to your grinder"
+      ],
+      "items": [
+        {
+          "text": "Source direct",
+          "icon": "travel_explore"
+        },
+        {
+          "text": "Roast to order",
+          "icon": "local_fire_department"
+        },
+        {
+          "text": "Rest & seal",
+          "icon": "package"
+        },
+        {
+          "text": "Ship fresh",
+          "icon": "rocket_launch",
+          "accent": true
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "dur": 4,
+      "layout": "cta",
+      "site": "roastery.example",
+      "direct": "DM us to find *your* roast"
+    }
+  ]
+}

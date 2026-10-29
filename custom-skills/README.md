@@ -43,7 +43,7 @@ sources:
 
 | Skill | Merged from | Status |
 |---|---|---|
-| — | — | Add your consolidated skills here |
+| [brand-reels/](brand-reels/SKILL.md) | video-generation (motion-graphics, cinematic-promos, editing-workflows) · ui-ux-skills (visual-design, interaction-design) | Ready |
 
 See the root [README.md](../README.md) for installation on each agent, and
 [AGENTS.md](../AGENTS.md) for the site-sync rule every addition must follow.

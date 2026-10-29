@@ -102,7 +102,11 @@ const SKILL_TREE = [
     icon: "⭐",
     desc: "Pedram's own combined skills, distilled from the categories above.",
     badge: "custom",
-    children: [],
+    children: [
+      { name: "brand-reels", icon: "🎬", desc: "On-brand 9:16 marketing reels rendered in code (canvas → headless Chrome → ffmpeg), for any business or language.", skills: [
+        { name: "SKILL.md", desc: "Brand-config-driven pipeline: hook-first / CTA-last grammar, beat-synced sound, pilot-then-batch workflow." },
+      ]},
+    ],
   },
 ];
 
