@@ -19,7 +19,10 @@ quality bar every skill must meet before it is merged.
 ```
 
 - Categories are fixed: `fullstack-skills`, `ui-ux-skills`, `seo-skills`,
-  `video-generation`. Ask before proposing a new top-level category.
+  `video-generation`, `custom-skills`, plus the vendored collections
+  `anthropic-skills`, `marketing-skills`, `product-skills` (never edited in
+  place — improvements go to `custom-skills/`).
+  Ask before proposing a new top-level category.
 - If a skill fits an existing subcategory, put it there. If it needs a new
   subcategory, create the folder **with a `README.md`** describing its scope.
 - Skill folder names: `kebab-case`, matching the `name` field in `SKILL.md`.
