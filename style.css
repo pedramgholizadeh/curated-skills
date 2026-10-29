@@ -113,13 +113,17 @@ section h2 { font-size: 1.7rem; font-weight: 700; margin-bottom: .6rem; }
 
 .tree .items { margin-left: 1.4rem; }
 .skill-item {
-  display: flex; align-items: baseline; gap: .55rem;
-  padding: .28rem .6rem; font-size: .88rem; color: var(--muted);
+  display: flex; flex-direction: column; gap: .15rem;
+  padding: .5rem .7rem; margin: .15rem 0;
+  border-left: 2px solid var(--line); border-radius: 0 8px 8px 0;
 }
+.skill-item:hover { background: var(--bg-card); border-left-color: var(--main); }
 .skill-item code {
-  font-size: .82rem; color: var(--text); background: var(--bg-card);
-  border: 1px solid var(--line); border-radius: 6px; padding: .05rem .4rem;
+  font-size: .95rem; font-weight: 500; color: var(--main); background: none;
+  border: none; padding: 0; font-family: "Space Grotesk", monospace;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
+.skill-item span { font-size: .82rem; color: var(--dim); line-height: 1.5; }
 
 /* ---------- Grids & cards ---------- */
 .grid { display: grid; gap: 1.1rem; }

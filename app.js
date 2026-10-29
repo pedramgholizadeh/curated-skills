@@ -34,6 +34,12 @@ function statusBadge(node) {
     : `<span class="badge skeleton">SKELETON</span>`;
 }
 
+/* Descending by skill count — empty (skeleton) folders sink to the end. */
+function sorted(nodes) {
+  return [...nodes].sort((a, b) =>
+    countSkills(b) - countSkills(a) || a.name.localeCompare(b.name));
+}
+
 function renderNode(node, depth) {
   const isSkill = !!node.skills;
   const det = el("details");
@@ -50,7 +56,7 @@ function renderNode(node, depth) {
     body.append(el("div", "skill-item",
       `<em style="color:var(--dim)">Folder ready — skills land here as subfolders appear.</em>`));
   } else {
-    node.children.forEach(c => body.append(renderNode(c, depth + 1)));
+    sorted(node.children).forEach(c => body.append(renderNode(c, depth + 1)));
   }
   det.append(body);
   const box = el("div", depth <= 2 ? "stack" : "leaf");
@@ -68,7 +74,7 @@ function renderCategory(cat) {
     ${statusBadge(cat)}`;
   det.append(sum);
   const body = el("div", "items");
-  cat.children.forEach(c => body.append(renderNode(c, 1)));
+  sorted(cat.children).forEach(c => body.append(renderNode(c, 1)));
   det.append(body);
   return det;
 }
@@ -77,7 +83,7 @@ async function boot() {
   const res = await fetch("skills.json");
   const data = await res.json();
 
-  document.getElementById("tree-root").append(...data.categories.map(renderCategory));
+  document.getElementById("tree-root").append(...sorted(data.categories).map(renderCategory));
   document.querySelector("#tree .section-note").insertAdjacentHTML(
     "afterend",
     `<p class="section-note" style="margin-top:-1rem">📊 ${data.skillCount} skills across ${data.categories.length} categories · catalog regenerates automatically on every push.</p>`);
