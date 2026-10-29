@@ -10,12 +10,6 @@ folder holds **opinionated** skills: workflows that merge several skills from
 one or more categories into a single production-ready procedure — tuned to how
 real projects are actually shipped.
 
-Examples of what belongs here:
-
-- A `ship-webapp` skill combining backend testing + frontend performance + deployment
-- An `seo-content-engine` merging keyword research, brief-driven writing and internal linking
-- A `bot-to-production` merging telegram-bot architecture with CI/CD basics
-
 ## Layout
 
 ```
@@ -43,6 +37,10 @@ sources:
 
 | Skill | Merged from | Status |
 |---|---|---|
+| [fullstack-dev/](fullstack-dev/SKILL.md) | anthropic-skills (frontend-design, web-artifacts-builder, webapp-testing, mcp-builder, claude-api) | Ready |
+| [ui-ux-pro/](ui-ux-pro/SKILL.md) | ui-ux-skills/ui-ux-pro-max (master, design-system, ui-styling, design) | Ready |
+| [pm-manager/](pm-manager/SKILL.md) | product-skills (discovery, strategy, execution, GTM, analytics) | Ready |
+| [marketing-manager/](marketing-manager/SKILL.md) | marketing-skills (positioning, seo-audit, content-strategy, cro, copywriting, launch, analytics) | Ready |
 | [brand-reels/](brand-reels/SKILL.md) | video-generation (motion-graphics, cinematic-promos, editing-workflows) · ui-ux-skills (visual-design, interaction-design) | Ready |
 
 See the root [README.md](../README.md) for installation on each agent, and
