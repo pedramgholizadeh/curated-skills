@@ -43,8 +43,11 @@ quality bar every skill must meet before it is merged.
 3. Commit messages follow Conventional Commits:
    `feat(backend): add prisma-migrations skill`
 4. Update the subcategory `README.md` index table with the new skill.
-5. Add yourself to the **Contributors** table in the root `README.md`.
-6. PR description must explain what the skill does and link a real usage
+5. Update the web catalog: `site/app.js` (`SKILL_TREE`, and `CONTRIBUTORS` if
+   you're new) — see [AGENTS.md](AGENTS.md). The site must change in the same
+   commit as the skill.
+6. Add yourself to the **Contributors** table in the root `README.md`.
+7. PR description must explain what the skill does and link a real usage
    example or session where it was applied.
 
 ## Review checklist (maintainers)
