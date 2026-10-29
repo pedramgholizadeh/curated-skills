@@ -1,0 +1,2089 @@
+{
+ "generated": "2026-10-29T12:07:49+00:00",
+ "skillCount": 152,
+ "categories": [
+  {
+   "name": "anthropic-skills",
+   "icon": "🏛️",
+   "desc": "Vendored: Anthropic's official SKILL.md reference collection.",
+   "badge": "vendor",
+   "children": [
+    {
+     "name": "academy-guide",
+     "desc": ">",
+     "path": "anthropic-skills/academy-guide",
+     "skills": [
+      {
+       "name": "academy-guide",
+       "desc": ">"
+      }
+     ]
+    },
+    {
+     "name": "algorithmic-art",
+     "desc": "Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code, generative art, algorithmic art, flow fields, or particle systems. C",
+     "path": "anthropic-skills/algorithmic-art",
+     "skills": [
+      {
+       "name": "algorithmic-art",
+       "desc": "Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code, generative art, algorithmic art, flow fields, or particle systems. C"
+      }
+     ]
+    },
+    {
+     "name": "brand-guidelines",
+     "desc": "Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthropic's look-and-feel. Use it when brand colors or style guidelines, visual formatting, or company design ",
+     "path": "anthropic-skills/brand-guidelines",
+     "skills": [
+      {
+       "name": "brand-guidelines",
+       "desc": "Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthropic's look-and-feel. Use it when brand colors or style guidelines, visual formatting, or company design "
+      }
+     ]
+    },
+    {
+     "name": "canvas-design",
+     "desc": "Create beautiful visual art in .png and .pdf documents using design philosophy. You should use this skill when the user asks to create a poster, piece of art, design, or other static piece. Create original visual designs",
+     "path": "anthropic-skills/canvas-design",
+     "skills": [
+      {
+       "name": "canvas-design",
+       "desc": "Create beautiful visual art in .png and .pdf documents using design philosophy. You should use this skill when the user asks to create a poster, piece of art, design, or other static piece. Create original visual designs"
+      }
+     ]
+    },
+    {
+     "name": "claude-api",
+     "desc": "|-",
+     "path": "anthropic-skills/claude-api",
+     "skills": [
+      {
+       "name": "claude-api",
+       "desc": "|-"
+      }
+     ]
+    },
+    {
+     "name": "discernment-nudge",
+     "desc": ">",
+     "path": "anthropic-skills/discernment-nudge",
+     "skills": [
+      {
+       "name": "discernment-nudge",
+       "desc": ">"
+      }
+     ]
+    },
+    {
+     "name": "doc-coauthoring",
+     "desc": "Guide users through a structured workflow for co-authoring documentation. Use when user wants to write documentation, proposals, technical specs, decision docs, or similar structured content. This workflow helps users ef",
+     "path": "anthropic-skills/doc-coauthoring",
+     "skills": [
+      {
+       "name": "doc-coauthoring",
+       "desc": "Guide users through a structured workflow for co-authoring documentation. Use when user wants to write documentation, proposals, technical specs, decision docs, or similar structured content. This workflow helps users ef"
+      }
+     ]
+    },
+    {
+     "name": "docx",
+     "desc": "Use this skill whenever the user wants to create, read, edit, or manipulate Word documents (.docx files) or Word templates (.dotx files). Triggers include: any mention of 'Word doc', 'word document', '.docx', '.dotx', or",
+     "path": "anthropic-skills/docx",
+     "skills": [
+      {
+       "name": "docx",
+       "desc": "Use this skill whenever the user wants to create, read, edit, or manipulate Word documents (.docx files) or Word templates (.dotx files). Triggers include: any mention of 'Word doc', 'word document', '.docx', '.dotx', or"
+      }
+     ]
+    },
+    {
+     "name": "frontend-design",
+     "desc": "Guidance for distinctive, intentional visual design when building new UI or reshaping an existing one. Helps with aesthetic direction, typography, and making choices that don't read as templated defaults.",
+     "path": "anthropic-skills/frontend-design",
+     "skills": [
+      {
+       "name": "frontend-design",
+       "desc": "Guidance for distinctive, intentional visual design when building new UI or reshaping an existing one. Helps with aesthetic direction, typography, and making choices that don't read as templated defaults."
+      }
+     ]
+    },
+    {
+     "name": "internal-comms",
+     "desc": "A set of resources to help me write all kinds of internal communications, using the formats that my company likes to use. Claude should use this skill whenever asked to write some sort of internal communications (status ",
+     "path": "anthropic-skills/internal-comms",
+     "skills": [
+      {
+       "name": "internal-comms",
+       "desc": "A set of resources to help me write all kinds of internal communications, using the formats that my company likes to use. Claude should use this skill whenever asked to write some sort of internal communications (status "
+      }
+     ]
+    },
+    {
+     "name": "mcp-builder",
+     "desc": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, ",
+     "path": "anthropic-skills/mcp-builder",
+     "skills": [
+      {
+       "name": "mcp-builder",
+       "desc": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, "
+      }
+     ]
+    },
+    {
+     "name": "pdf",
+     "desc": "Use this skill whenever the user wants to do anything with PDF files. This includes reading or extracting text/tables from PDFs, combining or merging multiple PDFs into one, splitting PDFs apart, rotating pages, adding w",
+     "path": "anthropic-skills/pdf",
+     "skills": [
+      {
+       "name": "pdf",
+       "desc": "Use this skill whenever the user wants to do anything with PDF files. This includes reading or extracting text/tables from PDFs, combining or merging multiple PDFs into one, splitting PDFs apart, rotating pages, adding w"
+      }
+     ]
+    },
+    {
+     "name": "pptx",
+     "desc": "Use this skill any time a .pptx or .potx file is involved in any way — as input, output, or both. This includes: creating slide decks, pitch decks, or presentations; reading, parsing, or extracting text from any .pptx or",
+     "path": "anthropic-skills/pptx",
+     "skills": [
+      {
+       "name": "pptx",
+       "desc": "Use this skill any time a .pptx or .potx file is involved in any way — as input, output, or both. This includes: creating slide decks, pitch decks, or presentations; reading, parsing, or extracting text from any .pptx or"
+      }
+     ]
+    },
+    {
+     "name": "skill-creator",
+     "desc": "Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, edit, or optimize an existing skill, run evals to test a skill, benchmark skill pe",
+     "path": "anthropic-skills/skill-creator",
+     "skills": [
+      {
+       "name": "skill-creator",
+       "desc": "Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, edit, or optimize an existing skill, run evals to test a skill, benchmark skill pe"
+      }
+     ]
+    },
+    {
+     "name": "slack-gif-creator",
+     "desc": "Knowledge and utilities for creating animated GIFs optimized for Slack. Provides constraints, validation tools, and animation concepts. Use when users request animated GIFs for Slack like \"make me a GIF of X doing Y for ",
+     "path": "anthropic-skills/slack-gif-creator",
+     "skills": [
+      {
+       "name": "slack-gif-creator",
+       "desc": "Knowledge and utilities for creating animated GIFs optimized for Slack. Provides constraints, validation tools, and animation concepts. Use when users request animated GIFs for Slack like \"make me a GIF of X doing Y for "
+      }
+     ]
+    },
+    {
+     "name": "theme-factory",
+     "desc": "Toolkit for styling artifacts with a theme. These artifacts can be slides, docs, reportings, HTML landing pages, etc. There are 10 pre-set themes with colors/fonts that you can apply to any artifact that has been creatin",
+     "path": "anthropic-skills/theme-factory",
+     "skills": [
+      {
+       "name": "theme-factory",
+       "desc": "Toolkit for styling artifacts with a theme. These artifacts can be slides, docs, reportings, HTML landing pages, etc. There are 10 pre-set themes with colors/fonts that you can apply to any artifact that has been creatin"
+      }
+     ]
+    },
+    {
+     "name": "web-artifacts-builder",
+     "desc": "Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui). Use for complex artifacts requiring state management, routing, or s",
+     "path": "anthropic-skills/web-artifacts-builder",
+     "skills": [
+      {
+       "name": "web-artifacts-builder",
+       "desc": "Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui). Use for complex artifacts requiring state management, routing, or s"
+      }
+     ]
+    },
+    {
+     "name": "webapp-testing",
+     "desc": "Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior, capturing browser screenshots, and viewing browser logs.",
+     "path": "anthropic-skills/webapp-testing",
+     "skills": [
+      {
+       "name": "webapp-testing",
+       "desc": "Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior, capturing browser screenshots, and viewing browser logs."
+      }
+     ]
+    },
+    {
+     "name": "xlsx",
+     "desc": "Use this skill any time a spreadsheet file is the primary input or output. This means any task where the user wants to: open, read, edit, or fix an existing .xlsx, .xlsm, .xltx, .csv, or .tsv file (e.g., adding columns, ",
+     "path": "anthropic-skills/xlsx",
+     "skills": [
+      {
+       "name": "xlsx",
+       "desc": "Use this skill any time a spreadsheet file is the primary input or output. This means any task where the user wants to: open, read, edit, or fix an existing .xlsx, .xlsm, .xltx, .csv, or .tsv file (e.g., adding columns, "
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "custom-skills",
+   "icon": "⭐",
+   "desc": "Consolidated, opinionated skills merged from the categories above.",
+   "badge": "custom",
+   "children": [
+    {
+     "name": "brand-reels",
+     "desc": "Produce a batch of on-brand short vertical marketing reels (9:16, ≤60s) for a business's own services or products, rendered deterministically in code (HTML canvas → headless Chrome → ffmpeg) with a hook-first / CTA-last ",
+     "path": "custom-skills/brand-reels",
+     "skills": [
+      {
+       "name": "brand-reels",
+       "desc": "Produce a batch of on-brand short vertical marketing reels (9:16, ≤60s) for a business's own services or products, rendered deterministically in code (HTML canvas → headless Chrome → ffmpeg) with a hook-first / CTA-last "
+      }
+     ]
+    },
+    {
+     "name": "fullstack-dev",
+     "desc": "End-to-end workflow for building and shipping production web applications with AI agents — distinctive UI planning, artifact scaffolding, reconnaissance-first Playwright testing, MCP tool integration and API-drift-safe C",
+     "path": "custom-skills/fullstack-dev",
+     "skills": [
+      {
+       "name": "fullstack-dev",
+       "desc": "End-to-end workflow for building and shipping production web applications with AI agents — distinctive UI planning, artifact scaffolding, reconnaissance-first Playwright testing, MCP tool integration and API-drift-safe C"
+      }
+     ]
+    },
+    {
+     "name": "marketing-manager",
+     "desc": "Marketing-lead operating workflow for products and sites — positioning context, SEO and content, CRO and copy, launches, and measurement with evidence-graded findings. Use for marketing plans, audits, landing pages, laun",
+     "path": "custom-skills/marketing-manager",
+     "skills": [
+      {
+       "name": "marketing-manager",
+       "desc": "Marketing-lead operating workflow for products and sites — positioning context, SEO and content, CRO and copy, launches, and measurement with evidence-graded findings. Use for marketing plans, audits, landing pages, laun"
+      }
+     ]
+    },
+    {
+     "name": "pm-manager",
+     "desc": "One operating workflow for product management — discovery through strategy, PRD, prioritization, outcome roadmaps, launch readiness and measurement. Use when defining what to build and why: writing PRDs or roadmaps, prio",
+     "path": "custom-skills/pm-manager",
+     "skills": [
+      {
+       "name": "pm-manager",
+       "desc": "One operating workflow for product management — discovery through strategy, PRD, prioritization, outcome roadmaps, launch readiness and measurement. Use when defining what to build and why: writing PRDs or roadmaps, prio"
+      }
+     ]
+    },
+    {
+     "name": "ui-ux-pro",
+     "desc": "Lean design-intelligence workflow for building UIs that don't look AI-generated — query-contract driven design system generation, accessibility floors, anti-slop rules, dials for variance/motion/density, and a pre-delive",
+     "path": "custom-skills/ui-ux-pro",
+     "skills": [
+      {
+       "name": "ui-ux-pro",
+       "desc": "Lean design-intelligence workflow for building UIs that don't look AI-generated — query-contract driven design system generation, accessibility floors, anti-slop rules, dials for variance/motion/density, and a pre-delive"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "fullstack-skills",
+   "icon": "🧩",
+   "desc": "Backend, frontend, mobile, Telegram bots and AI agents.",
+   "badge": null,
+   "children": [
+    {
+     "name": "ai-agents",
+     "desc": "Building systems on top of LLMs: model integration, retrieval, tools,",
+     "children": [
+      {
+       "name": "agent-orchestration",
+       "desc": "Skills for designing autonomous and semi-autonomous agent workflows.",
+       "children": []
+      },
+      {
+       "name": "evaluation",
+       "desc": "Skills for measuring and protecting the quality of AI features.",
+       "children": []
+      },
+      {
+       "name": "llm-integration",
+       "desc": "Skills for wiring language models into applications reliably.",
+       "children": []
+      },
+      {
+       "name": "mcp-servers",
+       "desc": "Model Context Protocol: building tools and servers that agents can call.",
+       "children": []
+      },
+      {
+       "name": "rag",
+       "desc": "Retrieval-augmented generation: getting the right context into the model.",
+       "children": []
+      }
+     ]
+    },
+    {
+     "name": "backend",
+     "desc": "Server-side engineering: runtimes, data layers, API contracts, security,",
+     "children": [
+      {
+       "name": "api-design",
+       "desc": "Skills for designing and documenting service contracts: REST, GraphQL, gRPC,",
+       "children": []
+      },
+      {
+       "name": "auth-security",
+       "desc": "Skills for authentication, authorization, and hardening backend systems.",
+       "children": []
+      },
+      {
+       "name": "databases",
+       "desc": "Skills for data layers: relational databases, document stores, ORMs,",
+       "children": []
+      },
+      {
+       "name": "deployment-devops",
+       "desc": "Skills for shipping and operating backend services: CI/CD, containers,",
+       "children": []
+      },
+      {
+       "name": "golang",
+       "desc": "Skills for Go services: stdlib HTTP, concurrency, and microservice patterns.",
+       "children": []
+      },
+      {
+       "name": "nodejs",
+       "desc": "Skills for Node.js server development: Express, Fastify, NestJS, Bun, and the",
+       "children": []
+      },
+      {
+       "name": "python",
+       "desc": "Skills for Python services: FastAPI, Django, Flask, async programming, and",
+       "children": []
+      },
+      {
+       "name": "testing",
+       "desc": "Skills for verifying server-side code: unit, integration, contract, and load",
+       "children": []
+      }
+     ]
+    },
+    {
+     "name": "frontend",
+     "desc": "Client-side web engineering: frameworks, language tooling, styling, speed, and",
+     "children": [
+      {
+       "name": "css-styling",
+       "desc": "Skills for scalable styling: Tailwind, modern CSS, and design token systems.",
+       "children": []
+      },
+      {
+       "name": "react-nextjs",
+       "desc": "Skills for building React and Next.js applications at production quality.",
+       "children": []
+      },
+      {
+       "name": "testing",
+       "desc": "Skills for testing user interfaces with confidence.",
+       "children": []
+      },
+      {
+       "name": "typescript",
+       "desc": "Skills for strict, maintainable TypeScript across frontend and backend.",
+       "children": []
+      },
+      {
+       "name": "vue-nuxt",
+       "desc": "Skills for Vue 3 and Nuxt applications.",
+       "children": []
+      },
+      {
+       "name": "web-performance",
+       "desc": "Skills for making web apps measurably fast.",
+       "children": []
+      }
+     ]
+    },
+    {
+     "name": "mobile",
+     "desc": "Cross-platform and native mobile development: architecture, platform APIs,",
+     "children": [
+      {
+       "name": "android-kotlin",
+       "desc": "Skills for native Android development.",
+       "children": []
+      },
+      {
+       "name": "flutter",
+       "desc": "Skills for Flutter and Dart applications.",
+       "children": []
+      },
+      {
+       "name": "ios-swift",
+       "desc": "Skills for native iOS development.",
+       "children": []
+      },
+      {
+       "name": "react-native",
+       "desc": "Skills for React Native and Expo apps.",
+       "children": []
+      }
+     ]
+    },
+    {
+     "name": "telegram-bots",
+     "desc": "Skills for building Telegram bots: frameworks, conversation design, and",
+     "children": [
+      {
+       "name": "bot-architecture",
+       "desc": "Framework-agnostic skills for designing and operating serious Telegram bots.",
+       "children": []
+      },
+      {
+       "name": "nodejs-bots",
+       "desc": "Skills for Telegram bots written in TypeScript / JavaScript.",
+       "children": []
+      },
+      {
+       "name": "python-bots",
+       "desc": "Skills for Telegram bots written in Python.",
+       "children": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "marketing-skills",
+   "icon": "📣",
+   "desc": "Vendored: coreyhaines31/marketingskills — 52 marketing skills.",
+   "badge": "vendor",
+   "children": [
+    {
+     "name": "ab-testing",
+     "desc": "When the user wants to plan, design, or implement an A/B test or experiment, or build a growth experimentation program. Also use when the user mentions \"A/B test,\" \"split test,\" \"experiment,\" \"test this change,\" \"variant",
+     "path": "marketing-skills/ab-testing",
+     "skills": [
+      {
+       "name": "ab-testing",
+       "desc": "When the user wants to plan, design, or implement an A/B test or experiment, or build a growth experimentation program. Also use when the user mentions \"A/B test,\" \"split test,\" \"experiment,\" \"test this change,\" \"variant"
+      }
+     ]
+    },
+    {
+     "name": "ad-creative",
+     "desc": "When the user wants to generate, iterate, or scale ad creative — headlines, descriptions, primary text, or full ad variations — for any paid advertising platform. Also use when the user mentions 'ad copy variations,' 'ad",
+     "path": "marketing-skills/ad-creative",
+     "skills": [
+      {
+       "name": "ad-creative",
+       "desc": "When the user wants to generate, iterate, or scale ad creative — headlines, descriptions, primary text, or full ad variations — for any paid advertising platform. Also use when the user mentions 'ad copy variations,' 'ad"
+      }
+     ]
+    },
+    {
+     "name": "ads",
+     "desc": "When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Instagram), LinkedIn, Twitter/X, or other ad platforms. Also use when the user mentions 'PPC,' 'paid media,' 'ROAS,' 'CPA,' 'ad campa",
+     "path": "marketing-skills/ads",
+     "skills": [
+      {
+       "name": "ads",
+       "desc": "When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Instagram), LinkedIn, Twitter/X, or other ad platforms. Also use when the user mentions 'PPC,' 'paid media,' 'ROAS,' 'CPA,' 'ad campa"
+      }
+     ]
+    },
+    {
+     "name": "ai-seo",
+     "desc": "When the user wants to optimize content for AI search engines, get cited by LLMs, or appear in AI-generated answers. Also use when the user mentions 'AI SEO,' 'AEO,' 'GEO,' 'LLMO,' 'answer engine optimization,' 'generati",
+     "path": "marketing-skills/ai-seo",
+     "skills": [
+      {
+       "name": "ai-seo",
+       "desc": "When the user wants to optimize content for AI search engines, get cited by LLMs, or appear in AI-generated answers. Also use when the user mentions 'AI SEO,' 'AEO,' 'GEO,' 'LLMO,' 'answer engine optimization,' 'generati"
+      }
+     ]
+    },
+    {
+     "name": "analytics",
+     "desc": "When the user wants to set up, improve, or audit analytics tracking and measurement. Also use when the user mentions \"set up tracking,\" \"GA4,\" \"Google Analytics,\" \"event tracking,\" \"UTM parameters,\" \"tag manager,\" \"GTM,\"",
+     "path": "marketing-skills/analytics",
+     "skills": [
+      {
+       "name": "analytics",
+       "desc": "When the user wants to set up, improve, or audit analytics tracking and measurement. Also use when the user mentions \"set up tracking,\" \"GA4,\" \"Google Analytics,\" \"event tracking,\" \"UTM parameters,\" \"tag manager,\" \"GTM,\""
+      }
+     ]
+    },
+    {
+     "name": "aso",
+     "desc": "When the user wants to audit or optimize an App Store or Google Play listing. Also use when the user mentions 'ASO audit,' 'app store optimization,' 'optimize my app listing,' 'improve app visibility,' 'app store ranking",
+     "path": "marketing-skills/aso",
+     "skills": [
+      {
+       "name": "aso",
+       "desc": "When the user wants to audit or optimize an App Store or Google Play listing. Also use when the user mentions 'ASO audit,' 'app store optimization,' 'optimize my app listing,' 'improve app visibility,' 'app store ranking"
+      }
+     ]
+    },
+    {
+     "name": "attribution",
+     "desc": "When the user wants to figure out which marketing actually drives conversions and revenue, choose or interpret an attribution model, or reconcile conflicting numbers across tools. Also use when the user mentions \"attribu",
+     "path": "marketing-skills/attribution",
+     "skills": [
+      {
+       "name": "attribution",
+       "desc": "When the user wants to figure out which marketing actually drives conversions and revenue, choose or interpret an attribution model, or reconcile conflicting numbers across tools. Also use when the user mentions \"attribu"
+      }
+     ]
+    },
+    {
+     "name": "churn-prevention",
+     "desc": "When the user wants to reduce churn, build cancellation flows, set up save offers, recover failed payments, or implement retention strategies. Also use when the user mentions 'churn,' 'cancel flow,' 'offboarding,' 'save ",
+     "path": "marketing-skills/churn-prevention",
+     "skills": [
+      {
+       "name": "churn-prevention",
+       "desc": "When the user wants to reduce churn, build cancellation flows, set up save offers, recover failed payments, or implement retention strategies. Also use when the user mentions 'churn,' 'cancel flow,' 'offboarding,' 'save "
+      }
+     ]
+    },
+    {
+     "name": "co-marketing",
+     "desc": "When the user wants to find co-marketing partners, plan joint campaigns, or brainstorm partnership opportunities. Use when the user says 'co-marketing,' 'partner marketing,' 'joint campaign,' 'who should we partner with,",
+     "path": "marketing-skills/co-marketing",
+     "skills": [
+      {
+       "name": "co-marketing",
+       "desc": "When the user wants to find co-marketing partners, plan joint campaigns, or brainstorm partnership opportunities. Use when the user says 'co-marketing,' 'partner marketing,' 'joint campaign,' 'who should we partner with,"
+      }
+     ]
+    },
+    {
+     "name": "cold-email",
+     "desc": "Write and run B2B cold outbound that gets replies, from cold emails and follow-ups to sending setup, LinkedIn, multichannel cadences, and reply handling. Use when the user mentions \"cold email,\" \"cold outreach,\" \"outboun",
+     "path": "marketing-skills/cold-email",
+     "skills": [
+      {
+       "name": "cold-email",
+       "desc": "Write and run B2B cold outbound that gets replies, from cold emails and follow-ups to sending setup, LinkedIn, multichannel cadences, and reply handling. Use when the user mentions \"cold email,\" \"cold outreach,\" \"outboun"
+      }
+     ]
+    },
+    {
+     "name": "community-marketing",
+     "desc": "Build and leverage online communities to drive product growth and brand loyalty. Use when the user wants to create a community strategy, grow a Discord or Slack community, manage a forum or subreddit, build brand advocat",
+     "path": "marketing-skills/community-marketing",
+     "skills": [
+      {
+       "name": "community-marketing",
+       "desc": "Build and leverage online communities to drive product growth and brand loyalty. Use when the user wants to create a community strategy, grow a Discord or Slack community, manage a forum or subreddit, build brand advocat"
+      }
+     ]
+    },
+    {
+     "name": "competitor-profiling",
+     "desc": "When the user wants to research, profile, or analyze competitors from their URLs. Also use when the user mentions 'competitor profile,' 'competitor research,' 'competitor analysis,' 'profile this competitor,' 'analyze co",
+     "path": "marketing-skills/competitor-profiling",
+     "skills": [
+      {
+       "name": "competitor-profiling",
+       "desc": "When the user wants to research, profile, or analyze competitors from their URLs. Also use when the user mentions 'competitor profile,' 'competitor research,' 'competitor analysis,' 'profile this competitor,' 'analyze co"
+      }
+     ]
+    },
+    {
+     "name": "competitors",
+     "desc": "When the user wants to create competitor comparison or alternative pages for SEO and buyer-facing use. Also use when the user mentions 'alternative page,' 'vs page,' 'competitor comparison,' 'comparison page,' '[Product]",
+     "path": "marketing-skills/competitors",
+     "skills": [
+      {
+       "name": "competitors",
+       "desc": "When the user wants to create competitor comparison or alternative pages for SEO and buyer-facing use. Also use when the user mentions 'alternative page,' 'vs page,' 'competitor comparison,' 'comparison page,' '[Product]"
+      }
+     ]
+    },
+    {
+     "name": "content-strategy",
+     "desc": "When the user wants to plan a content strategy, decide what content to create, or figure out what topics to cover. Also use when the user mentions \"content strategy,\" \"what should I write about,\" \"content ideas,\" \"blog s",
+     "path": "marketing-skills/content-strategy",
+     "skills": [
+      {
+       "name": "content-strategy",
+       "desc": "When the user wants to plan a content strategy, decide what content to create, or figure out what topics to cover. Also use when the user mentions \"content strategy,\" \"what should I write about,\" \"content ideas,\" \"blog s"
+      }
+     ]
+    },
+    {
+     "name": "conversion-tracking",
+     "desc": "Set up, audit, verify, or fix website conversion tracking. Use when the conversion is a form submission, booked meeting, chat, phone call, signup, or purchase; when conversions must reach Google Ads, Meta, GA4, LinkedIn,",
+     "path": "marketing-skills/conversion-tracking",
+     "skills": [
+      {
+       "name": "conversion-tracking",
+       "desc": "Set up, audit, verify, or fix website conversion tracking. Use when the conversion is a form submission, booked meeting, chat, phone call, signup, or purchase; when conversions must reach Google Ads, Meta, GA4, LinkedIn,"
+      }
+     ]
+    },
+    {
+     "name": "copy-editing",
+     "desc": "When the user wants to edit, review, or improve existing marketing copy, or refresh outdated content. Also use when the user mentions 'edit this copy,' 'review my copy,' 'copy feedback,' 'proofread,' 'polish this,' 'make",
+     "path": "marketing-skills/copy-editing",
+     "skills": [
+      {
+       "name": "copy-editing",
+       "desc": "When the user wants to edit, review, or improve existing marketing copy, or refresh outdated content. Also use when the user mentions 'edit this copy,' 'review my copy,' 'copy feedback,' 'proofread,' 'polish this,' 'make"
+      }
+     ]
+    },
+    {
+     "name": "copywriting",
+     "desc": "When the user wants to write, rewrite, or improve marketing copy for any page, including homepage, landing pages, pricing pages, feature pages, about pages, or product pages. Also use when the user says \"write copy for,\"",
+     "path": "marketing-skills/copywriting",
+     "skills": [
+      {
+       "name": "copywriting",
+       "desc": "When the user wants to write, rewrite, or improve marketing copy for any page, including homepage, landing pages, pricing pages, feature pages, about pages, or product pages. Also use when the user says \"write copy for,\""
+      }
+     ]
+    },
+    {
+     "name": "cro",
+     "desc": "When the user wants to optimize, improve, or increase conversions on any marketing page or form — including homepage, landing pages, pricing pages, feature pages, lead capture forms, or contact forms. Also use when the u",
+     "path": "marketing-skills/cro",
+     "skills": [
+      {
+       "name": "cro",
+       "desc": "When the user wants to optimize, improve, or increase conversions on any marketing page or form — including homepage, landing pages, pricing pages, feature pages, lead capture forms, or contact forms. Also use when the u"
+      }
+     ]
+    },
+    {
+     "name": "customer-research",
+     "desc": "When the user wants to conduct, analyze, or synthesize customer research. Use when the user mentions \"customer research,\" \"ICP research,\" \"talk to customers,\" \"analyze transcripts,\" \"customer interviews,\" \"survey analysi",
+     "path": "marketing-skills/customer-research",
+     "skills": [
+      {
+       "name": "customer-research",
+       "desc": "When the user wants to conduct, analyze, or synthesize customer research. Use when the user mentions \"customer research,\" \"ICP research,\" \"talk to customers,\" \"analyze transcripts,\" \"customer interviews,\" \"survey analysi"
+      }
+     ]
+    },
+    {
+     "name": "directory-submissions",
+     "desc": "When the user wants to submit their product to startup, SaaS, AI, agent, MCP, no-code, or review directories for backlinks, domain rating, and discovery. Also use when the user mentions \"directory submissions,\" \"submit t",
+     "path": "marketing-skills/directory-submissions",
+     "skills": [
+      {
+       "name": "directory-submissions",
+       "desc": "When the user wants to submit their product to startup, SaaS, AI, agent, MCP, no-code, or review directories for backlinks, domain rating, and discovery. Also use when the user mentions \"directory submissions,\" \"submit t"
+      }
+     ]
+    },
+    {
+     "name": "emails",
+     "desc": "When the user wants to create or optimize an email sequence, drip campaign, automated email flow, or lifecycle email program. Also use when the user mentions \"email sequence,\" \"drip campaign,\" \"nurture sequence,\" \"onboar",
+     "path": "marketing-skills/emails",
+     "skills": [
+      {
+       "name": "emails",
+       "desc": "When the user wants to create or optimize an email sequence, drip campaign, automated email flow, or lifecycle email program. Also use when the user mentions \"email sequence,\" \"drip campaign,\" \"nurture sequence,\" \"onboar"
+      }
+     ]
+    },
+    {
+     "name": "events",
+     "desc": "When the user wants to plan, run, sponsor, speak at, or get pipeline from events — webinars, conferences, trade shows, meetups, dinners, workshops, virtual summits, or user conferences. Also use when the user mentions 'e",
+     "path": "marketing-skills/events",
+     "skills": [
+      {
+       "name": "events",
+       "desc": "When the user wants to plan, run, sponsor, speak at, or get pipeline from events — webinars, conferences, trade shows, meetups, dinners, workshops, virtual summits, or user conferences. Also use when the user mentions 'e"
+      }
+     ]
+    },
+    {
+     "name": "free-tools",
+     "desc": "When the user wants to plan, evaluate, or build a free tool for marketing purposes — lead generation, SEO value, or brand awareness. Also use when the user mentions \"engineering as marketing,\" \"free tool,\" \"marketing too",
+     "path": "marketing-skills/free-tools",
+     "skills": [
+      {
+       "name": "free-tools",
+       "desc": "When the user wants to plan, evaluate, or build a free tool for marketing purposes — lead generation, SEO value, or brand awareness. Also use when the user mentions \"engineering as marketing,\" \"free tool,\" \"marketing too"
+      }
+     ]
+    },
+    {
+     "name": "image",
+     "desc": "When the user wants to create, generate, edit, or optimize images for marketing — blog heroes, social graphics, product mockups, profile banners, listing visuals, or brand assets. Also use when the user mentions 'AI imag",
+     "path": "marketing-skills/image",
+     "skills": [
+      {
+       "name": "image",
+       "desc": "When the user wants to create, generate, edit, or optimize images for marketing — blog heroes, social graphics, product mockups, profile banners, listing visuals, or brand assets. Also use when the user mentions 'AI imag"
+      }
+     ]
+    },
+    {
+     "name": "influencer-marketing",
+     "desc": "When the user wants to run influencer, creator, or ambassador partnerships to promote their product — finding and vetting partners, structuring deals, briefing creators, disclosure compliance, and measuring ROI. Also use",
+     "path": "marketing-skills/influencer-marketing",
+     "skills": [
+      {
+       "name": "influencer-marketing",
+       "desc": "When the user wants to run influencer, creator, or ambassador partnerships to promote their product — finding and vetting partners, structuring deals, briefing creators, disclosure compliance, and measuring ROI. Also use"
+      }
+     ]
+    },
+    {
+     "name": "launch",
+     "desc": "When the user wants to plan a product launch, feature announcement, or release strategy. Also use when the user mentions 'launch,' 'Product Hunt,' 'feature release,' 'announcement,' 'go-to-market,' 'beta launch,' 'early ",
+     "path": "marketing-skills/launch",
+     "skills": [
+      {
+       "name": "launch",
+       "desc": "When the user wants to plan a product launch, feature announcement, or release strategy. Also use when the user mentions 'launch,' 'Product Hunt,' 'feature release,' 'announcement,' 'go-to-market,' 'beta launch,' 'early "
+      }
+     ]
+    },
+    {
+     "name": "lead-magnets",
+     "desc": "When the user wants to create, plan, or optimize a lead magnet for email capture or lead generation. Also use when the user mentions \"lead magnet,\" \"gated content,\" \"content upgrade,\" \"downloadable,\" \"ebook,\" \"cheat shee",
+     "path": "marketing-skills/lead-magnets",
+     "skills": [
+      {
+       "name": "lead-magnets",
+       "desc": "When the user wants to create, plan, or optimize a lead magnet for email capture or lead generation. Also use when the user mentions \"lead magnet,\" \"gated content,\" \"content upgrade,\" \"downloadable,\" \"ebook,\" \"cheat shee"
+      }
+     ]
+    },
+    {
+     "name": "link-building",
+     "desc": "When the user wants to earn backlinks or third-party mentions that lift rankings and AI citations. Also use when the user mentions 'link building,' 'linkbuilding,' 'backlinks,' 'get more backlinks,' 'link prospecting,' '",
+     "path": "marketing-skills/link-building",
+     "skills": [
+      {
+       "name": "link-building",
+       "desc": "When the user wants to earn backlinks or third-party mentions that lift rankings and AI citations. Also use when the user mentions 'link building,' 'linkbuilding,' 'backlinks,' 'get more backlinks,' 'link prospecting,' '"
+      }
+     ]
+    },
+    {
+     "name": "marketing-council",
+     "desc": "When the user wants multiple expert perspectives on a marketing question — a simulated board of advisors staffed by legendary marketers (Seth Godin, David Ogilvy, Eugene Schwartz, April Dunford, Rory Sutherland, Alex Hor",
+     "path": "marketing-skills/marketing-council",
+     "skills": [
+      {
+       "name": "marketing-council",
+       "desc": "When the user wants multiple expert perspectives on a marketing question — a simulated board of advisors staffed by legendary marketers (Seth Godin, David Ogilvy, Eugene Schwartz, April Dunford, Rory Sutherland, Alex Hor"
+      }
+     ]
+    },
+    {
+     "name": "marketing-ideas",
+     "desc": "When the user needs marketing ideas, inspiration, or strategies for their SaaS or software product. Also use when the user asks for 'marketing ideas,' 'growth ideas,' 'how to market,' 'marketing strategies,' 'marketing t",
+     "path": "marketing-skills/marketing-ideas",
+     "skills": [
+      {
+       "name": "marketing-ideas",
+       "desc": "When the user needs marketing ideas, inspiration, or strategies for their SaaS or software product. Also use when the user asks for 'marketing ideas,' 'growth ideas,' 'how to market,' 'marketing strategies,' 'marketing t"
+      }
+     ]
+    },
+    {
+     "name": "marketing-loops",
+     "desc": "When the user wants to set up a recurring, self-running marketing workflow — a repeatable loop an AI agent runs on a cadence (weekly, daily, on a trigger) rather than a one-off task. Also use when the user mentions 'mark",
+     "path": "marketing-skills/marketing-loops",
+     "skills": [
+      {
+       "name": "marketing-loops",
+       "desc": "When the user wants to set up a recurring, self-running marketing workflow — a repeatable loop an AI agent runs on a cadence (weekly, daily, on a trigger) rather than a one-off task. Also use when the user mentions 'mark"
+      }
+     ]
+    },
+    {
+     "name": "marketing-plan",
+     "desc": "When the user needs a comprehensive marketing plan for a client, a company they advise, or their own product. Also use when the user mentions \"marketing plan,\" \"growth plan,\" \"GTM plan,\" \"go-to-market plan,\" \"AARRR plan,",
+     "path": "marketing-skills/marketing-plan",
+     "skills": [
+      {
+       "name": "marketing-plan",
+       "desc": "When the user needs a comprehensive marketing plan for a client, a company they advise, or their own product. Also use when the user mentions \"marketing plan,\" \"growth plan,\" \"GTM plan,\" \"go-to-market plan,\" \"AARRR plan,"
+      }
+     ]
+    },
+    {
+     "name": "marketing-psychology",
+     "desc": "When the user wants to apply psychological principles, mental models, or behavioral science to marketing. Also use when the user mentions 'psychology,' 'mental models,' 'cognitive bias,' 'persuasion,' 'behavioral science",
+     "path": "marketing-skills/marketing-psychology",
+     "skills": [
+      {
+       "name": "marketing-psychology",
+       "desc": "When the user wants to apply psychological principles, mental models, or behavioral science to marketing. Also use when the user mentions 'psychology,' 'mental models,' 'cognitive bias,' 'persuasion,' 'behavioral science"
+      }
+     ]
+    },
+    {
+     "name": "offers",
+     "desc": "When the user wants to design, construct, or improve an offer — the thing they actually sell — including value framing, bonus stacking, guarantee design, scarcity/urgency, naming, and payment structure. Also use when the",
+     "path": "marketing-skills/offers",
+     "skills": [
+      {
+       "name": "offers",
+       "desc": "When the user wants to design, construct, or improve an offer — the thing they actually sell — including value framing, bonus stacking, guarantee design, scarcity/urgency, naming, and payment structure. Also use when the"
+      }
+     ]
+    },
+    {
+     "name": "onboarding",
+     "desc": "When the user wants to optimize post-signup onboarding, user activation, first-run experience, or time-to-value. Also use when the user mentions \"onboarding flow,\" \"activation rate,\" \"user activation,\" \"first-run experie",
+     "path": "marketing-skills/onboarding",
+     "skills": [
+      {
+       "name": "onboarding",
+       "desc": "When the user wants to optimize post-signup onboarding, user activation, first-run experience, or time-to-value. Also use when the user mentions \"onboarding flow,\" \"activation rate,\" \"user activation,\" \"first-run experie"
+      }
+     ]
+    },
+    {
+     "name": "paywalls",
+     "desc": "When the user wants to create or optimize in-app paywalls, upgrade screens, upsell modals, or feature gates. Also use when the user mentions \"paywall,\" \"upgrade screen,\" \"upgrade modal,\" \"upsell,\" \"feature gate,\" \"conver",
+     "path": "marketing-skills/paywalls",
+     "skills": [
+      {
+       "name": "paywalls",
+       "desc": "When the user wants to create or optimize in-app paywalls, upgrade screens, upsell modals, or feature gates. Also use when the user mentions \"paywall,\" \"upgrade screen,\" \"upgrade modal,\" \"upsell,\" \"feature gate,\" \"conver"
+      }
+     ]
+    },
+    {
+     "name": "popups",
+     "desc": "When the user wants to create or optimize popups, modals, overlays, slide-ins, or banners for conversion purposes. Also use when the user mentions \"exit intent,\" \"popup conversions,\" \"modal optimization,\" \"lead capture p",
+     "path": "marketing-skills/popups",
+     "skills": [
+      {
+       "name": "popups",
+       "desc": "When the user wants to create or optimize popups, modals, overlays, slide-ins, or banners for conversion purposes. Also use when the user mentions \"exit intent,\" \"popup conversions,\" \"modal optimization,\" \"lead capture p"
+      }
+     ]
+    },
+    {
+     "name": "pricing",
+     "desc": "When the user wants help with pricing decisions, packaging, or monetization strategy. Also use when the user mentions 'pricing,' 'pricing tiers,' 'freemium,' 'free trial,' 'packaging,' 'price increase,' 'value metric,' '",
+     "path": "marketing-skills/pricing",
+     "skills": [
+      {
+       "name": "pricing",
+       "desc": "When the user wants help with pricing decisions, packaging, or monetization strategy. Also use when the user mentions 'pricing,' 'pricing tiers,' 'freemium,' 'free trial,' 'packaging,' 'price increase,' 'value metric,' '"
+      }
+     ]
+    },
+    {
+     "name": "product-marketing",
+     "desc": "When the user wants to create or update their product marketing context document. Also use when the user mentions 'product context,' 'marketing context,' 'set up context,' 'positioning,' 'who is my target audience,' 'des",
+     "path": "marketing-skills/product-marketing",
+     "skills": [
+      {
+       "name": "product-marketing",
+       "desc": "When the user wants to create or update their product marketing context document. Also use when the user mentions 'product context,' 'marketing context,' 'set up context,' 'positioning,' 'who is my target audience,' 'des"
+      }
+     ]
+    },
+    {
+     "name": "programmatic-seo",
+     "desc": "When the user wants to create SEO-driven pages at scale using templates and data. Also use when the user mentions \"programmatic SEO,\" \"template pages,\" \"pages at scale,\" \"directory pages,\" \"location pages,\" \"[keyword] + ",
+     "path": "marketing-skills/programmatic-seo",
+     "skills": [
+      {
+       "name": "programmatic-seo",
+       "desc": "When the user wants to create SEO-driven pages at scale using templates and data. Also use when the user mentions \"programmatic SEO,\" \"template pages,\" \"pages at scale,\" \"directory pages,\" \"location pages,\" \"[keyword] + "
+      }
+     ]
+    },
+    {
+     "name": "prospecting",
+     "desc": "When the user wants to find, qualify, and build a list of prospects to reach out to, across B2B SaaS, general B2B, or local small businesses. Also use when the user mentions \"prospecting,\" \"build a prospect list,\" \"find ",
+     "path": "marketing-skills/prospecting",
+     "skills": [
+      {
+       "name": "prospecting",
+       "desc": "When the user wants to find, qualify, and build a list of prospects to reach out to, across B2B SaaS, general B2B, or local small businesses. Also use when the user mentions \"prospecting,\" \"build a prospect list,\" \"find "
+      }
+     ]
+    },
+    {
+     "name": "public-relations",
+     "desc": "When the user wants help with public relations, earned media, press coverage, journalist outreach, or media strategy (not pull requests). Also use when the user mentions 'PR,' 'press,' 'press release,' 'media outreach,' ",
+     "path": "marketing-skills/public-relations",
+     "skills": [
+      {
+       "name": "public-relations",
+       "desc": "When the user wants help with public relations, earned media, press coverage, journalist outreach, or media strategy (not pull requests). Also use when the user mentions 'PR,' 'press,' 'press release,' 'media outreach,' "
+      }
+     ]
+    },
+    {
+     "name": "referrals",
+     "desc": "When the user wants to create, optimize, or analyze a referral program, affiliate program, or word-of-mouth strategy. Also use when the user mentions 'referral,' 'affiliate,' 'ambassador,' 'word of mouth,' 'viral loop,' ",
+     "path": "marketing-skills/referrals",
+     "skills": [
+      {
+       "name": "referrals",
+       "desc": "When the user wants to create, optimize, or analyze a referral program, affiliate program, or word-of-mouth strategy. Also use when the user mentions 'referral,' 'affiliate,' 'ambassador,' 'word of mouth,' 'viral loop,' "
+      }
+     ]
+    },
+    {
+     "name": "revops",
+     "desc": "When the user wants help with revenue operations, lead lifecycle management, or marketing-to-sales handoff processes. Also use when the user mentions 'RevOps,' 'revenue operations,' 'lead scoring,' 'outbound pipeline sta",
+     "path": "marketing-skills/revops",
+     "skills": [
+      {
+       "name": "revops",
+       "desc": "When the user wants help with revenue operations, lead lifecycle management, or marketing-to-sales handoff processes. Also use when the user mentions 'RevOps,' 'revenue operations,' 'lead scoring,' 'outbound pipeline sta"
+      }
+     ]
+    },
+    {
+     "name": "sales-enablement",
+     "desc": "When the user wants to create sales collateral, pitch decks, one-pagers, objection handling docs, or demo scripts. Also use when the user mentions 'sales deck,' 'pitch deck,' 'one-pager,' 'leave-behind,' 'objection handl",
+     "path": "marketing-skills/sales-enablement",
+     "skills": [
+      {
+       "name": "sales-enablement",
+       "desc": "When the user wants to create sales collateral, pitch decks, one-pagers, objection handling docs, or demo scripts. Also use when the user mentions 'sales deck,' 'pitch deck,' 'one-pager,' 'leave-behind,' 'objection handl"
+      }
+     ]
+    },
+    {
+     "name": "schema",
+     "desc": "When the user wants to add, fix, or optimize schema markup and structured data on their site. Also use when the user mentions \"schema markup,\" \"structured data,\" \"JSON-LD,\" \"rich snippets,\" \"schema.org,\" \"FAQ schema,\" \"p",
+     "path": "marketing-skills/schema",
+     "skills": [
+      {
+       "name": "schema",
+       "desc": "When the user wants to add, fix, or optimize schema markup and structured data on their site. Also use when the user mentions \"schema markup,\" \"structured data,\" \"JSON-LD,\" \"rich snippets,\" \"schema.org,\" \"FAQ schema,\" \"p"
+      }
+     ]
+    },
+    {
+     "name": "seo-audit",
+     "desc": "When the user wants to audit, review, or diagnose SEO issues on their site. Also use when the user mentions \"SEO audit,\" \"technical SEO,\" \"why am I not ranking,\" \"SEO issues,\" \"on-page SEO,\" \"meta tags review,\" \"SEO heal",
+     "path": "marketing-skills/seo-audit",
+     "skills": [
+      {
+       "name": "seo-audit",
+       "desc": "When the user wants to audit, review, or diagnose SEO issues on their site. Also use when the user mentions \"SEO audit,\" \"technical SEO,\" \"why am I not ranking,\" \"SEO issues,\" \"on-page SEO,\" \"meta tags review,\" \"SEO heal"
+      }
+     ]
+    },
+    {
+     "name": "signup",
+     "desc": "When the user wants to optimize signup, registration, account creation, or trial activation flows. Also use when the user mentions \"signup conversions,\" \"registration friction,\" \"signup form optimization,\" \"free trial si",
+     "path": "marketing-skills/signup",
+     "skills": [
+      {
+       "name": "signup",
+       "desc": "When the user wants to optimize signup, registration, account creation, or trial activation flows. Also use when the user mentions \"signup conversions,\" \"registration friction,\" \"signup form optimization,\" \"free trial si"
+      }
+     ]
+    },
+    {
+     "name": "site-architecture",
+     "desc": "When the user wants to plan, map, or restructure their website's page hierarchy, navigation, URL structure, or internal linking. Also use when the user mentions \"sitemap,\" \"site map,\" \"visual sitemap,\" \"site structure,\" ",
+     "path": "marketing-skills/site-architecture",
+     "skills": [
+      {
+       "name": "site-architecture",
+       "desc": "When the user wants to plan, map, or restructure their website's page hierarchy, navigation, URL structure, or internal linking. Also use when the user mentions \"sitemap,\" \"site map,\" \"visual sitemap,\" \"site structure,\" "
+      }
+     ]
+    },
+    {
+     "name": "sms",
+     "desc": "When the user wants to plan, build, or optimize SMS, MMS, or WhatsApp marketing — including welcome flows, abandoned cart texts, post-purchase, win-back, promotional sends, or transactional/auth SMS. Also use when the us",
+     "path": "marketing-skills/sms",
+     "skills": [
+      {
+       "name": "sms",
+       "desc": "When the user wants to plan, build, or optimize SMS, MMS, or WhatsApp marketing — including welcome flows, abandoned cart texts, post-purchase, win-back, promotional sends, or transactional/auth SMS. Also use when the us"
+      }
+     ]
+    },
+    {
+     "name": "social",
+     "desc": "When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram, TikTok, or Facebook, or wants to do social listening and engagement triage. Also use when the user men",
+     "path": "marketing-skills/social",
+     "skills": [
+      {
+       "name": "social",
+       "desc": "When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram, TikTok, or Facebook, or wants to do social listening and engagement triage. Also use when the user men"
+      }
+     ]
+    },
+    {
+     "name": "video",
+     "desc": "When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI video,' 'Remotion,' 'Hyperframes,' 'HeyGen,' 'Synthesia",
+     "path": "marketing-skills/video",
+     "skills": [
+      {
+       "name": "video",
+       "desc": "When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI video,' 'Remotion,' 'Hyperframes,' 'HeyGen,' 'Synthesia"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "product-skills",
+   "icon": "📦",
+   "desc": "Vendored: phuryn/pm-skills — product management by discipline.",
+   "badge": "vendor",
+   "children": [
+    {
+     "name": "ai-shipping",
+     "desc": "",
+     "children": [
+      {
+       "name": "code-review",
+       "desc": "Moved to phuryn/product-engineering, where it is maintained in the ai-shipping plugin; this copy says where it went and how to install it. Use when asked to review changes, find bugs, audit a codebase, or check whether a",
+       "path": "product-skills/ai-shipping/code-review",
+       "skills": [
+        {
+         "name": "code-review",
+         "desc": "Moved to phuryn/product-engineering, where it is maintained in the ai-shipping plugin; this copy says where it went and how to install it. Use when asked to review changes, find bugs, audit a codebase, or check whether a"
+        }
+       ]
+      },
+      {
+       "name": "intended-vs-implemented",
+       "desc": "Moved to phuryn/product-engineering, where it is maintained in the ai-shipping plugin; this copy says where it went and how to install it. Use when asked to find where the code does something other than its docs say.",
+       "path": "product-skills/ai-shipping/intended-vs-implemented",
+       "skills": [
+        {
+         "name": "intended-vs-implemented",
+         "desc": "Moved to phuryn/product-engineering, where it is maintained in the ai-shipping plugin; this copy says where it went and how to install it. Use when asked to find where the code does something other than its docs say."
+        }
+       ]
+      },
+      {
+       "name": "shipping-artifacts",
+       "desc": "Moved to phuryn/product-engineering, where it is maintained in the ai-shipping plugin; this copy says where it went and how to install it. Use when asked to document an AI-built app so it can be reviewed before it ships.",
+       "path": "product-skills/ai-shipping/shipping-artifacts",
+       "skills": [
+        {
+         "name": "shipping-artifacts",
+         "desc": "Moved to phuryn/product-engineering, where it is maintained in the ai-shipping plugin; this copy says where it went and how to install it. Use when asked to document an AI-built app so it can be reviewed before it ships."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "data-analytics",
+     "desc": "",
+     "children": [
+      {
+       "name": "ab-test-analysis",
+       "desc": "Analyze A/B test results with statistical significance, sample size validation, confidence intervals, and ship/extend/stop recommendations. Use when evaluating experiment results, checking if a test reached significance,",
+       "path": "product-skills/data-analytics/ab-test-analysis",
+       "skills": [
+        {
+         "name": "ab-test-analysis",
+         "desc": "Analyze A/B test results with statistical significance, sample size validation, confidence intervals, and ship/extend/stop recommendations. Use when evaluating experiment results, checking if a test reached significance,"
+        }
+       ]
+      },
+      {
+       "name": "cohort-analysis",
+       "desc": "Perform cohort analysis on user engagement data — retention curves, feature adoption trends, and segment-level insights. Use when analyzing user retention by cohort, studying feature adoption over time, investigating chu",
+       "path": "product-skills/data-analytics/cohort-analysis",
+       "skills": [
+        {
+         "name": "cohort-analysis",
+         "desc": "Perform cohort analysis on user engagement data — retention curves, feature adoption trends, and segment-level insights. Use when analyzing user retention by cohort, studying feature adoption over time, investigating chu"
+        }
+       ]
+      },
+      {
+       "name": "sql-queries",
+       "desc": "Generate SQL queries from natural language descriptions. Supports BigQuery, PostgreSQL, MySQL, and other dialects. Reads database schemas from uploaded diagrams or documentation. Use when writing SQL, building data repor",
+       "path": "product-skills/data-analytics/sql-queries",
+       "skills": [
+        {
+         "name": "sql-queries",
+         "desc": "Generate SQL queries from natural language descriptions. Supports BigQuery, PostgreSQL, MySQL, and other dialects. Reads database schemas from uploaded diagrams or documentation. Use when writing SQL, building data repor"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "execution",
+     "desc": "",
+     "children": [
+      {
+       "name": "brainstorm-okrs",
+       "desc": "Brainstorm team-level OKRs aligned with company objectives — qualitative objectives with measurable key results. Use when setting quarterly OKRs, aligning team goals with company strategy, drafting objectives, or learnin",
+       "path": "product-skills/execution/brainstorm-okrs",
+       "skills": [
+        {
+         "name": "brainstorm-okrs",
+         "desc": "Brainstorm team-level OKRs aligned with company objectives — qualitative objectives with measurable key results. Use when setting quarterly OKRs, aligning team goals with company strategy, drafting objectives, or learnin"
+        }
+       ]
+      },
+      {
+       "name": "create-prd",
+       "desc": "Create a lean, decision-ready Product Requirements Document with an 8-section template: summary, contacts, background, objective, market segments, value propositions (6-part JTBD template), solution, and release. Lean by",
+       "path": "product-skills/execution/create-prd",
+       "skills": [
+        {
+         "name": "create-prd",
+         "desc": "Create a lean, decision-ready Product Requirements Document with an 8-section template: summary, contacts, background, objective, market segments, value propositions (6-part JTBD template), solution, and release. Lean by"
+        }
+       ]
+      },
+      {
+       "name": "dummy-dataset",
+       "desc": "Generate realistic dummy datasets for testing with customizable columns, constraints, and output formats (CSV, JSON, SQL, Python script). Use when creating test data, building mock datasets, or generating sample data for",
+       "path": "product-skills/execution/dummy-dataset",
+       "skills": [
+        {
+         "name": "dummy-dataset",
+         "desc": "Generate realistic dummy datasets for testing with customizable columns, constraints, and output formats (CSV, JSON, SQL, Python script). Use when creating test data, building mock datasets, or generating sample data for"
+        }
+       ]
+      },
+      {
+       "name": "job-stories",
+       "desc": "Create job stories using the 'When [situation], I want to [motivation], so I can [outcome]' format with detailed acceptance criteria. Use when writing job stories, creating JTBD-style backlog items, or expressing user si",
+       "path": "product-skills/execution/job-stories",
+       "skills": [
+        {
+         "name": "job-stories",
+         "desc": "Create job stories using the 'When [situation], I want to [motivation], so I can [outcome]' format with detailed acceptance criteria. Use when writing job stories, creating JTBD-style backlog items, or expressing user si"
+        }
+       ]
+      },
+      {
+       "name": "outcome-roadmap",
+       "desc": "Transform an output-focused roadmap into an outcome-focused one that communicates strategic intent. Rewrites initiatives as outcome statements reflecting user and business impacts. Use when shifting to outcome roadmaps, ",
+       "path": "product-skills/execution/outcome-roadmap",
+       "skills": [
+        {
+         "name": "outcome-roadmap",
+         "desc": "Transform an output-focused roadmap into an outcome-focused one that communicates strategic intent. Rewrites initiatives as outcome statements reflecting user and business impacts. Use when shifting to outcome roadmaps, "
+        }
+       ]
+      },
+      {
+       "name": "pre-mortem",
+       "desc": "Run a pre-mortem risk analysis on a PRD or launch plan. Categorizes risks as Tigers (real problems), Paper Tigers (overblown concerns), and Elephants (unspoken worries), then classifies as launch-blocking, fast-follow, o",
+       "path": "product-skills/execution/pre-mortem",
+       "skills": [
+        {
+         "name": "pre-mortem",
+         "desc": "Run a pre-mortem risk analysis on a PRD or launch plan. Categorizes risks as Tigers (real problems), Paper Tigers (overblown concerns), and Elephants (unspoken worries), then classifies as launch-blocking, fast-follow, o"
+        }
+       ]
+      },
+      {
+       "name": "prioritization-frameworks",
+       "desc": "Reference guide to 9 prioritization frameworks with formulas, when-to-use guidance, and templates — RICE, ICE, Kano, MoSCoW, Opportunity Score, and more. Use when selecting a prioritization method, comparing frameworks l",
+       "path": "product-skills/execution/prioritization-frameworks",
+       "skills": [
+        {
+         "name": "prioritization-frameworks",
+         "desc": "Reference guide to 9 prioritization frameworks with formulas, when-to-use guidance, and templates — RICE, ICE, Kano, MoSCoW, Opportunity Score, and more. Use when selecting a prioritization method, comparing frameworks l"
+        }
+       ]
+      },
+      {
+       "name": "release-notes",
+       "desc": "Generate user-facing release notes from tickets, PRDs, or changelogs. Creates clear, engaging summaries organized by category (new features, improvements, fixes). Use when writing release notes, creating changelogs, anno",
+       "path": "product-skills/execution/release-notes",
+       "skills": [
+        {
+         "name": "release-notes",
+         "desc": "Generate user-facing release notes from tickets, PRDs, or changelogs. Creates clear, engaging summaries organized by category (new features, improvements, fixes). Use when writing release notes, creating changelogs, anno"
+        }
+       ]
+      },
+      {
+       "name": "retro",
+       "desc": "Facilitate a structured sprint retrospective — what went well, what didn't, and prioritized action items with owners and deadlines. Use when running a retrospective, reflecting on a sprint, creating action items from tea",
+       "path": "product-skills/execution/retro",
+       "skills": [
+        {
+         "name": "retro",
+         "desc": "Facilitate a structured sprint retrospective — what went well, what didn't, and prioritized action items with owners and deadlines. Use when running a retrospective, reflecting on a sprint, creating action items from tea"
+        }
+       ]
+      },
+      {
+       "name": "sprint-plan",
+       "desc": "Plan a sprint with capacity estimation, story selection, dependency mapping, and risk identification. Use when preparing for sprint planning, estimating team capacity, selecting stories, or balancing sprint scope against",
+       "path": "product-skills/execution/sprint-plan",
+       "skills": [
+        {
+         "name": "sprint-plan",
+         "desc": "Plan a sprint with capacity estimation, story selection, dependency mapping, and risk identification. Use when preparing for sprint planning, estimating team capacity, selecting stories, or balancing sprint scope against"
+        }
+       ]
+      },
+      {
+       "name": "stakeholder-map",
+       "desc": "Build a stakeholder map using a power/interest grid, identify communication strategies per quadrant, and generate a communication plan. Use when managing stakeholders, preparing for a launch, aligning cross-functional te",
+       "path": "product-skills/execution/stakeholder-map",
+       "skills": [
+        {
+         "name": "stakeholder-map",
+         "desc": "Build a stakeholder map using a power/interest grid, identify communication strategies per quadrant, and generate a communication plan. Use when managing stakeholders, preparing for a launch, aligning cross-functional te"
+        }
+       ]
+      },
+      {
+       "name": "strategy-red-team",
+       "desc": "Red-team a PRD, roadmap, or strategy by attacking its load-bearing assumptions before reality does. Steelmans then attacks each claim, ranks failure modes by impact × likelihood × cheapness-to-test, and returns the cheap",
+       "path": "product-skills/execution/strategy-red-team",
+       "skills": [
+        {
+         "name": "strategy-red-team",
+         "desc": "Red-team a PRD, roadmap, or strategy by attacking its load-bearing assumptions before reality does. Steelmans then attacks each claim, ranks failure modes by impact × likelihood × cheapness-to-test, and returns the cheap"
+        }
+       ]
+      },
+      {
+       "name": "summarize-meeting",
+       "desc": "Summarize a meeting transcript into structured notes with date, participants, topic, key decisions, summary points, and action items. Use when processing meeting recordings, creating meeting notes, writing meeting minute",
+       "path": "product-skills/execution/summarize-meeting",
+       "skills": [
+        {
+         "name": "summarize-meeting",
+         "desc": "Summarize a meeting transcript into structured notes with date, participants, topic, key decisions, summary points, and action items. Use when processing meeting recordings, creating meeting notes, writing meeting minute"
+        }
+       ]
+      },
+      {
+       "name": "test-scenarios",
+       "desc": "Create comprehensive test scenarios from user stories with test objectives, starting conditions, user roles, step-by-step actions, and expected outcomes. Use when writing QA test cases, creating test plans, defining acce",
+       "path": "product-skills/execution/test-scenarios",
+       "skills": [
+        {
+         "name": "test-scenarios",
+         "desc": "Create comprehensive test scenarios from user stories with test objectives, starting conditions, user roles, step-by-step actions, and expected outcomes. Use when writing QA test cases, creating test plans, defining acce"
+        }
+       ]
+      },
+      {
+       "name": "user-stories",
+       "desc": "Create user stories following the 3 C's (Card, Conversation, Confirmation) and INVEST criteria with descriptions, design links, and acceptance criteria. Use when writing user stories, breaking down features into backlog ",
+       "path": "product-skills/execution/user-stories",
+       "skills": [
+        {
+         "name": "user-stories",
+         "desc": "Create user stories following the 3 C's (Card, Conversation, Confirmation) and INVEST criteria with descriptions, design links, and acceptance criteria. Use when writing user stories, breaking down features into backlog "
+        }
+       ]
+      },
+      {
+       "name": "wwas",
+       "desc": "Create product backlog items in Why-What-Acceptance format — independent, valuable, testable items with strategic context. Use when writing structured backlog items, breaking features into work items, or using the WWA fo",
+       "path": "product-skills/execution/wwas",
+       "skills": [
+        {
+         "name": "wwas",
+         "desc": "Create product backlog items in Why-What-Acceptance format — independent, valuable, testable items with strategic context. Use when writing structured backlog items, breaking features into work items, or using the WWA fo"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "go-to-market",
+     "desc": "",
+     "children": [
+      {
+       "name": "beachhead-segment",
+       "desc": "Identify the first beachhead market segment for a product launch. Evaluates segments against burning pain, willingness to pay, winnable market share, and referral potential. Use when choosing a first market, targeting an",
+       "path": "product-skills/go-to-market/beachhead-segment",
+       "skills": [
+        {
+         "name": "beachhead-segment",
+         "desc": "Identify the first beachhead market segment for a product launch. Evaluates segments against burning pain, willingness to pay, winnable market share, and referral potential. Use when choosing a first market, targeting an"
+        }
+       ]
+      },
+      {
+       "name": "competitive-battlecard",
+       "desc": "Create sales-ready competitive battlecards comparing your product against a specific competitor — positioning, feature comparison, objection handling, and win/loss patterns. Use when preparing sales teams, creating compe",
+       "path": "product-skills/go-to-market/competitive-battlecard",
+       "skills": [
+        {
+         "name": "competitive-battlecard",
+         "desc": "Create sales-ready competitive battlecards comparing your product against a specific competitor — positioning, feature comparison, objection handling, and win/loss patterns. Use when preparing sales teams, creating compe"
+        }
+       ]
+      },
+      {
+       "name": "growth-loops",
+       "desc": "Identify growth loops (flywheels) for sustainable traction. Evaluates 5 loop types: Viral, Usage, Collaboration, User-Generated, and Referral. Use when designing growth mechanisms, building product-led traction, or under",
+       "path": "product-skills/go-to-market/growth-loops",
+       "skills": [
+        {
+         "name": "growth-loops",
+         "desc": "Identify growth loops (flywheels) for sustainable traction. Evaluates 5 loop types: Viral, Usage, Collaboration, User-Generated, and Referral. Use when designing growth mechanisms, building product-led traction, or under"
+        }
+       ]
+      },
+      {
+       "name": "gtm-motions",
+       "desc": "Identify the best GTM motions and tools across 7 motion types: Inbound, Outbound, Paid Digital, Community, Partners, ABM, and PLG. Use when selecting marketing channels, choosing between inbound and outbound strategy, or",
+       "path": "product-skills/go-to-market/gtm-motions",
+       "skills": [
+        {
+         "name": "gtm-motions",
+         "desc": "Identify the best GTM motions and tools across 7 motion types: Inbound, Outbound, Paid Digital, Community, Partners, ABM, and PLG. Use when selecting marketing channels, choosing between inbound and outbound strategy, or"
+        }
+       ]
+      },
+      {
+       "name": "gtm-strategy",
+       "desc": "Create a go-to-market strategy covering marketing channels, messaging, success metrics, and launch timeline. Use when planning a product launch, creating a GTM plan from scratch, or defining a launch strategy for a new m",
+       "path": "product-skills/go-to-market/gtm-strategy",
+       "skills": [
+        {
+         "name": "gtm-strategy",
+         "desc": "Create a go-to-market strategy covering marketing channels, messaging, success metrics, and launch timeline. Use when planning a product launch, creating a GTM plan from scratch, or defining a launch strategy for a new m"
+        }
+       ]
+      },
+      {
+       "name": "ideal-customer-profile",
+       "desc": "Identify the Ideal Customer Profile (ICP) from research data with demographics, behaviors, JTBD, and needs. Use when defining your ICP, analyzing PMF survey data, or understanding who your best customers are.",
+       "path": "product-skills/go-to-market/ideal-customer-profile",
+       "skills": [
+        {
+         "name": "ideal-customer-profile",
+         "desc": "Identify the Ideal Customer Profile (ICP) from research data with demographics, behaviors, JTBD, and needs. Use when defining your ICP, analyzing PMF survey data, or understanding who your best customers are."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "market-research",
+     "desc": "",
+     "children": [
+      {
+       "name": "competitor-analysis",
+       "desc": "Analyze competitors with strengths, weaknesses, and differentiation opportunities. Identifies direct competitors and maps the competitive landscape. Use when doing competitive research, preparing a competitive brief, or ",
+       "path": "product-skills/market-research/competitor-analysis",
+       "skills": [
+        {
+         "name": "competitor-analysis",
+         "desc": "Analyze competitors with strengths, weaknesses, and differentiation opportunities. Identifies direct competitors and maps the competitive landscape. Use when doing competitive research, preparing a competitive brief, or "
+        }
+       ]
+      },
+      {
+       "name": "customer-journey-map",
+       "desc": "Create an end-to-end customer journey map with stages, touchpoints, emotions, pain points, and opportunities. Use when mapping the customer experience, identifying friction points, improving onboarding, or visualizing th",
+       "path": "product-skills/market-research/customer-journey-map",
+       "skills": [
+        {
+         "name": "customer-journey-map",
+         "desc": "Create an end-to-end customer journey map with stages, touchpoints, emotions, pain points, and opportunities. Use when mapping the customer experience, identifying friction points, improving onboarding, or visualizing th"
+        }
+       ]
+      },
+      {
+       "name": "market-segments",
+       "desc": "Identify 3-5 potential customer segments with demographics, JTBD, and product fit analysis. Use when exploring market segments, identifying target audiences, evaluating new markets, or learning how to segment a market.",
+       "path": "product-skills/market-research/market-segments",
+       "skills": [
+        {
+         "name": "market-segments",
+         "desc": "Identify 3-5 potential customer segments with demographics, JTBD, and product fit analysis. Use when exploring market segments, identifying target audiences, evaluating new markets, or learning how to segment a market."
+        }
+       ]
+      },
+      {
+       "name": "market-sizing",
+       "desc": "Estimate market size using TAM, SAM, and SOM with top-down and bottom-up approaches. Use when sizing a market opportunity, estimating addressable market, preparing for investor pitches, or evaluating market entry.",
+       "path": "product-skills/market-research/market-sizing",
+       "skills": [
+        {
+         "name": "market-sizing",
+         "desc": "Estimate market size using TAM, SAM, and SOM with top-down and bottom-up approaches. Use when sizing a market opportunity, estimating addressable market, preparing for investor pitches, or evaluating market entry."
+        }
+       ]
+      },
+      {
+       "name": "sentiment-analysis",
+       "desc": "Analyze user feedback data to identify segments with sentiment scores, JTBD, and product satisfaction insights. Use when analyzing user feedback at scale, running sentiment analysis on reviews or surveys, or identifying ",
+       "path": "product-skills/market-research/sentiment-analysis",
+       "skills": [
+        {
+         "name": "sentiment-analysis",
+         "desc": "Analyze user feedback data to identify segments with sentiment scores, JTBD, and product satisfaction insights. Use when analyzing user feedback at scale, running sentiment analysis on reviews or surveys, or identifying "
+        }
+       ]
+      },
+      {
+       "name": "user-personas",
+       "desc": "Create refined user personas from research data — 3 personas with JTBD, pains, gains, and unexpected insights. Use when building personas from survey data, creating user profiles from research, or segmenting users for pr",
+       "path": "product-skills/market-research/user-personas",
+       "skills": [
+        {
+         "name": "user-personas",
+         "desc": "Create refined user personas from research data — 3 personas with JTBD, pains, gains, and unexpected insights. Use when building personas from survey data, creating user profiles from research, or segmenting users for pr"
+        }
+       ]
+      },
+      {
+       "name": "user-segmentation",
+       "desc": "Segment users from feedback data based on behavior, JTBD, and needs. Identifies at least 3 distinct user segments. Use when segmenting a user base, analyzing diverse user feedback, or building a segmentation model.",
+       "path": "product-skills/market-research/user-segmentation",
+       "skills": [
+        {
+         "name": "user-segmentation",
+         "desc": "Segment users from feedback data based on behavior, JTBD, and needs. Identifies at least 3 distinct user segments. Use when segmenting a user base, analyzing diverse user feedback, or building a segmentation model."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "marketing-growth",
+     "desc": "",
+     "children": [
+      {
+       "name": "marketing-ideas",
+       "desc": "Generate 5 creative, cost-effective marketing ideas with channels, messaging, and engagement rationale. Use when brainstorming marketing campaigns, planning product promotion, or looking for creative marketing tactics.",
+       "path": "product-skills/marketing-growth/marketing-ideas",
+       "skills": [
+        {
+         "name": "marketing-ideas",
+         "desc": "Generate 5 creative, cost-effective marketing ideas with channels, messaging, and engagement rationale. Use when brainstorming marketing campaigns, planning product promotion, or looking for creative marketing tactics."
+        }
+       ]
+      },
+      {
+       "name": "north-star-metric",
+       "desc": "Define a North Star Metric and 3-5 supporting input metrics that form a metrics constellation. Classify the business game (Attention, Transaction, Productivity) and validate against 7 criteria for an effective North Star",
+       "path": "product-skills/marketing-growth/north-star-metric",
+       "skills": [
+        {
+         "name": "north-star-metric",
+         "desc": "Define a North Star Metric and 3-5 supporting input metrics that form a metrics constellation. Classify the business game (Attention, Transaction, Productivity) and validate against 7 criteria for an effective North Star"
+        }
+       ]
+      },
+      {
+       "name": "positioning-ideas",
+       "desc": "Brainstorm product positioning ideas differentiated from competitors. Identifies top competitors and generates positioning statements with rationale. Use when developing product positioning, differentiating from competit",
+       "path": "product-skills/marketing-growth/positioning-ideas",
+       "skills": [
+        {
+         "name": "positioning-ideas",
+         "desc": "Brainstorm product positioning ideas differentiated from competitors. Identifies top competitors and generates positioning statements with rationale. Use when developing product positioning, differentiating from competit"
+        }
+       ]
+      },
+      {
+       "name": "product-name",
+       "desc": "Brainstorm 5 unique, memorable product names with rationale aligned to brand values and target audience. Use when naming a new product, rebranding, or exploring product name ideas.",
+       "path": "product-skills/marketing-growth/product-name",
+       "skills": [
+        {
+         "name": "product-name",
+         "desc": "Brainstorm 5 unique, memorable product names with rationale aligned to brand values and target audience. Use when naming a new product, rebranding, or exploring product name ideas."
+        }
+       ]
+      },
+      {
+       "name": "value-prop-statements",
+       "desc": "Generate value proposition statements for marketing, sales, and onboarding from existing value propositions. Use when writing marketing copy, creating sales messaging, or crafting onboarding messages.",
+       "path": "product-skills/marketing-growth/value-prop-statements",
+       "skills": [
+        {
+         "name": "value-prop-statements",
+         "desc": "Generate value proposition statements for marketing, sales, and onboarding from existing value propositions. Use when writing marketing copy, creating sales messaging, or crafting onboarding messages."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "product-discovery",
+     "desc": "",
+     "children": [
+      {
+       "name": "analyze-feature-requests",
+       "desc": "Analyze and prioritize a list of feature requests by theme, strategic alignment, impact, effort, and risk. Use when reviewing customer feature requests, triaging a backlog, or making prioritization decisions.",
+       "path": "product-skills/product-discovery/analyze-feature-requests",
+       "skills": [
+        {
+         "name": "analyze-feature-requests",
+         "desc": "Analyze and prioritize a list of feature requests by theme, strategic alignment, impact, effort, and risk. Use when reviewing customer feature requests, triaging a backlog, or making prioritization decisions."
+        }
+       ]
+      },
+      {
+       "name": "brainstorm-experiments-existing",
+       "desc": "Design experiments to test assumptions for an existing product — prototypes, A/B tests, spikes, and other low-effort validation methods. Use when validating assumptions, testing feature ideas cheaply, or planning product",
+       "path": "product-skills/product-discovery/brainstorm-experiments-existing",
+       "skills": [
+        {
+         "name": "brainstorm-experiments-existing",
+         "desc": "Design experiments to test assumptions for an existing product — prototypes, A/B tests, spikes, and other low-effort validation methods. Use when validating assumptions, testing feature ideas cheaply, or planning product"
+        }
+       ]
+      },
+      {
+       "name": "brainstorm-experiments-new",
+       "desc": "Design lean startup experiments (pretotypes) for a new product. Creates XYZ hypotheses and suggests low-effort validation methods like landing pages, explainer videos, and pre-orders. Use when validating a new product id",
+       "path": "product-skills/product-discovery/brainstorm-experiments-new",
+       "skills": [
+        {
+         "name": "brainstorm-experiments-new",
+         "desc": "Design lean startup experiments (pretotypes) for a new product. Creates XYZ hypotheses and suggests low-effort validation methods like landing pages, explainer videos, and pre-orders. Use when validating a new product id"
+        }
+       ]
+      },
+      {
+       "name": "brainstorm-ideas-existing",
+       "desc": "Brainstorm product ideas for an existing product using multi-perspective ideation from PM, Designer, and Engineer viewpoints. Use when generating new feature ideas, brainstorming solutions for an identified opportunity, ",
+       "path": "product-skills/product-discovery/brainstorm-ideas-existing",
+       "skills": [
+        {
+         "name": "brainstorm-ideas-existing",
+         "desc": "Brainstorm product ideas for an existing product using multi-perspective ideation from PM, Designer, and Engineer viewpoints. Use when generating new feature ideas, brainstorming solutions for an identified opportunity, "
+        }
+       ]
+      },
+      {
+       "name": "brainstorm-ideas-new",
+       "desc": "Brainstorm feature ideas for a new product in initial discovery from PM, Designer, and Engineer perspectives. Use when starting product discovery for a new product, exploring features for a startup idea, or doing initial",
+       "path": "product-skills/product-discovery/brainstorm-ideas-new",
+       "skills": [
+        {
+         "name": "brainstorm-ideas-new",
+         "desc": "Brainstorm feature ideas for a new product in initial discovery from PM, Designer, and Engineer perspectives. Use when starting product discovery for a new product, exploring features for a startup idea, or doing initial"
+        }
+       ]
+      },
+      {
+       "name": "identify-assumptions-existing",
+       "desc": "Identify risky assumptions for a feature idea in an existing product across Value, Usability, Viability, and Feasibility. Uses multi-perspective devil's advocate thinking. Use when stress-testing a feature idea, doing ri",
+       "path": "product-skills/product-discovery/identify-assumptions-existing",
+       "skills": [
+        {
+         "name": "identify-assumptions-existing",
+         "desc": "Identify risky assumptions for a feature idea in an existing product across Value, Usability, Viability, and Feasibility. Uses multi-perspective devil's advocate thinking. Use when stress-testing a feature idea, doing ri"
+        }
+       ]
+      },
+      {
+       "name": "identify-assumptions-new",
+       "desc": "Identify risky assumptions for a new product idea across 8 risk categories including Go-to-Market, Strategy, and Team. Use when evaluating startup risks, assessing a new product concept, or mapping assumptions for a new ",
+       "path": "product-skills/product-discovery/identify-assumptions-new",
+       "skills": [
+        {
+         "name": "identify-assumptions-new",
+         "desc": "Identify risky assumptions for a new product idea across 8 risk categories including Go-to-Market, Strategy, and Team. Use when evaluating startup risks, assessing a new product concept, or mapping assumptions for a new "
+        }
+       ]
+      },
+      {
+       "name": "interview-script",
+       "desc": "Create a structured customer interview script with JTBD probing questions, warm-up, core exploration, and wrap-up sections. Follows The Mom Test principles — no leading questions, no pitching, focus on past behavior. Use",
+       "path": "product-skills/product-discovery/interview-script",
+       "skills": [
+        {
+         "name": "interview-script",
+         "desc": "Create a structured customer interview script with JTBD probing questions, warm-up, core exploration, and wrap-up sections. Follows The Mom Test principles — no leading questions, no pitching, focus on past behavior. Use"
+        }
+       ]
+      },
+      {
+       "name": "metrics-dashboard",
+       "desc": "Define and design a product metrics dashboard with key metrics, data sources, visualization types, and alert thresholds. Use when creating a metrics dashboard, defining KPIs, setting up product analytics, or building a d",
+       "path": "product-skills/product-discovery/metrics-dashboard",
+       "skills": [
+        {
+         "name": "metrics-dashboard",
+         "desc": "Define and design a product metrics dashboard with key metrics, data sources, visualization types, and alert thresholds. Use when creating a metrics dashboard, defining KPIs, setting up product analytics, or building a d"
+        }
+       ]
+      },
+      {
+       "name": "opportunity-solution-tree",
+       "desc": "Build an Opportunity Solution Tree (OST) to structure product discovery — map a desired outcome to opportunities, solutions, and experiments. Based on Teresa Torres' Continuous Discovery Habits. Use when structuring disc",
+       "path": "product-skills/product-discovery/opportunity-solution-tree",
+       "skills": [
+        {
+         "name": "opportunity-solution-tree",
+         "desc": "Build an Opportunity Solution Tree (OST) to structure product discovery — map a desired outcome to opportunities, solutions, and experiments. Based on Teresa Torres' Continuous Discovery Habits. Use when structuring disc"
+        }
+       ]
+      },
+      {
+       "name": "prioritize-assumptions",
+       "desc": "Prioritize assumptions using an Impact × Risk matrix and suggest experiments for each. Use when triaging a list of assumptions, deciding what to test first, or applying the assumption prioritization canvas.",
+       "path": "product-skills/product-discovery/prioritize-assumptions",
+       "skills": [
+        {
+         "name": "prioritize-assumptions",
+         "desc": "Prioritize assumptions using an Impact × Risk matrix and suggest experiments for each. Use when triaging a list of assumptions, deciding what to test first, or applying the assumption prioritization canvas."
+        }
+       ]
+      },
+      {
+       "name": "prioritize-features",
+       "desc": "Prioritize a backlog of feature ideas based on impact, effort, risk, and strategic alignment with top 5 recommendations. Use when prioritizing a feature backlog, making scope decisions, or ranking product ideas.",
+       "path": "product-skills/product-discovery/prioritize-features",
+       "skills": [
+        {
+         "name": "prioritize-features",
+         "desc": "Prioritize a backlog of feature ideas based on impact, effort, risk, and strategic alignment with top 5 recommendations. Use when prioritizing a feature backlog, making scope decisions, or ranking product ideas."
+        }
+       ]
+      },
+      {
+       "name": "summarize-interview",
+       "desc": "Summarize a customer interview transcript into a structured template with JTBD, satisfaction signals, and action items. Use when processing interview recordings or transcripts, synthesizing discovery interviews, or creat",
+       "path": "product-skills/product-discovery/summarize-interview",
+       "skills": [
+        {
+         "name": "summarize-interview",
+         "desc": "Summarize a customer interview transcript into a structured template with JTBD, satisfaction signals, and action items. Use when processing interview recordings or transcripts, synthesizing discovery interviews, or creat"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "product-strategy",
+     "desc": "",
+     "children": [
+      {
+       "name": "ansoff-matrix",
+       "desc": "Generate an Ansoff Matrix analysis mapping growth strategies across market penetration, market development, product development, and diversification. Use when considering growth options, planning market expansion, or eva",
+       "path": "product-skills/product-strategy/ansoff-matrix",
+       "skills": [
+        {
+         "name": "ansoff-matrix",
+         "desc": "Generate an Ansoff Matrix analysis mapping growth strategies across market penetration, market development, product development, and diversification. Use when considering growth options, planning market expansion, or eva"
+        }
+       ]
+      },
+      {
+       "name": "business-model",
+       "desc": "Generate a Business Model Canvas with all 9 building blocks. Use when creating a business model, documenting how a business creates value, or analyzing an existing business model.",
+       "path": "product-skills/product-strategy/business-model",
+       "skills": [
+        {
+         "name": "business-model",
+         "desc": "Generate a Business Model Canvas with all 9 building blocks. Use when creating a business model, documenting how a business creates value, or analyzing an existing business model."
+        }
+       ]
+      },
+      {
+       "name": "lean-canvas",
+       "desc": "Generate a Lean Canvas with problem, solution, metrics, cost structure, UVP, unfair advantage, channels, segments, and revenue. Use when exploring a lean startup canvas, testing a business hypothesis, or modeling a new v",
+       "path": "product-skills/product-strategy/lean-canvas",
+       "skills": [
+        {
+         "name": "lean-canvas",
+         "desc": "Generate a Lean Canvas with problem, solution, metrics, cost structure, UVP, unfair advantage, channels, segments, and revenue. Use when exploring a lean startup canvas, testing a business hypothesis, or modeling a new v"
+        }
+       ]
+      },
+      {
+       "name": "monetization-strategy",
+       "desc": "Brainstorm 3-5 monetization strategies with audience fit, risks, and validation experiments. Use when exploring revenue models, evaluating pricing strategies, or deciding how to monetize a product.",
+       "path": "product-skills/product-strategy/monetization-strategy",
+       "skills": [
+        {
+         "name": "monetization-strategy",
+         "desc": "Brainstorm 3-5 monetization strategies with audience fit, risks, and validation experiments. Use when exploring revenue models, evaluating pricing strategies, or deciding how to monetize a product."
+        }
+       ]
+      },
+      {
+       "name": "pestle-analysis",
+       "desc": "Perform a PESTLE analysis covering Political, Economic, Social, Technological, Legal, and Environmental factors. Use when assessing the macro environment, doing strategic planning, or evaluating external factors affectin",
+       "path": "product-skills/product-strategy/pestle-analysis",
+       "skills": [
+        {
+         "name": "pestle-analysis",
+         "desc": "Perform a PESTLE analysis covering Political, Economic, Social, Technological, Legal, and Environmental factors. Use when assessing the macro environment, doing strategic planning, or evaluating external factors affectin"
+        }
+       ]
+      },
+      {
+       "name": "porters-five-forces",
+       "desc": "Perform Porter's Five Forces analysis — competitive rivalry, supplier power, buyer power, threat of substitutes, and threat of new entrants. Use when analyzing industry dynamics, assessing competitive forces, or evaluati",
+       "path": "product-skills/product-strategy/porters-five-forces",
+       "skills": [
+        {
+         "name": "porters-five-forces",
+         "desc": "Perform Porter's Five Forces analysis — competitive rivalry, supplier power, buyer power, threat of substitutes, and threat of new entrants. Use when analyzing industry dynamics, assessing competitive forces, or evaluati"
+        }
+       ]
+      },
+      {
+       "name": "pricing-strategy",
+       "desc": "Analyze and design pricing strategies including pricing models, competitive pricing analysis, willingness-to-pay estimation, and price elasticity. Use when setting prices, evaluating pricing models, preparing for a prici",
+       "path": "product-skills/product-strategy/pricing-strategy",
+       "skills": [
+        {
+         "name": "pricing-strategy",
+         "desc": "Analyze and design pricing strategies including pricing models, competitive pricing analysis, willingness-to-pay estimation, and price elasticity. Use when setting prices, evaluating pricing models, preparing for a prici"
+        }
+       ]
+      },
+      {
+       "name": "product-strategy",
+       "desc": "Create a comprehensive product strategy using the 9-section Product Strategy Canvas — vision, segments, costs, value propositions, trade-offs, metrics, growth, capabilities, and defensibility. Use when building a product",
+       "path": "product-skills/product-strategy/product-strategy",
+       "skills": [
+        {
+         "name": "product-strategy",
+         "desc": "Create a comprehensive product strategy using the 9-section Product Strategy Canvas — vision, segments, costs, value propositions, trade-offs, metrics, growth, capabilities, and defensibility. Use when building a product"
+        }
+       ]
+      },
+      {
+       "name": "product-vision",
+       "desc": "Brainstorm an inspiring, achievable, and emotional product vision that motivates teams and aligns stakeholders. Use when defining or refining a product vision, creating a vision statement, or aligning the team around a s",
+       "path": "product-skills/product-strategy/product-vision",
+       "skills": [
+        {
+         "name": "product-vision",
+         "desc": "Brainstorm an inspiring, achievable, and emotional product vision that motivates teams and aligns stakeholders. Use when defining or refining a product vision, creating a vision statement, or aligning the team around a s"
+        }
+       ]
+      },
+      {
+       "name": "startup-canvas",
+       "desc": "Generate a Startup Canvas combining Product Strategy (9 sections) and Business Model (costs + revenue) for a new product. An alternative to BMC and Lean Canvas that separates strategy from business model. Use when launch",
+       "path": "product-skills/product-strategy/startup-canvas",
+       "skills": [
+        {
+         "name": "startup-canvas",
+         "desc": "Generate a Startup Canvas combining Product Strategy (9 sections) and Business Model (costs + revenue) for a new product. An alternative to BMC and Lean Canvas that separates strategy from business model. Use when launch"
+        }
+       ]
+      },
+      {
+       "name": "swot-analysis",
+       "desc": "Perform a detailed SWOT analysis — strengths, weaknesses, opportunities, and threats with actionable recommendations. Use when doing strategic assessment, competitive analysis, or evaluating a product or business positio",
+       "path": "product-skills/product-strategy/swot-analysis",
+       "skills": [
+        {
+         "name": "swot-analysis",
+         "desc": "Perform a detailed SWOT analysis — strengths, weaknesses, opportunities, and threats with actionable recommendations. Use when doing strategic assessment, competitive analysis, or evaluating a product or business positio"
+        }
+       ]
+      },
+      {
+       "name": "value-proposition",
+       "desc": "Design a detailed value proposition using a 6-part JTBD template — Who, Why, What before, How, What after, Alternatives. Use when creating a value proposition, analyzing customer value delivery, or articulating why custo",
+       "path": "product-skills/product-strategy/value-proposition",
+       "skills": [
+        {
+         "name": "value-proposition",
+         "desc": "Design a detailed value proposition using a 6-part JTBD template — Who, Why, What before, How, What after, Alternatives. Use when creating a value proposition, analyzing customer value delivery, or articulating why custo"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "toolkit",
+     "desc": "",
+     "children": [
+      {
+       "name": "draft-nda",
+       "desc": "Draft a detailed Non-Disclosure Agreement between two parties covering information types, jurisdiction, and clauses needing legal review. Use when creating confidentiality agreements or preparing an NDA for a partnership",
+       "path": "product-skills/toolkit/draft-nda",
+       "skills": [
+        {
+         "name": "draft-nda",
+         "desc": "Draft a detailed Non-Disclosure Agreement between two parties covering information types, jurisdiction, and clauses needing legal review. Use when creating confidentiality agreements or preparing an NDA for a partnership"
+        }
+       ]
+      },
+      {
+       "name": "grammar-check",
+       "desc": "Identify grammar, logical, and flow errors in text and suggest targeted fixes without rewriting the entire text. Use when proofreading content, checking writing quality, or reviewing a draft.",
+       "path": "product-skills/toolkit/grammar-check",
+       "skills": [
+        {
+         "name": "grammar-check",
+         "desc": "Identify grammar, logical, and flow errors in text and suggest targeted fixes without rewriting the entire text. Use when proofreading content, checking writing quality, or reviewing a draft."
+        }
+       ]
+      },
+      {
+       "name": "privacy-policy",
+       "desc": "Draft a detailed privacy policy covering data types, jurisdiction, GDPR and compliance considerations, and clauses needing legal review. Use when creating a privacy policy, updating data protection documentation, or prep",
+       "path": "product-skills/toolkit/privacy-policy",
+       "skills": [
+        {
+         "name": "privacy-policy",
+         "desc": "Draft a detailed privacy policy covering data types, jurisdiction, GDPR and compliance considerations, and clauses needing legal review. Use when creating a privacy policy, updating data protection documentation, or prep"
+        }
+       ]
+      },
+      {
+       "name": "review-resume",
+       "desc": "Comprehensive PM resume review and tailoring against 10 best practices including XYZ+S formula, keyword optimization, job-specific tailoring, and structure. Use when reviewing a PM resume, preparing for job applications,",
+       "path": "product-skills/toolkit/review-resume",
+       "skills": [
+        {
+         "name": "review-resume",
+         "desc": "Comprehensive PM resume review and tailoring against 10 best practices including XYZ+S formula, keyword optimization, job-specific tailoring, and structure. Use when reviewing a PM resume, preparing for job applications,"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "seo-skills",
+   "icon": "📈",
+   "desc": "Search visibility as an engineering & content discipline.",
+   "badge": null,
+   "children": [
+    {
+     "name": "content-skills",
+     "desc": "Winning search demand with content: finding it, writing it, and planning it.",
+     "children": [
+      {
+       "name": "content-strategy",
+       "desc": "Skills for planning content programs, not single articles.",
+       "children": []
+      },
+      {
+       "name": "content-writing",
+       "desc": "Skills for writing pages that rank and convert.",
+       "children": []
+      },
+      {
+       "name": "keyword-research",
+       "desc": "Skills for discovering and prioritizing search demand.",
+       "children": []
+      }
+     ]
+    },
+    {
+     "name": "on-page-skills",
+     "desc": "Page-level ranking signals: metadata, structured data, and linking.",
+     "children": [
+      {
+       "name": "internal-linking",
+       "desc": "Skills for distributing authority and guiding crawlers with links.",
+       "children": []
+      },
+      {
+       "name": "meta-optimization",
+       "desc": "Skills for title tags, descriptions, headings, and URLs.",
+       "children": []
+      },
+      {
+       "name": "structured-data",
+       "desc": "Skills for Schema.org markup and rich results.",
+       "children": []
+      }
+     ]
+    },
+    {
+     "name": "optimizing-website",
+     "desc": "Site-level search health: technical foundations, page experience, and audits.",
+     "children": [
+      {
+       "name": "core-web-vitals",
+       "desc": "Skills for page experience metrics that affect ranking and conversion.",
+       "children": []
+      },
+      {
+       "name": "performance-audits",
+       "desc": "Skills for running and reporting complete site audits.",
+       "children": []
+      },
+      {
+       "name": "technical-seo",
+       "desc": "Skills for the infrastructure layer of search visibility.",
+       "children": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "ui-ux-skills",
+   "icon": "🎨",
+   "desc": "Design intelligence for web, mobile and desktop.",
+   "badge": null,
+   "children": [
+    {
+     "name": "accessibility",
+     "desc": "Skills for interfaces that everyone can use.",
+     "children": []
+    },
+    {
+     "name": "design-systems",
+     "desc": "Skills for building and maintaining design systems that scale across teams.",
+     "children": []
+    },
+    {
+     "name": "interaction-design",
+     "desc": "Skills for how interfaces behave over time.",
+     "children": []
+    },
+    {
+     "name": "ui-ux-pro-max",
+     "desc": "Vendored copy of nextlevelbuilder/ui-ux-pro-max-skill(https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)",
+     "children": [
+      {
+       "name": "banner-design",
+       "desc": "Design banners for social media, ads, website heroes, creative assets, and print. Multiple art direction options with optional generated or supplied visuals. Actions: design, create, generate banner. Platforms: Facebook,",
+       "path": "ui-ux-skills/ui-ux-pro-max/banner-design",
+       "skills": [
+        {
+         "name": "banner-design",
+         "desc": "Design banners for social media, ads, website heroes, creative assets, and print. Multiple art direction options with optional generated or supplied visuals. Actions: design, create, generate banner. Platforms: Facebook,"
+        }
+       ]
+      },
+      {
+       "name": "brand",
+       "desc": "Brand voice, visual identity, messaging frameworks, asset management, brand consistency. Activate for branded content, tone of voice, marketing assets, brand compliance, style guides.",
+       "path": "ui-ux-skills/ui-ux-pro-max/brand",
+       "skills": [
+        {
+         "name": "brand",
+         "desc": "Brand voice, visual identity, messaging frameworks, asset management, brand consistency. Activate for branded content, tone of voice, marketing assets, brand compliance, style guides."
+        }
+       ]
+      },
+      {
+       "name": "design",
+       "desc": "Comprehensive design skill: brand identity, design tokens, UI styling, logo generation (55 styles, Gemini, Atlas Cloud, or MuAPI AI), corporate identity program (50 deliverables, CIP mockups), HTML presentations (Chart.j",
+       "path": "ui-ux-skills/ui-ux-pro-max/design",
+       "skills": [
+        {
+         "name": "design",
+         "desc": "Comprehensive design skill: brand identity, design tokens, UI styling, logo generation (55 styles, Gemini, Atlas Cloud, or MuAPI AI), corporate identity program (50 deliverables, CIP mockups), HTML presentations (Chart.j"
+        }
+       ]
+      },
+      {
+       "name": "design-system",
+       "desc": "Token architecture, component specifications, and slide generation. Three-layer tokens (primitive→semantic→component), CSS variables, spacing/typography scales, component specs, strategic slide creation. Use for design t",
+       "path": "ui-ux-skills/ui-ux-pro-max/design-system",
+       "skills": [
+        {
+         "name": "design-system",
+         "desc": "Token architecture, component specifications, and slide generation. Three-layer tokens (primitive→semantic→component), CSS variables, spacing/typography scales, component specs, strategic slide creation. Use for design t"
+        }
+       ]
+      },
+      {
+       "name": "slides",
+       "desc": "Create strategic HTML presentations with Chart.js, design tokens, responsive layouts, copywriting formulas, and contextual slide strategies.",
+       "path": "ui-ux-skills/ui-ux-pro-max/slides",
+       "skills": [
+        {
+         "name": "slides",
+         "desc": "Create strategic HTML presentations with Chart.js, design tokens, responsive layouts, copywriting formulas, and contextual slide strategies."
+        }
+       ]
+      },
+      {
+       "name": "ui-styling",
+       "desc": "Create beautiful, accessible user interfaces with shadcn/ui components (built on Radix UI + Tailwind), Tailwind CSS utility-first styling, and canvas-based visual designs. Use when building user interfaces, implementing ",
+       "path": "ui-ux-skills/ui-ux-pro-max/ui-styling",
+       "skills": [
+        {
+         "name": "ui-styling",
+         "desc": "Create beautiful, accessible user interfaces with shadcn/ui components (built on Radix UI + Tailwind), Tailwind CSS utility-first styling, and canvas-based visual designs. Use when building user interfaces, implementing "
+        }
+       ]
+      },
+      {
+       "name": "ui-ux-pro-max",
+       "desc": "UI/UX design intelligence for web, mobile, and desktop. This skill should be used when designing, building, reviewing, or fixing interfaces, including pages, components, design systems, accessibility, interaction, respon",
+       "path": "ui-ux-skills/ui-ux-pro-max/ui-ux-pro-max",
+       "skills": [
+        {
+         "name": "ui-ux-pro-max",
+         "desc": "UI/UX design intelligence for web, mobile, and desktop. This skill should be used when designing, building, reviewing, or fixing interfaces, including pages, components, design systems, accessibility, interaction, respon"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "ux-research",
+     "desc": "Skills for evidence-based design decisions.",
+     "children": []
+    },
+    {
+     "name": "visual-design",
+     "desc": "Skills for the look of an interface: type, color, space, and hierarchy.",
+     "children": []
+    }
+   ]
+  },
+  {
+   "name": "video-generation",
+   "icon": "🎥",
+   "desc": "Finished video, produced in code and with AI.",
+   "badge": null,
+   "children": [
+    {
+     "name": "ai-video-generation",
+     "desc": "Skills for generative video: text-to-video and image-to-video workflows.",
+     "children": []
+    },
+    {
+     "name": "cinematic-promos",
+     "desc": "Skills for cinematic, music-synced product and brand videos.",
+     "children": []
+    },
+    {
+     "name": "editing-workflows",
+     "desc": "Skills for working with existing footage rather than generating it.",
+     "children": []
+    },
+    {
+     "name": "explainers",
+     "desc": "Skills for narrative-driven 45–90 second explainers.",
+     "children": []
+    },
+    {
+     "name": "motion-graphics",
+     "desc": "Skills for designed motion: type, data, and titles.",
+     "children": []
+    }
+   ]
+  }
+ ],
+ "contributors": [
+  {
+   "name": "Pedram Gholizadeh",
+   "site": "https://pedramgholizadeh.ir",
+   "role": "Creator & maintainer",
+   "focus": [
+    "Fullstack",
+    "AI agents",
+    "SEO",
+    "Video"
+   ],
+   "initials": "PG"
+  }
+ ]
+}
