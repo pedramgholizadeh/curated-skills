@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Curated Skills — Pedram Gholizadeh</title>
+<meta name="description" content="A hand-picked, production-grade collection of AI agent skills: fullstack, UI/UX, SEO and video generation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <nav class="nav">
+    <a class="logo" href="#">Curated<span>Skills</span></a>
+    <div class="nav-links">
+      <a href="#tree">Skill Tree</a>
+      <a href="#usage">Usage</a>
+      <a href="#contributors">Contributors</a>
+      <a class="btn-ghost" href="https://github.com/pedramgholizadeh/curated-skills" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+  </nav>
+  <div class="hero-inner">
+    <p class="kicker">AI AGENT SKILLS · OPEN SKILL.MD STANDARD</p>
+    <h1>The skills I use to build<br><em class="accent">with AI agents</em>, every day.</h1>
+    <p class="sub">Fullstack · UI/UX · SEO · Video — organized as a tree, curated by
+      <a href="https://pedramgholizadeh.ir" target="_blank" rel="noopener">Pedram Gholizadeh</a>.
+      Works with Claude Code, Qoder, OpenCode, ZCode, Antigravity and Codex.</p>
+    <div class="hero-cta">
+      <a class="btn" href="#tree">Browse the tree</a>
+      <a class="btn btn-alt" href="https://github.com/pedramgholizadeh/curated-skills" target="_blank" rel="noopener">View repository</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section id="tree">
+    <h2>🌳 Skill Tree</h2>
+    <p class="section-note">Every node is a folder in the repository. Subcategories show the scope of the skills that live (or land) inside them.</p>
+    <div class="tree-tools">
+      <button class="chip" data-action="expand">Expand all</button>
+      <button class="chip" data-action="collapse">Collapse all</button>
+    </div>
+    <div id="tree-root" class="tree"></div>
+  </section>
+
+  <section id="usage">
+    <h2>🚀 Using these skills</h2>
+    <div class="grid grid-3" id="agent-cards"></div>
+  </section>
+
+  <section id="contributors">
+    <h2>🤝 Contributors</h2>
+    <div class="grid grid-2" id="contributor-cards"></div>
+    <p class="section-note">Want your name here? Add a skill and yourself to the
+      <a class="inline" href="https://github.com/pedramgholizadeh/curated-skills/blob/master/README.md#contributors" target="_blank" rel="noopener">repository contributors list</a>
+      — the site mirrors it.</p>
+  </section>
+</main>
+
+<footer>
+  <p>Curated with ☕ by <a href="https://pedramgholizadeh.ir" target="_blank" rel="noopener">Pedram Gholizadeh</a> ·
+  <a href="https://github.com/pedramgholizadeh/curated-skills" target="_blank" rel="noopener">curated-skills</a> on GitHub</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
