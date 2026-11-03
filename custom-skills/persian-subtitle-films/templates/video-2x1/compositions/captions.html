@@ -1,0 +1,83 @@
+<template>
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+    }
+
+    .cap {
+      position: absolute;
+      inset-inline: 0;
+      bottom: 88px;
+      padding-inline: 220px;
+      text-align: center;
+      z-index: 2;
+    }
+
+    .cap-line {
+      display: block;
+      max-width: 1480px;
+      margin-inline: auto;
+      color: var(--color-ink);
+      font-size: 76px;
+      font-weight: 700;
+      line-height: 1.45;
+      text-align: center;
+      text-wrap: balance;
+      overflow: visible;
+      text-shadow: 0 2px 22px rgba(0, 0, 0, 0.55);
+      opacity: 0;
+      will-change: opacity, transform, filter;
+    }
+
+    .cap-word {
+      display: inline-block;
+      white-space: nowrap;
+    }
+
+    .cap-word.hot {
+      color: var(--color-accent);
+    }
+
+    .cap-latin {
+      display: inline-block;
+      direction: ltr;
+      unicode-bidi: isolate;
+      font-weight: 600;
+    }
+  </style>
+
+  <div id="root" data-composition-id="captions" data-width="1920" data-height="960">
+    <div
+      id="cap-demo"
+      class="clip cap"
+      data-start="3.8"
+      data-duration="1.1"
+      data-track-index="20"
+      data-hold
+    >
+      <div id="cap-demo-line" class="cap-line">
+        <span class="cap-word">یک</span>
+        <span class="cap-word">ایدهٔ</span>
+        <span class="cap-word hot">دیجیتال</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const tl = gsap.timeline({ paused: true });
+
+    // Demo card: 3.8 → 4.9. The SRT builder emits one such block per card.
+    tl.fromTo(
+      "#cap-demo-line",
+      { opacity: 0, y: 8, filter: "blur(5px)" },
+      { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.18, ease: "power3.out" },
+      3.8
+    );
+    tl.to("#cap-demo-line", { opacity: 0, duration: 0.12, ease: "power2.in" }, 4.78);
+
+    window.__timelines["captions"] = tl;
+    tl.seek(0);
+  </script>
+</template>

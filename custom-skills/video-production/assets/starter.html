@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>video starter</title>
+<style>
+  :root {
+    --ground: #F7F7F8;
+    --ink: #111114;
+    --muted: #8A8A94;
+    --accent: #2E6BFF;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; background: #111114; overflow: hidden; }
+  #stage {
+    position: absolute; top: 0; left: 0;
+    width: 1920px; height: 1080px;
+    background: var(--ground);
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+    overflow: hidden;
+    transform-origin: 0 0;
+  }
+  .scene { position: absolute; inset: 0; background: transparent; will-change: opacity, transform; }
+  .line {
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-size: 84px; font-weight: 700; letter-spacing: -0.02em;
+    color: var(--ink);
+  }
+  .line .hl { position: relative; display: inline-block; padding: 0 8px; border-radius: 6px; background: transparent; }
+  .sub { position: absolute; left: 50%; bottom: 140px; transform: translateX(-50%);
+         font-size: 30px; color: var(--muted); letter-spacing: 0.01em; white-space: nowrap; }
+  #progress { position: absolute; left: 0; bottom: 0; height: 4px; width: 0; background: var(--accent); }
+  /* preview only */
+  #ui { position: fixed; left: 0; right: 0; bottom: 0; padding: 12px 16px; display: flex; gap: 10px;
+        align-items: center; background: rgba(0,0,0,.6); color: #fff; font: 12px/1 ui-monospace, monospace; }
+  #ui input[type=range] { flex: 1; }
+  body[data-render="1"] #ui { display: none; }
+</style>
+</head>
+<body>
+<div id="stage">
+  <div class="scene" id="s1">
+    <div class="line" id="l1">Your next post</div>
+  </div>
+  <div class="scene" id="s2">
+    <div class="line" id="l2">in your <span class="hl" id="hl">voice</span></div>
+  </div>
+  <div class="scene" id="s3">
+    <div class="line" id="l3">checked before you see it</div>
+    <div class="sub" id="sub3">Sample copy — replace with the user's own words</div>
+  </div>
+  <div id="progress"></div>
+</div>
+<div id="ui">
+  <button id="play">play</button>
+  <input id="scrub" type="range" min="0" max="10" step="0.001" value="0">
+  <span id="clock">0.00s</span>
+</div>
+
+<script>
+/* ---- helpers (full set: assets/motion.js) ---- */
+const clamp = (x, a = 0, b = 1) => (x < a ? a : x > b ? b : x);
+const lerp = (a, b, k) => a + (b - a) * k;
+const seg = (t, a, b) => clamp((t - a) / (b - a));
+const ease = x => { x = clamp(x); return x < .5 ? 4*x*x*x : 1 - Math.pow(-2*x+2, 3)/2; };
+const expoOut = x => (clamp(x) >= 1 ? 1 : 1 - Math.pow(2, -10 * clamp(x)));
+const kf = keys => t => {
+  if (t <= keys[0][0]) return keys[0][1];
+  for (let i = 1; i < keys.length; i++) {
+    const [a, va] = keys[i-1], [b, vb, e = ease] = keys[i];
+    if (t <= b) return lerp(va, vb, e(clamp((t - a) / (b - a || 1))));
+  }
+  return keys[keys.length - 1][1];
+};
+
+/* ---- the piece ---- */
+window.VIDEO = { w: 1920, h: 1080, duration: 10, fps: 30 };
+
+const el = id => document.getElementById(id);
+const camScale = kf([[0, 1.0], [3.0, 1.14], [4.2, 1.14], [7.5, 1.0], [10, 1.0]]);
+const sceneOpacity = (t, a, b) => Math.min(seg(t, a - 0.35, a + 0.05), 1 - seg(t, b - 0.25, b + 0.1));
+
+window.seek = (t) => {
+  const s = camScale(t);
+  el('stage').style.transform =
+    `translate(${960 * (1 - s)}px, ${540 * (1 - s)}px) scale(${s})`;
+
+  // beat 1: 0.3-3.2  beat 2: 3.6-6.6  beat 3: 7.0-end (holds)
+  const o1 = 1 - seg(t, 2.95, 3.3);
+  const o2 = sceneOpacity(t, 3.6, 6.6);
+  const o3 = seg(t, 6.7, 7.05);
+  el('s1').style.opacity = o1;
+  el('s2').style.opacity = o2;
+  el('s3').style.opacity = o3;
+  el('s1').style.display = o1 > 0.001 ? 'block' : 'none';
+  el('s2').style.display = o2 > 0.001 ? 'block' : 'none';
+  el('s3').style.display = o3 > 0.001 ? 'block' : 'none';
+
+  // entrances: y offset + mask-free fade, one word highlighted after it lands
+  const enter = (node, start, dist = 36) => {
+    const k = expoOut(seg(t, start, start + 0.6));
+    node.style.opacity = k;
+    node.style.transform = `translate(-50%, calc(-50% + ${(1 - k) * dist}px))`;
+  };
+  enter(el('l1'), -0.35); // hook is already on screen at t=0; nothing starts empty
+  enter(el('l2'), 3.3);
+  enter(el('l3'), 6.8);
+
+  const hl = seg(t, 4.6, 5.2);
+  el('hl').style.background = `rgba(46,107,255,${0.16 * hl})`;
+
+  el('sub3').style.opacity = seg(t, 7.9, 8.5) * 0.9;
+
+  el('progress').style.width = (1920 * clamp(t / VIDEO.duration)) + 'px';
+};
+
+/* ---- optional audio (see references/sound.md: real SFX, not synthesized beeps) ----
+window.buildAudio = async (ctx) => {
+  // const buf = await (await fetch('assets/sfx/transition/whoosh.ogg')).arrayBuffer();
+  // const src = ctx.createBufferSource(); src.buffer = await ctx.decodeAudioData(buf);
+  // src.connect(ctx.destination); src.start(7.0);
+};
+*/
+
+/* ---- preview / render controls ---- */
+const params = new URLSearchParams(location.search);
+const renderMode = params.has('render');
+if (renderMode) {
+  document.body.dataset.render = '1';
+  el('stage').style.transform = '';
+  const t0 = Number(params.get('t') || 0);
+  seek(t0);
+} else {
+  const scale = () => Math.min(innerWidth / VIDEO.w, (innerHeight - 44) / VIDEO.h);
+  const fit = () => { el('stage').style.transform = `scale(${scale()})`; };
+  addEventListener('resize', fit); fit();
+
+  const scrub = el('scrub'), clock = el('clock'), btn = el('play');
+  scrub.max = VIDEO.duration;
+  let playing = false, startAt = 0, offset = 0, raf = 0;
+  const now = () => playing ? (offset + (performance.now() - startAt) / 1000) % VIDEO.duration : offset;
+  const tick = () => {
+    offset = now();
+    seek(offset); scrub.value = offset;
+    clock.textContent = offset.toFixed(2) + 's';
+    raf = requestAnimationFrame(tick);
+  };
+  btn.onclick = () => {
+    if (playing) { offset = now(); playing = false; cancelAnimationFrame(raf); btn.textContent = 'play'; }
+    else { playing = true; startAt = performance.now(); btn.textContent = 'pause'; tick(); }
+  };
+  scrub.oninput = () => { offset = Number(scrub.value); if (!playing) { seek(offset); clock.textContent = offset.toFixed(2) + 's'; } };
+  seek(0);
+}
+</script>
+</body>
+</html>

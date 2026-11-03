@@ -1,0 +1,106 @@
+#!/usr/bin/env bash
+# cool-run — run a heavy media job at a capped share of the machine's power.
+#
+#   cool-run <command> [args...]     wrap and run the command at the cap
+#   cool-run --threads               print the computed thread cap and exit
+#   cool-run --check                 print cap, load, thermal state, heavy jobs
+#
+# Defaults come from the maintainer's policy and are overridable by environment:
+#   COOL_RENDER_CPU_PCT   share of physical cores to use (default: 50)
+#
+# Portability: core count via `sysctl -n hw.physicalcpu` (macOS) or `nproc` /
+# `/sys/devices/system/cpu/possible` (Linux). Background QoS via `taskpolicy`
+# only where it exists; otherwise degrade to `nice`. Never fails a platform
+# just because a probe or scheduler flag is unavailable.
+set -euo pipefail
+
+CPU_PCT="${COOL_RENDER_CPU_PCT:-50}"
+
+# ---- portable physical-core detection -------------------------------------
+detect_cores() {
+  local c
+  # macOS
+  if command -v sysctl >/dev/null 2>&1; then
+    c=$(sysctl -n hw.physicalcpu 2>/dev/null || true)
+    if [ -n "${c:-}" ] && [ "$c" -gt 0 ] 2>/dev/null; then echo "$c"; return 0; fi
+  fi
+  # Linux: nproc
+  if command -v nproc >/dev/null 2>&1; then
+    c=$(nproc 2>/dev/null || true)
+    if [ -n "${c:-}" ] && [ "$c" -gt 0 ] 2>/dev/null; then echo "$c"; return 0; fi
+  fi
+  # Linux: possible-CPU mask (e.g. "0-7" or "0-3,8-11")
+  if [ -r /sys/devices/system/cpu/possible ]; then
+    c=$(tr ',' '\n' < /sys/devices/system/cpu/possible |
+        awk '{split($0,a,"-"); s=a[1]; e=(a[2]==""?a[1]:a[2]); if(s=="")next; t+=e-s+1} END{print t}')
+    if [ -n "${c:-}" ] && [ "$c" -gt 0 ] 2>/dev/null; then echo "$c"; return 0; fi
+  fi
+  return 1
+}
+
+CORES=""
+if CORES=$(detect_cores); then
+  # cap = round(CORES * CPU_PCT / 100), min 1
+  THREADS=$(awk -v c="$CORES" -v p="$CPU_PCT" 'BEGIN{t=int((c*p+50)/100); if(t<1)t=1; print t}')
+else
+  CORES=""
+  THREADS=""
+  echo "cool-run: warning: could not detect core count; running uncapped." >&2
+fi
+
+# ---- subcommands ----------------------------------------------------------
+case "${1:-}" in
+  --threads)
+    if [ -z "$THREADS" ]; then
+      echo "cool-run: warning: no thread cap (core count undetectable)." >&2
+      exit 0
+    fi
+    echo "$THREADS"
+    exit 0
+    ;;
+  --check)
+    if [ -n "$CORES" ]; then
+      echo "physical cores: $CORES   power cap: $THREADS threads (${CPU_PCT}%)"
+    else
+      echo "physical cores: unknown   power cap: uncapped (${CPU_PCT}% requested)"
+    fi
+    # load average (macOS sysctl, else Linux /proc, else uptime)
+    if command -v sysctl >/dev/null 2>&1 && sysctl -n vm.loadavg >/dev/null 2>&1; then
+      echo "load average: $(sysctl -n vm.loadavg | tr -d '{}')"
+    elif [ -r /proc/loadavg ]; then
+      echo "load average: $(cut -d' ' -f1-3 /proc/loadavg)"
+    else
+      echo "load average: unavailable"
+    fi
+    # thermal status (macOS only; skip elsewhere)
+    if command -v pmset >/dev/null 2>&1; then
+      pmset -g therm 2>/dev/null | grep -vE '^$' | head -6 || true
+    fi
+    echo '--- heavy media jobs running now ---'
+    ps -Ao %cpu,pid,comm 2>/dev/null |
+      grep -iE 'ffmpeg|chrome|chromium|hyperframes|whisper|node' |
+      awk '$1 > 20 {printf "%5.1f%%  pid=%s  %s\n", $1, $2, $3}' | head -10 || true
+    exit 0
+    ;;
+esac
+
+[ "$#" -gt 0 ] || { echo "usage: cool-run <command> [args...] | --threads | --check" >&2; exit 2; }
+
+# ---- thread-cap the environment -----------------------------------------
+if [ -n "$THREADS" ]; then
+  export OMP_NUM_THREADS="$THREADS"
+  export MKL_NUM_THREADS="$THREADS"
+  export OPENBLAS_NUM_THREADS="$THREADS"
+  export NUMEXPR_NUM_THREADS="$THREADS"
+  export VECLIB_MAXIMUM_THREADS="$THREADS"
+fi
+
+# ---- scheduling prefix: taskpolicy where present, else nice, else none ----
+if command -v taskpolicy >/dev/null 2>&1; then
+  exec taskpolicy -c background nice -n 15 "$@"
+elif command -v nice >/dev/null 2>&1; then
+  exec nice -n 15 "$@"
+else
+  echo "cool-run: warning: no nice/taskpolicy available; running at default priority." >&2
+  exec "$@"
+fi

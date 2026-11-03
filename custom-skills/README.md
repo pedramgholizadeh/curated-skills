@@ -42,6 +42,10 @@ sources:
 | [pm-manager/](pm-manager/SKILL.md) | product-skills (discovery, strategy, execution, GTM, analytics) | Ready |
 | [marketing-manager/](marketing-manager/SKILL.md) | marketing-skills (positioning, seo-audit, content-strategy, cro, copywriting, launch, analytics) | Ready |
 | [brand-reels/](brand-reels/SKILL.md) | video-generation (motion-graphics, cinematic-promos, editing-workflows) · ui-ux-skills (visual-design, interaction-design) | Ready |
+| [persian-subtitle-films/](persian-subtitle-films/SKILL.md) | video-generation (editing-workflows, explainers, motion-graphics, cinematic-promos) · ui-ux-skills (visual-design) · custom-skills (cool-render, srt-caption-timing) | Ready |
+| [srt-caption-timing/](srt-caption-timing/SKILL.md) | video-generation (editing-workflows, openmontage/speech-to-text, openmontage/hyperframes-media) | Ready |
+| [cool-render/](cool-render/SKILL.md) | video-generation (editing-workflows, cinematic-promos) | Ready |
+| [video-production/](video-production/SKILL.md) | video-generation (cinematic-promos, explainers, motion-graphics, editing-workflows, ai-video-generation, openmontage) | Ready |
 
 See the root [README.md](../README.md) for installation on each agent, and
 [AGENTS.md](../AGENTS.md) for the site-sync rule every addition must follow.

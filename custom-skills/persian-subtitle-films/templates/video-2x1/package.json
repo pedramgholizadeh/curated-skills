@@ -1,0 +1,11 @@
+{
+  "name": "persian-subtitle-film-2x1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npx --yes hyperframes@0.9.8 preview",
+    "check": "npx --yes hyperframes@0.9.8 check",
+    "still": "npx --yes hyperframes@0.9.8 snapshot",
+    "render": "npx --yes hyperframes@0.9.8 render --quality delivery"
+  }
+}

@@ -1,0 +1,115 @@
+#!/usr/bin/env bash
+# fit-size — keep a rendered video under a file-size budget without dropping fps.
+#
+#   fit-size <file.mp4> [max_mb]      re-encode only if the file is over budget
+#
+# Defaults come from the maintainer's policy and are overridable by environment:
+#   COOL_RENDER_MAX_MB        size budget in decimal MB (default: 200)
+#   COOL_RENDER_CPU_PCT       share of cores to encode with (default: 50)
+#   COOL_RENDER_MIN_KBPS      bitrate floor; reject budgets below it (default: 400)
+#
+# Behaviour: two-pass libx264 at the computed bitrate, forced 30 fps CFR, run at
+# the core cap. Only triggers when the file is over budget. The oversized
+# original is kept as `-oversize.bak.mp4`; the fitted file replaces the input.
+#
+# Bitrate model:  video kbit/s = int(MAX_MB * 8 * 1000 / duration) - AUDIO_KBPS
+# (the -130 subtracts the 128 kbit/s AAC track). If that value falls below
+# MIN_KBPS the budget is too small for the clip and the script refuses to run.
+set -euo pipefail
+
+SRC=${1:?usage: fit-size <file.mp4> [max_mb]}
+MAX_MB=${2:-${COOL_RENDER_MAX_MB:-200}}
+MIN_KBPS=${COOL_RENDER_MIN_KBPS:-400}
+CPU_PCT="${COOL_RENDER_CPU_PCT:-50}"
+TARGET_FPS=30
+AUDIO_KBPS=128
+
+# ---- portable physical-core detection (mirrors cool-run) ------------------
+detect_cores() {
+  local c
+  if command -v sysctl >/dev/null 2>&1; then
+    c=$(sysctl -n hw.physicalcpu 2>/dev/null || true)
+    if [ -n "${c:-}" ] && [ "$c" -gt 0 ] 2>/dev/null; then echo "$c"; return 0; fi
+  fi
+  if command -v nproc >/dev/null 2>&1; then
+    c=$(nproc 2>/dev/null || true)
+    if [ -n "${c:-}" ] && [ "$c" -gt 0 ] 2>/dev/null; then echo "$c"; return 0; fi
+  fi
+  if [ -r /sys/devices/system/cpu/possible ]; then
+    c=$(tr ',' '\n' < /sys/devices/system/cpu/possible |
+        awk '{split($0,a,"-"); s=a[1]; e=(a[2]==""?a[1]:a[2]); if(s=="")next; t+=e-s+1} END{print t}')
+    if [ -n "${c:-}" ] && [ "$c" -gt 0 ] 2>/dev/null; then echo "$c"; return 0; fi
+  fi
+  return 1
+}
+
+if CORES=$(detect_cores); then
+  THREADS=$(awk -v c="$CORES" -v p="$CPU_PCT" 'BEGIN{t=int((c*p+50)/100); if(t<1)t=1; print t}')
+else
+  THREADS=""
+  echo "fit-size: warning: core count undetectable; encoding uncapped." >&2
+fi
+
+# ---- scheduling prefix: taskpolicy where present, else nice, else plain ---
+if command -v taskpolicy >/dev/null 2>&1 && command -v nice >/dev/null 2>&1; then
+  SCHED=(taskpolicy -c background nice -n 15)
+elif command -v nice >/dev/null 2>&1; then
+  SCHED=(nice -n 15)
+else
+  SCHED=()
+fi
+
+SIZE_BYTES=$(ffprobe -v error -show_entries format=size -of csv=p=0 "$SRC")
+DUR=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "$SRC")
+BUDGET_BYTES=$(awk -v m="$MAX_MB" 'BEGIN{printf "%d", m*1000*1000}')
+
+if [ "$SIZE_BYTES" -le "$BUDGET_BYTES" ]; then
+  awk -v b="$SIZE_BYTES" -v m="$MAX_MB" 'BEGIN{printf "ok: %.0f MB of %s MB budget — no re-encode\n", b/1000000, m}'
+  exit 0
+fi
+
+# Required video bitrate, minus the AAC track.
+VIDEO_KBPS=$(awk -v m="$MAX_MB" -v d="$DUR" -v a="$AUDIO_KBPS" 'BEGIN{print int(m*8*1000/d)-a}')
+
+# Floor guard: too little budget for this duration → refuse rather than ship mush.
+if [ "$VIDEO_KBPS" -lt "$MIN_KBPS" ]; then
+  printf 'fit-size: ERROR: %.2f MB over %s MB budget needs %s kbit/s, below the %s kbit/s floor.\n' \
+    "$(awk -v b="$SIZE_BYTES" 'BEGIN{print b/1000000}')" "$MAX_MB" "$VIDEO_KBPS" "$MIN_KBPS" >&2
+  printf 'Either raise max_mb, shorten the clip, or accept the oversized file.\n' >&2
+  exit 1
+fi
+
+THREAD_ARG=()
+[ -n "$THREADS" ] && THREAD_ARG=(-threads "$THREADS")
+
+# 30 fps CFR flag, version-adaptive: ffmpeg >=5 uses -fps_mode cfr, older uses
+# -vsync 2. Keep -r 30 explicit in both cases.
+if ffmpeg -h full 2>/dev/null | grep -q -- '-fps_mode'; then
+  CFR=(-fps_mode cfr)
+elif ffmpeg -h full 2>/dev/null | grep -q -- '-vsync'; then
+  CFR=(-vsync 2)
+else
+  CFR=()
+fi
+
+TMP="${SRC%.mp4}-slim.mp4"
+echo "over budget: $(awk -v b="$SIZE_BYTES" 'BEGIN{printf "%.2f MB", b/1000000}') → ${VIDEO_KBPS} kbit/s video, ${TARGET_FPS} fps CFR, ${THREADS:-all} threads"
+
+COMMON=(-map 0:v:0 -map 0:a? -c:v libx264 -preset slow -profile:v high -pix_fmt yuv420p
+        -r "$TARGET_FPS" ${CFR[@]+"${CFR[@]}"} -b:v "${VIDEO_KBPS}k" -maxrate "${VIDEO_KBPS}k"
+        -bufsize "$((VIDEO_KBPS * 2))k" ${THREAD_ARG[@]+"${THREAD_ARG[@]}"})
+
+${SCHED[@]+"${SCHED[@]}"} ffmpeg -hide_banner -loglevel error -nostats -y -i "$SRC" \
+  "${COMMON[@]}" -pass 1 -an -f mp4 /dev/null
+${SCHED[@]+"${SCHED[@]}"} ffmpeg -hide_banner -loglevel error -nostats -y -i "$SRC" \
+  "${COMMON[@]}" -pass 2 -c:a aac -b:a "${AUDIO_KBPS}k" -movflags +faststart "$TMP"
+rm -f ffmpeg2pass-0.log ffmpeg2pass-0.log.mbtree
+
+mv "$SRC" "${SRC%.mp4}-oversize.bak.mp4"
+mv "$TMP" "$SRC"
+
+OUT_BYTES=$(ffprobe -v error -show_entries format=size -of csv=p=0 "$SRC")
+printf 'done: %.2f MB → %.2f MB (original kept as %s)\n' \
+  "$(awk -v b="$SIZE_BYTES" 'BEGIN{print b/1000000}')" \
+  "$(awk -v b="$OUT_BYTES" 'BEGIN{print b/1000000}')" \
+  "${SRC%.mp4}-oversize.bak.mp4"

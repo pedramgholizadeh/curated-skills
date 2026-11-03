@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-29T15:49:32+00:00",
- "skillCount": 267,
+ "generated": "2026-11-03T16:11:13+00:00",
+ "skillCount": 271,
  "categories": [
   {
    "name": "anthropic-skills",
@@ -257,6 +257,18 @@
      "support": 3
     },
     {
+     "name": "cool-render",
+     "desc": "Enforce hard CPU, file-size and frame-rate limits on every video production job — render, transcode, encode, export, snapshot, whisper/transcribe, HyperFrames, Remotion, FFmpeg, WebM/MOV/MP4. Caps the machine at a config",
+     "path": "custom-skills/cool-render",
+     "skills": [
+      {
+       "name": "cool-render",
+       "desc": "Enforce hard CPU, file-size and frame-rate limits on every video production job — render, transcode, encode, export, snapshot, whisper/transcribe, HyperFrames, Remotion, FFmpeg, WebM/MOV/MP4. Caps the machine at a config"
+      }
+     ],
+     "support": 1
+    },
+    {
      "name": "fullstack-dev",
      "desc": "End-to-end workflow for building and shipping production web applications with AI agents — distinctive UI planning, artifact scaffolding, reconnaissance-first Playwright testing, MCP tool integration and API-drift-safe C",
      "path": "custom-skills/fullstack-dev",
@@ -281,6 +293,18 @@
      "support": 0
     },
     {
+     "name": "persian-subtitle-films",
+     "desc": "Build Persian (RTL, Vazirmatn) subtitle films and Reels from an SRT using HyperFrames and HyperMotion — a token-driven brand look, a deterministic caption engine, motion recipes, capped rendering and visual QA on 2:1 (19",
+     "path": "custom-skills/persian-subtitle-films",
+     "skills": [
+      {
+       "name": "persian-subtitle-films",
+       "desc": "Build Persian (RTL, Vazirmatn) subtitle films and Reels from an SRT using HyperFrames and HyperMotion — a token-driven brand look, a deterministic caption engine, motion recipes, capped rendering and visual QA on 2:1 (19"
+      }
+     ],
+     "support": 5
+    },
+    {
      "name": "pm-manager",
      "desc": "One operating workflow for product management — discovery through strategy, PRD, prioritization, outcome roadmaps, launch readiness and measurement. Use when defining what to build and why: writing PRDs or roadmaps, prio",
      "path": "custom-skills/pm-manager",
@@ -293,6 +317,18 @@
      "support": 0
     },
     {
+     "name": "srt-caption-timing",
+     "desc": "Put a proofread caption transcript on a machine transcript's word-accurate clock and onto the edited master's timeline, using monotonic word-overlap alignment, local interpolation across ASR gaps and a speed-factor divid",
+     "path": "custom-skills/srt-caption-timing",
+     "skills": [
+      {
+       "name": "srt-caption-timing",
+       "desc": "Put a proofread caption transcript on a machine transcript's word-accurate clock and onto the edited master's timeline, using monotonic word-overlap alignment, local interpolation across ASR gaps and a speed-factor divid"
+      }
+     ],
+     "support": 2
+    },
+    {
      "name": "ui-ux-pro",
      "desc": "Lean design-intelligence workflow for building UIs that don't look AI-generated — query-contract driven design system generation, accessibility floors, anti-slop rules, dials for variance/motion/density, and a pre-delive",
      "path": "custom-skills/ui-ux-pro",
@@ -303,6 +339,18 @@
       }
      ],
      "support": 0
+    },
+    {
+     "name": "video-production",
+     "desc": "Make finished videos in code: launch promos, 45–90s product explainers, 9:16 reels, UI/motion-graphic effects, kinetic-type reels, chart animations, and edits of existing footage. Covers brief intake and beat sheets, bra",
+     "path": "custom-skills/video-production",
+     "skills": [
+      {
+       "name": "video-production",
+       "desc": "Make finished videos in code: launch promos, 45–90s product explainers, 9:16 reels, UI/motion-graphic effects, kinetic-type reels, chart animations, and edits of existing footage. Covers brief intake and beat sheets, bra"
+      }
+     ],
+     "support": 2
     }
    ]
   },

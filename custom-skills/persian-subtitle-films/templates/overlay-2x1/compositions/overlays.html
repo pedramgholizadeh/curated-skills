@@ -1,0 +1,267 @@
+<template>
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      background: transparent;
+      font-family: var(--font-fa);
+    }
+
+    .ov { position: absolute; }
+
+    /* ---------- liquid glass: 5 px radius, smoky base, caustics, grain ---------- */
+    .glass {
+      position: relative;
+      border-radius: 5px;
+      background:
+        linear-gradient(135deg, rgba(19, 22, 22, 0.62) 0%, rgba(14, 16, 16, 0.48) 46%, rgba(21, 25, 24, 0.58) 100%),
+        linear-gradient(135deg, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.06) 38%, rgba(255, 255, 255, 0.12) 100%);
+      border: 1px solid rgba(255, 255, 255, 0.26);
+      box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.62),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.05),
+        inset 0 -24px 44px rgba(0, 0, 0, 0.12),
+        0 24px 60px rgba(0, 0, 0, 0.42),
+        0 4px 12px rgba(0, 0, 0, 0.22);
+      overflow: hidden;
+      isolation: isolate;
+    }
+
+    .caustic {
+      position: absolute;
+      inset: -30%;
+      pointer-events: none;
+      background:
+        radial-gradient(42% 58% at 28% 24%, rgba(85, 230, 165, 0.30), rgba(85, 230, 165, 0) 70%),
+        radial-gradient(46% 62% at 76% 80%, rgba(240, 143, 116, 0.20), rgba(240, 143, 116, 0) 72%),
+        radial-gradient(60% 80% at 55% 45%, rgba(255, 255, 255, 0.10), rgba(255, 255, 255, 0) 70%);
+      filter: blur(16px);
+    }
+
+    .noise {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      opacity: 0.055;
+      mix-blend-mode: overlay;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='160' height='160' filter='url(%23n)'/></svg>");
+    }
+
+    .sheen {
+      position: absolute;
+      top: -30%;
+      bottom: -30%;
+      width: 38%;
+      pointer-events: none;
+      background: linear-gradient(105deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.38) 48%, rgba(255, 255, 255, 0) 100%);
+      transform: skewX(-14deg);
+      filter: blur(2px);
+    }
+
+    .content { position: relative; z-index: 2; }
+
+    .mi { width: 1em; height: 1em; display: block; fill: currentColor; flex: none; }
+    .ico { display: inline-flex; align-items: center; justify-content: center; color: var(--color-accent); }
+
+    .caret {
+      display: inline-block;
+      width: 3px;
+      height: 1.15em;
+      background: var(--color-accent);
+      vertical-align: -0.16em;
+      margin-left: 4px;
+      border-radius: 1px;
+    }
+
+    .ch { display: inline-block; white-space: pre; }
+
+    /* ---------- beat 1: title chip, top-right ---------- */
+    .b1 { right: 96px; top: 72px; }
+
+    .b1 .glass {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      height: 116px;
+      padding: 0 30px;
+    }
+
+    .b1 .ico { font-size: 54px; }
+
+    .b1 .stack { display: flex; flex-direction: column; gap: 6px; }
+
+    .b1 .name-wrap { display: inline-flex; align-items: center; }
+
+    .b1 .name {
+      font-size: 40px;
+      font-weight: 700;
+      color: var(--color-ink);
+      line-height: 1.2;
+      white-space: nowrap;
+    }
+
+    .b1 .meta {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 26px;
+      color: var(--color-ink-muted);
+      direction: ltr;
+      letter-spacing: 0.14em;
+    }
+
+    .dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--color-accent);
+      box-shadow: 0 0 12px rgba(85, 230, 165, 0.8);
+    }
+
+    /* ---------- beat 2: terminal, bottom-left ---------- */
+    .b2 { left: 96px; bottom: 84px; }
+
+    .b2 .glass { width: 760px; }
+
+    .b2 .bar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      height: 52px;
+      padding: 0 18px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .b2 .dots { display: flex; gap: 8px; }
+
+    .b2 .dots i {
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.30);
+      display: block;
+    }
+
+    .b2 .dots i:first-child { background: rgba(240, 143, 116, 0.85); }
+    .b2 .dots i:nth-child(2) { background: rgba(232, 254, 81, 0.7); }
+    .b2 .dots i:nth-child(3) { background: rgba(85, 230, 165, 0.8); }
+
+    .b2 .bar .t { font-size: 27px; color: var(--color-ink-muted); direction: ltr; letter-spacing: 0.08em; }
+
+    .b2 .body { padding: 24px 26px 26px; direction: ltr; text-align: left; }
+
+    .b2 .line { font-size: 34px; line-height: 1.75; color: var(--color-ink); white-space: pre; }
+    .b2 .line.out { color: var(--color-accent); }
+    .b2 .prompt { color: var(--color-micro); margin-right: 10px; }
+  </style>
+
+  <div id="root" data-composition-id="overlays" data-width="1920" data-height="960" data-layout-allow-overflow>
+
+    <div id="beat-1" class="clip ov b1" data-start="0.4" data-duration="6.6" data-track-index="1" data-hold>
+      <div class="glass">
+        <div class="caustic"></div><div class="noise"></div><div class="sheen"></div>
+        <div class="content" style="display:flex;align-items:center;gap:22px">
+          <span class="ico" data-icon="movie_edit"></span>
+          <div class="stack">
+            <div class="name-wrap">
+              <span class="name" data-wipe>تدوین ویدیو با هوش مصنوعی</span>
+              <span class="caret"></span>
+            </div>
+            <div class="meta"><span class="dot"></span>AI&nbsp;VIDEO&nbsp;OVERLAY</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="beat-2" class="clip ov b2" data-start="7.8" data-duration="6" data-track-index="2" data-hold>
+      <div class="glass">
+        <div class="caustic"></div><div class="noise"></div><div class="sheen"></div>
+        <div class="content">
+          <div class="bar">
+            <span class="dots"><i></i><i></i><i></i></span>
+            <span class="t">ffmpeg</span>
+          </div>
+          <div class="body">
+            <div class="line"><span class="prompt">$</span><span class="typed" data-text="ffmpeg -i input.mp4"></span><span class="caret"></span></div>
+            <div class="line out"><span class="prompt">→</span><span class="typed" data-text="media engine ready"></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      "use strict";
+
+      document.querySelectorAll("[data-icon]").forEach(function (n) {
+        n.innerHTML = window.icon(n.getAttribute("data-icon"));
+      });
+
+      document.querySelectorAll("[data-text]").forEach(function (n) {
+        var text = n.getAttribute("data-text");
+        n.textContent = "";
+        for (var i = 0; i < text.length; i++) {
+          var s = document.createElement("span");
+          s.className = "ch";
+          s.textContent = text[i] === " " ? "\u00A0" : text[i];
+          n.appendChild(s);
+        }
+      });
+
+      var tl = gsap.timeline({ paused: true });
+
+      function enter(sel, at) {
+        tl.fromTo(sel, { opacity: 0, y: 22, filter: "blur(10px)" },
+          { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.5, ease: "expo.out" }, at);
+      }
+      function leave(sel, at) {
+        tl.fromTo(sel, { opacity: 1, y: 0, filter: "blur(0px)" },
+          { opacity: 0, y: -16, filter: "blur(8px)", duration: 0.4, ease: "power3.in" }, at);
+      }
+      function drift(sel, at, dur) {
+        tl.fromTo(sel + " .caustic", { x: -16, y: -10 }, { x: 20, y: 10, duration: dur, ease: "sine.inOut" }, at);
+        tl.fromTo(sel + " .sheen", { x: -340 }, { x: 760, duration: 1.1, ease: "power2.inOut" }, at + 0.35);
+      }
+
+      /* beat 1 */
+      enter(".b1 .glass", 0.5);
+      drift(".b1", 0.5, 6.4);
+      tl.fromTo(".b1 .ico", { scale: 0.4, rotate: -90, opacity: 0 },
+        { scale: 1, rotate: 0, opacity: 1, duration: 0.6, ease: "back.out(2)" }, 0.7);
+      tl.fromTo(".b1 .meta", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power2.out" }, 0.95);
+      tl.fromTo(".b1 .name", { clipPath: "inset(0 0 0 100%)" },
+        { clipPath: "inset(0 0 0 0%)", duration: 0.95, ease: "power2.inOut" }, 1.02);
+      tl.fromTo(".b1 .caret", { opacity: 1 }, {
+        keyframes: [
+          { opacity: 1, duration: 0.34 }, { opacity: 0, duration: 0.34 },
+          { opacity: 1, duration: 0.34 }, { opacity: 0, duration: 0.34 },
+          { opacity: 1, duration: 0.34 }, { opacity: 0, duration: 0.34 },
+          { opacity: 1, duration: 0.34 }, { opacity: 0, duration: 0.34 }
+        ], duration: 2.72, ease: "none"
+      }, 2.0);
+      leave(".b1 .glass", 6.55);
+
+      /* beat 2 */
+      enter(".b2 .glass", 7.9);
+      drift(".b2", 7.9, 5.6);
+      tl.fromTo(".b2 .bar", { opacity: 0, y: -8 }, { opacity: 1, y: 0, duration: 0.35, ease: "expo.out" }, 8.0);
+      tl.fromTo(".b2 .typed", { opacity: 0 },
+        { opacity: 1, duration: 0.001, ease: "none", stagger: 0.055 }, 8.3);
+      tl.fromTo(".b2 .caret", { opacity: 1 }, {
+        keyframes: [
+          { opacity: 1, duration: 0.3 }, { opacity: 0, duration: 0.3 },
+          { opacity: 1, duration: 0.3 }, { opacity: 0, duration: 0.3 },
+          { opacity: 1, duration: 0.3 }, { opacity: 0, duration: 0.3 }
+        ], duration: 1.8, ease: "none"
+      }, 8.3);
+      tl.fromTo(".b2 .line.out", { opacity: 0, y: 8 }, { opacity: 1, y: 0, duration: 0.45, ease: "expo.out" }, 9.55);
+      leave(".b2 .glass", 13.25);
+
+      window.__timelines["overlays"] = tl;
+      tl.seek(0);
+    })();
+  </script>
+</template>

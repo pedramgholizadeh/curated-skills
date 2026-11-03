@@ -1,0 +1,96 @@
+<template>
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+    }
+
+    .end-wrap {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 26px;
+      text-align: center;
+    }
+
+    .end-name {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      color: var(--color-ink);
+      font-size: 112px;
+      font-weight: 700;
+      line-height: 1.3;
+    }
+
+    .end-name .hm-word {
+      opacity: 0;
+      will-change: transform, opacity, filter;
+    }
+
+    .end-dot {
+      display: block;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: var(--color-accent);
+      transform: scale(0);
+    }
+
+    .end-rule {
+      display: block;
+      width: 520px;
+      height: 2px;
+      background: var(--color-accent);
+      opacity: 0.55;
+      transform-origin: right center;
+    }
+
+    .end-site {
+      color: var(--color-ink-muted);
+      font-size: 38px;
+      font-weight: 500;
+      line-height: 1.4;
+      letter-spacing: 0.02em;
+      opacity: 0;
+    }
+
+    .end-site span {
+      direction: ltr;
+      unicode-bidi: isolate;
+    }
+  </style>
+
+  <div id="root" data-composition-id="endcard" data-width="1920" data-height="960">
+    <div id="end-wrap" class="end-wrap">
+      <div class="end-name">
+        <span id="end-name-text">نام برند</span>
+        <span id="end-dot" class="end-dot"></span>
+      </div>
+      <span id="end-rule" class="end-rule"></span>
+      <div id="end-site" class="end-site"><span>example.com</span></div>
+    </div>
+  </div>
+
+  <script>
+    const tl = gsap.timeline({ paused: true });
+
+    HM.revealWords(tl, "#end-name-text", { at: 0.15, stagger: 0.09, fromX: 14, duration: 0.42 });
+    tl.fromTo(
+      "#end-dot",
+      { scale: 0, opacity: 0 },
+      { scale: 1, opacity: 1, duration: 0.32, ease: "back.out(1.4)" },
+      0.5
+    );
+    HM.drawRule(tl, "#end-rule", { at: 0.56, duration: 0.4 });
+    HM.revealLine(tl, "#end-site", { at: 0.82, duration: 0.28 });
+
+    // Hold to the end of the film; the last frame is the end card.
+    window.__timelines["endcard"] = tl;
+    tl.seek(0);
+  </script>
+</template>
